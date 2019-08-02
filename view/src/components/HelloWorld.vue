@@ -1,8 +1,15 @@
 <template>
-    <div class="test">
-        <h1>{{ msg }}</h1>
-        <button v-on:click="getData()">SHOT</button>
-    </div>
+    <v-container>
+        <v-card  max-width="344" class="mx-auto">
+            <v-card-title>INSA CSB</v-card-title>
+            <v-card-text>Getting data: </v-card-text>
+            <v-card-text>{{ msg }}</v-card-text>
+            <v-card-text>{{ myData }}</v-card-text>
+            <v-card-actions>
+                <v-btn v-on:click="getData()"> GET </v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-container>
 </template>
 
 <script>
@@ -18,13 +25,13 @@ export default {
     methods: {
         getData() {
             api.getTodos().then((data) => {
-                console.log(data);
+                this.myData = data[0].name;
+                console.log({ data });
             });
         },
     },
+    data: () => ({
+        myData: 'This is my data',
+    }),
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
