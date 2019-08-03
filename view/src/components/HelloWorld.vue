@@ -5,14 +5,16 @@
             <v-card-text>Getting data: </v-card-text>
             <v-card-text>{{ msg }}</v-card-text>
             <v-card-text>{{ myData }}</v-card-text>
+            <v-card-text v-if="items.length">{{ items }}</v-card-text>
             <v-card-actions>
-                <v-btn v-on:click="getData()"> GET </v-btn>
+                <v-btn v-on:click="getData(); setData();"> GET </v-btn>
             </v-card-actions>
         </v-card>
     </v-container>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import APIService from '../services/APIService';
 
 const api = new APIService();
@@ -25,13 +27,23 @@ export default {
     methods: {
         getData() {
             api.getTodos().then((data) => {
-                this.myData = data[0].name;
+                this.myData = data;
                 console.log({ data });
+                console.log(this.items);
+            });
+        },
+        setData() {
+            this.$store.dispatch('items/addItem', {
+                name: 'example',
+                data: 'bye',
             });
         },
     },
+    computed: {
+        ...mapState('items', ['items']),
+    },
     data: () => ({
-        myData: 'This is my data',
+        myData: [],
     }),
 };
 </script>
