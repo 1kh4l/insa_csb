@@ -3,6 +3,7 @@
         <v-app-bar app>
             <InsaNavBar/>
         </v-app-bar>
+        <TheSideNavMenu/>
         <v-content>
             <HelloWorld msg="Welcome to the new INSA's web site"/>
         </v-content>
@@ -12,12 +13,14 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import InsaNavBar from './components/InsaNavBar.vue';
+import TheSideNavMenu from './components/TheSideNavMenu.vue';
 
 export default {
     name: 'App',
     components: {
         HelloWorld,
         InsaNavBar,
+        TheSideNavMenu,
     },
     data: () => ({
         //
