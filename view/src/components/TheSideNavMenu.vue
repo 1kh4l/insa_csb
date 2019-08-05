@@ -3,7 +3,7 @@
         <v-list dense nav>
             <v-list-item v-for="item in menuItems" :key="item.title" link>
                 <v-list-item-icon>
-                    <v-icon>{{ item.icon }}</v-icon>
+                    <v-icon class="icon-menu">{{ item.icon }}</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -27,16 +27,21 @@ export default {
     },
     data: () => ({
         menuItems: [
-            { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-            { title: 'Photos', icon: 'mdi-image' },
+            { title: 'Home', icon: 'mdi-church' },
+            { title: 'About us', icon: 'mdi-christianity' },
             { title: 'About', icon: 'mdi-help-box' },
         ],
     }),
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/settings.scss";
+
 .nav-bar {
     top: 65px !important;
+}
+.icon-menu {
+    color: $color-base-red !important;
 }
 </style>
