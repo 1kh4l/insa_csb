@@ -35,10 +35,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/settings.scss";
+
 .nav-bar {
     top: 65px !important;
 }
 .icon-menu {
+    color: $color-base-red !important;
 }
 </style>
