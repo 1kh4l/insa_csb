@@ -1,11 +1,10 @@
 <template>
-    <v-navigation-drawer v-if="visible" permanent fixed class="nav-bar">
+    <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
         <v-list dense nav>
             <v-list-item v-for="item in menuItems" :key="item.title" link>
                 <v-list-item-icon>
                     <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-icon>
-
                 <v-list-item-content>
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item-content>

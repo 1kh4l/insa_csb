@@ -3,7 +3,7 @@
         <v-container justify-center>
             <v-layout row align-center class="header">
                 <v-flex md2 xs3>
-                    <v-btn class="menu-btn" v-on:click="showUpMenu()" validate-on-blur>
+                    <v-btn class="menu-btn" @click="showUpMenu()">
                         <v-icon>mdi-menu</v-icon>
                     </v-btn>
                     <img class="insa-logo" src="./../assets/insa_logo.png">

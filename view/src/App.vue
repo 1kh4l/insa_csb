@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-app-bar app>
+        <v-app-bar clipped-left app>
             <InsaNavBar/>
         </v-app-bar>
         <TheSideNavMenu/>
