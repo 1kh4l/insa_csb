@@ -21,4 +21,4 @@ yarn-error.log*
 *.sw?
 
 # local files
-/src/assets
+/src/assets/**
