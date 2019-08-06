@@ -1,14 +1,22 @@
 <template>
     <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
         <v-list dense nav>
-            <v-list-item v-for="item in menuItems" :key="item.title" link>
-                <v-list-item-icon>
-                    <v-icon class="icon-menu">{{ item.icon }}</v-icon>
-                </v-list-item-icon>
-                <v-list-item-content>
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
+            <v-list-group v-for="item in menuItems" :key="item.title">
+                <template v-slot:activator>
+                    <v-list-item-icon>
+                        <v-icon>{{item.icon}}</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>{{item.title}}</v-list-item-title>
+                </template>
+                <v-list-group v-for="subItem in item.items"
+                 no-action sub-group :key="subItem.title">
+                    <template v-slot:activator>
+                        <v-list-item-content>
+                            <v-list-item-title>{{subItem.title}}</v-list-item-title>
+                        </v-list-item-content>
+                  </template>
+                </v-list-group>
+            </v-list-group>
         </v-list>
     </v-navigation-drawer>
 </template>
@@ -27,9 +35,9 @@ export default {
     },
     data: () => ({
         menuItems: [
-            { title: 'Home', icon: 'mdi-church' },
-            { title: 'About us', icon: 'mdi-christianity' },
-            { title: 'About', icon: 'mdi-help-box' },
+            { title: 'Home', icon: 'mdi-church', items: [{ title: 'test', icon: 'mdi-home' }] },
+            { title: 'About us', icon: 'mdi-christianity', items: [{ title: 'hello', icon: 'mdi-home' }] },
+            { title: 'About', icon: 'mdi-help-box', items: [{ title: 'world', icon: 'mdi-home' }] },
         ],
     }),
 };
@@ -42,6 +50,6 @@ export default {
     top: 65px !important;
 }
 .icon-menu {
-    color: $color-base-red !important;
+    color: $color-base-gray !important;
 }
 </style>
