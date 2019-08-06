@@ -1,20 +1,29 @@
 <template>
     <v-toolbar-title class="headline">
-        <v-container justify-center>
-            <v-layout row align-center class="header">
-                <v-flex md2 xs3>
+        <v-container class="container-nav-bar" justify-center>
+            <v-layout row align-center class="row-logo">
+                <v-flex md3 xs3>
+                    <img class="insa-logo" src="./../assets/insa_logo.png">
                     <v-btn class="menu-btn" @click="showUpMenu()">
                         <v-icon>mdi-menu</v-icon>
                     </v-btn>
-                    <img class="insa-logo" src="./../assets/insa_logo.png">
                 </v-flex>
-                <v-flex md10 xs9>
-                    <div :class="{'ma-0': $vuetify.breakpoint.smAndDown}">
-                        <span>INSA</span>
-                        <span class="font-weight-light">
-                            ~ Instituto Nuestra Señora de la Asunción
+                <v-flex md8 xs8>
+                    <v-layout column :class="{'ma-0': $vuetify.breakpoint.smAndDown}"
+                     class="title-container">
+                        <v-layout row class="insa-title">
+                            <span>INSA</span>
+                            <span class="font-weight-light">
+                                ~ Instituto Nuestra Señora de la Asunción
+                            </span>
+                        </v-layout>
+                        <span class="overline motto-insa text-end">
+                            Enseñanos bondad, disciplina y ciencia
                         </span>
-                    </div>
+                    </v-layout>
+                </v-flex>
+                <v-flex md1 xs1>
+                    <div>Language</div>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -68,7 +77,20 @@ export default {
     justify-content: center !important;
     width: 36px !important;
 }
-.header {
+.row-logo {
     margin-right: 0px !important;
+}
+.container-nav-bar {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+.headline {
+    width: 100%;
+    padding-left: 13px;
+}
+.insa-title {
+    padding-top: 10px;
 }
 </style>
