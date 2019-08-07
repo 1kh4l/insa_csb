@@ -24,11 +24,11 @@
                 <div class="lang-btn">
                     <v-menu>
                         <template v-slot:activator="{ on }">
-                            <v-btn color="primary" dark v-on="on">
-                                <flag :iso="flagSelected.id"/>
+                            <v-btn class="btn-flag" v-on="on">
+                                <flag class="flag" :iso="flagSelected.id"/>
                             </v-btn>
                         </template>
-                        <v-list>
+                        <v-list class="flag-list">
                             <v-list-item v-for="insaFlag in flags"
                              @click="selectFlag(insaFlag)" :key="insaFlag.id">
                                 <v-list-item-title>
@@ -54,7 +54,8 @@ export default {
             });
         },
         selectFlag(flag) {
-            this.flagSelected = this.flags.filter(f => f.id === flag.id)[0];
+            const flagFiltered = this.flags.filter(f => f.id === flag.id)[0];
+            this.flagSelected = flagFiltered;
         },
     },
     computed: {
@@ -87,7 +88,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 .toolbar-insa {
     padding: 0px 8px 0px 8px;
 }
@@ -138,5 +139,20 @@ export default {
 }
 .title-motto {
     height: 64px !important;
+}
+.btn-flag {
+    min-width: 42px !important;
+    width: 42px !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    .flag {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+}
+.flag-list {
+    padding: 0px !important;
 }
 </style>
