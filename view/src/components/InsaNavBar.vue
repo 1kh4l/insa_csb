@@ -25,9 +25,9 @@
                 </v-layout>
             </v-flex>
             <!-- INTERNATIONALIZATION FLAGS -->
-            <v-flex md1 xs1>
+            <v-flex class="international" md1 xs1>
                 <div class="lang-btn">
-                    <v-menu>
+                    <v-menu class="menu-flags">
                         <template v-slot:activator="{ on }">
                             <v-btn class="btn-flag" v-on="on">
                                 <flag class="flag" :iso="flagSelected.id"/>
@@ -145,21 +145,30 @@ export default {
             }
         }
 
-        .btn-flag {
-            min-width: 42px !important;
-            width: 42px !important;
-            border-radius: 50% !important;
-            box-shadow: none !important;
-            background-color: transparent !important;
-            .flag {
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-            }
-        }
+        .international {
 
-        .flag-list {
-            padding: 0px !important;
+            .lang-btn {
+
+                .btn-flag {
+                    min-width: 42px !important;
+                    width: 42px !important;
+                    border-radius: 50% !important;
+                    box-shadow: none !important;
+                    background-color: transparent !important;
+                    .flag {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .menu-flags {
+
+                    .flag-list {
+                        padding: 0px !important;
+                    }
+                }
+            }
         }
     }
 }
