@@ -27,7 +27,7 @@
             <!-- INTERNATIONALIZATION FLAGS -->
             <v-flex class="international" md1 xs1>
                 <div class="lang-btn">
-                    <v-menu class="menu-flags">
+                    <v-menu>
                         <template v-slot:activator="{ on }">
                             <v-btn class="btn-flag" v-on="on">
                                 <flag class="flag" :iso="flagSelected.id"/>
@@ -93,12 +93,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .container-nav-bar {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    max-width: 100%;
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    max-width: 100% !important;
 
     .row-logo {
         margin-right: 0px !important;
@@ -161,15 +161,12 @@ export default {
                         border-radius: 50%;
                     }
                 }
-
-                .menu-flags {
-
-                    .flag-list {
-                        padding: 0px !important;
-                    }
-                }
             }
         }
     }
+}
+
+.flag-list {
+    padding: 0px !important;
 }
 </style>

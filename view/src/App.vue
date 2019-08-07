@@ -5,20 +5,18 @@
         </v-app-bar>
         <TheSideNavMenu/>
         <v-content>
-            <InsaHome msg="Welcome to the new INSA's web site"/>
+            <router-view/>
         </v-content>
     </v-app>
 </template>
 
 <script>
-import InsaHome from './components/InsaHome.vue';
 import InsaNavBar from './components/InsaNavBar.vue';
 import TheSideNavMenu from './components/TheSideNavMenu.vue';
 
 export default {
     name: 'App',
     components: {
-        InsaHome,
         InsaNavBar,
         TheSideNavMenu,
     },
