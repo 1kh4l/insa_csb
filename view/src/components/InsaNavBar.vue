@@ -1,12 +1,16 @@
 <template>
+    <!-- CONTAINER NAVIGATION BAR -->
     <v-container class="container-nav-bar" justify-center>
+        <!-- ROW WITH LOGO | SIDENAV MENU | INTERNATIONALIZATION CHANGE -->
         <v-layout row align-center class="row-logo">
+            <!-- LOGO | SIDENAV MENU -->
             <v-flex class="logo-btn" md1 xs3>
                 <img class="insa-logo" src="./../assets/insa_logo.png">
                 <v-btn class="menu-btn" @click="showUpMenu()">
                     <v-icon>mdi-menu</v-icon>
                 </v-btn>
             </v-flex>
+            <!-- TITLE AND MOTTO -->
             <v-flex class="title-motto" md10 xs8>
                 <v-layout column align-center :class="{'ma-0': $vuetify.breakpoint.smAndDown}">
                     <v-layout row class="insa-title">
@@ -20,6 +24,7 @@
                     </span>
                 </v-layout>
             </v-flex>
+            <!-- INTERNATIONALIZATION FLAGS -->
             <v-flex md1 xs1>
                 <div class="lang-btn">
                     <v-menu>
@@ -64,24 +69,24 @@ export default {
     data: () => ({
         flags: [
             {
-                nationality: 'Colombian',
+                country: 'Colombia',
                 id: 'co',
             },
             {
-                nationality: 'Britain',
+                country: 'England',
                 id: 'gb',
             },
             {
-                nationality: 'French',
+                country: 'France',
                 id: 'fr',
             },
             {
-                nationality: 'Italian',
+                country: 'Italy',
                 id: 'it',
             },
         ],
         flagSelected: {
-            nationality: 'Colombian',
+            country: 'Colombia',
             id: 'co',
         },
     }),
@@ -89,70 +94,73 @@ export default {
 </script>
 
 <style lang="scss" scope>
-.toolbar-insa {
-    padding: 0px 8px 0px 8px;
-}
-.logo-btn {
-    max-height: 64px;
-}
-.insa-logo {
-    padding-top: 4px;
-    max-height: 65px;
-    max-width: 52px;
-}
-.ma-0 {
-    font-size: 0.5em;
-}
-.menu-btn {
-    top: -23px;
-    background-color: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    min-width: 0px !important;
-    border-radius: 50% !important;
-    width: 36px !important;
-}
-.menu-btn:hover {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border-radius: 50% !important;
-    justify-content: center !important;
-    width: 36px !important;
-}
-.row-logo {
-    margin-right: 0px !important;
-}
 .container-nav-bar {
     width: 100%;
     padding: 0px;
     margin: 0px;
     max-width: 100%;
-}
-.headline {
-    width: 100%;
-    padding-left: 13px;
-}
-.insa-title {
-    padding-top: 10px;
-}
-.title-motto {
-    height: 64px !important;
-}
-.btn-flag {
-    min-width: 42px !important;
-    width: 42px !important;
-    border-radius: 50% !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    .flag {
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
+
+    .row-logo {
+        margin-right: 0px !important;
+
+        .logo-btn {
+            max-height: 64px;
+
+            .insa-logo {
+                padding-top: 4px;
+                max-height: 65px;
+                max-width: 52px;
+            }
+
+            .menu-btn {
+                top: -23px;
+                background-color: transparent !important;
+                color: black !important;
+                box-shadow: none !important;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                min-width: 0px !important;
+                border-radius: 50% !important;
+                width: 36px !important;
+            }
+            .menu-btn:hover {
+                background-color: transparent !important;
+                box-shadow: none !important;
+                border-radius: 50% !important;
+                justify-content: center !important;
+                width: 36px !important;
+            }
+        }
+
+        .title-motto {
+            height: 64px !important;
+
+            .ma-0 {
+                font-size: 0.5em;
+
+            }
+
+            .insa-title {
+                padding-top: 10px;
+            }
+        }
+
+        .btn-flag {
+            min-width: 42px !important;
+            width: 42px !important;
+            border-radius: 50% !important;
+            box-shadow: none !important;
+            background-color: transparent !important;
+            .flag {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+            }
+        }
+
+        .flag-list {
+            padding: 0px !important;
+        }
     }
-}
-.flag-list {
-    padding: 0px !important;
 }
 </style>
