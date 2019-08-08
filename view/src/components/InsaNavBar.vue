@@ -20,7 +20,7 @@
                         </span>
                     </v-layout>
                     <span class="overline motto-insa text-end">
-                        Enseñanos bondad, disciplina y ciencia
+                       {{ $t('header.motto') }}
                     </span>
                 </v-layout>
             </v-flex>
@@ -50,6 +50,7 @@
 
 <script>
 import { mapState } from 'vuex';
+import i18n from '@/plugins/i18n';
 
 export default {
     methods: {
@@ -61,6 +62,7 @@ export default {
         selectFlag(flag) {
             const flagFiltered = this.flags.filter(f => f.id === flag.id)[0];
             this.flagSelected = flagFiltered;
+            i18n.locale = this.flagSelected.id;
         },
     },
     computed: {
