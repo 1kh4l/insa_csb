@@ -14,4 +14,12 @@ module.exports = {
                 .tap(opt => Object.assign(opt, { data: '@import \'~@/sass/main.scss\';' }));
         });
     },
+    pluginOptions: {
+        i18n: {
+            locale: 'en',
+            fallbackLocale: 'en',
+            localeDir: '~@/locales',
+            enableInSFC: true,
+        },
+    }
 };

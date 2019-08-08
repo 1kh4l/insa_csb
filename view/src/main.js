@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
 import vuetify from './plugins/vuetify';
+import i18n from './plugins/i18n';
 import Router from './router';
 
 Vue.use(VueRouter);
@@ -21,5 +22,6 @@ new Vue({
     render: h => h(App),
     store,
     FlagIcon,
+    i18n,
     router,
 }).$mount('#app');

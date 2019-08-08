@@ -6,6 +6,7 @@ export default {
         items: [],
         status: null,
         visible: true,
+        lang: 'co',
     },
     mutations: {
         setItems(state, items) {
@@ -13,6 +14,9 @@ export default {
         },
         setVisibility(state) {
             Vue.set(state, 'visible', !state.visible);
+        },
+        setLanguage(state, lang) {
+            Vue.set(state, 'lang', lang);
         },
         addItem(state, item) {
             let newItems = [];
@@ -27,6 +31,9 @@ export default {
         },
         setVisibility(context) {
             context.commit('setVisibility');
+        },
+        setLanguage(context, lang) {
+            context.commit('setLanguage', lang);
         },
         getItems(context) {
             const newItems = [{ name: 'newOne', data: 'bye' }];

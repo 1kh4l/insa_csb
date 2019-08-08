@@ -1,0 +1,25 @@
+{
+    "header": {
+        "motto": "Enseñanos bondad, disciplina y ciencia"
+    },
+    "sidenav": {
+        "home": "Inicio",
+        "about-us": {
+            "title": "Quiénes somos",
+            "items": {
+                "about": "INSA",
+                "mission": "Misión",
+                "vision": "Visión",
+                "history": "Historia"
+            }
+        },
+        "basilians": {
+            "title": "Basilianos",
+            "items": {
+                "about": "Quiénes somos",
+                "history": "Historia",
+                "work": "Qué hacemos"
+            }
+        }
+    }
+}
