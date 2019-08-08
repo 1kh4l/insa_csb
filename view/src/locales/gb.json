@@ -1,5 +1,25 @@
 {
     "header": {
         "motto": "Teach me goodness, discipline, and knowledge"
+    },
+    "sidenav": {
+        "home": "Home",
+        "about-us": {
+            "title": "About us",
+            "items": {
+                "about": "INSA",
+                "mission": "Mission",
+                "vision": "Vision",
+                "history": "History"
+            }
+        },
+        "basilians": {
+            "title": "Basilians",
+            "items": {
+                "about": "About us",
+                "history": "History",
+                "work": "Our Work"
+            }
+        }
     }
 }

@@ -63,6 +63,7 @@ export default {
             const flagFiltered = this.flags.filter(f => f.id === flag.id)[0];
             this.flagSelected = flagFiltered;
             i18n.locale = this.flagSelected.id;
+            this.$store.dispatch('items/setLanguage', i18n.locale);
         },
     },
     computed: {
