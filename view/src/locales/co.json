@@ -20,6 +20,16 @@
                 "history": "Historia",
                 "work": "Qué hacemos"
             }
-        }
+        },
+        "academic": {
+            "title": "Académico",
+            "items": {
+                "student": "Estudiante",
+                "teachers": "Maestros",
+                "courses": "Electivas",
+                "study-plan": "Currículos"
+            }
+        },
+        "contact": "Contacto"
     }
 }
