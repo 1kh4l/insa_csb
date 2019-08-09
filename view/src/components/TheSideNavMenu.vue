@@ -1,5 +1,7 @@
 <template>
+    <!-- SIDENAV -->
     <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
+        <!-- LIST ITEMS CONTAINER-->
         <v-list dense nav>
             <v-list-item @click="">
                 <v-list-item-icon>
@@ -7,6 +9,7 @@
                 </v-list-item-icon>
                 <v-list-item-title>{{ $t('sidenav.home') }}</v-list-item-title>
             </v-list-item>
+            <!-- NESTED SUBMENUS -->
             <v-list-group v-for="item in filteredMenu" :key="item.title">
                 <template v-slot:activator>
                     <v-list-item-icon class="icon-menu">
@@ -24,12 +27,19 @@
                     </v-list-item-icon>
                 </v-list-item>
             </v-list-group>
+            <v-list-item @click="">
+                <v-list-item-icon>
+                    <v-icon class="icon-menu">mdi-church</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>{{ $t('sidenav.contact') }}</v-list-item-title>
+            </v-list-item>
         </v-list>
     </v-navigation-drawer>
 </template>
 
 <script>
 import { mapState } from 'vuex';
+import sideNav from '../assets/sidenav-menu.json';
 
 export default {
     name: 'SideNavMenu',
@@ -43,35 +53,7 @@ export default {
         filteredMenu() { return this.menuItems.filter(n => n.title !== 'Home'); },
     },
     data: () => ({
-        menuItems: [
-            { title: 'Home', icon: 'mdi-church', items: [{ title: 'test', icon: 'mdi-home' }] },
-            {
-                title: 'sidenav.about-us.title',
-                icon: 'mdi-christianity',
-                items: [
-                    {
-                        title: 'sidenav.about-us.items.about',
-                        icon: 'mdi-school',
-                    },
-                    {
-                        title: 'sidenav.about-us.items.mission',
-                        icon: 'mdi-book-open-page-variant',
-                    },
-                    {
-                        title: 'sidenav.about-us.items.vision',
-                        icon: 'mdi-book-open-page-variant',
-                    },
-                ],
-            },
-            {
-                title: 'sidenav.basilians.title',
-                icon: 'mdi-christianity',
-                items: [{
-                    title: 'sidenav.basilians.items.about',
-                    icon: 'mdi-home',
-                }],
-            },
-        ],
+        menuItems: sideNav.menu,
     }),
 };
 </script>
