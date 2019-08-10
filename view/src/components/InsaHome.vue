@@ -50,9 +50,9 @@
 
 <script>
 import { mapState } from 'vuex';
-import APIService from '../services/APIService';
+/* import APIService from '../services/APIService'; */
 
-const api = new APIService();
+/* const api = new APIService(); */
 
 export default {
     name: 'InsaHome',
@@ -60,13 +60,15 @@ export default {
         msg: String,
     },
     methods: {
-        getData() {
+        /*
+         getData() {
             api.getTodos().then((data) => {
                 this.myData = data;
                 console.log({ data });
                 console.log(this.items);
             });
-        },
+            },
+        */
         setData() {
             this.$store.dispatch('items/addItem', {
                 name: 'example',
