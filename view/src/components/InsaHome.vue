@@ -19,7 +19,7 @@
 
         <div class="about-us-insa">
             <v-card>
-                <v-card-title>ABOUT US</v-card-title>
+                <v-card-title>{{ $t('about') }}</v-card-title>
                 <v-card-text>Here we go</v-card-text>
             </v-card>
         </div>
@@ -27,21 +27,21 @@
         </div>
         <div class="history-insa">
             <v-card>
-                <v-card-title>HISTORY</v-card-title>
+                <v-card-title>{{ $t('history') }}</v-card-title>
                 <v-card-text> Here we go </v-card-text>
             </v-card>
         </div>
 
         <div class="mission-insa">
             <v-card>
-                <v-card-title>MISSION</v-card-title>
+                <v-card-title>{{ $t('mission') }}</v-card-title>
                 <v-card-text> Here we go </v-card-text>
             </v-card>
         </div>
 
         <div class="vission-insa">
             <v-card>
-                <v-card-title>VISION</v-card-title>
+                <v-card-title>{{ $t('vision') }}</v-card-title>
                 <v-card-text> Here we go </v-card-text>
             </v-card>
         </div>

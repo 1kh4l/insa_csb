@@ -2,34 +2,34 @@
     "header": {
         "motto": "Enseñanos bondad, disciplina y ciencia"
     },
+    "about"  : "Quiénes somos",
+    "history": "Historia",
+    "mission": "Misión",
+    "vision" : "Visión",
     "sidenav": {
-        "home": "Inicio",
+        "home"    : "Inicio",
         "about-us": {
             "title": "Quiénes somos",
             "items": {
-                "about": "INSA",
-                "mission": "Misión",
-                "vision": "Visión",
-                "history": "Historia"
+                "about"  : "INSA"
             }
         },
         "basilians": {
             "title": "Basilianos",
             "items": {
-                "about": "Quiénes somos",
-                "history": "Historia",
-                "work": "Qué hacemos"
+                "about"  : "Quiénes somos",
+                "work"   : "Qué hacemos"
             }
         },
         "academic": {
             "title": "Académico",
             "items": {
-                "student": "Estudiante",
-                "teachers": "Maestros",
-                "courses": "Electivas",
+                "student"   : "Estudiante",
+                "teachers"  : "Maestros",
+                "courses"   : "Electivas",
                 "study-plan": "Currículos"
             }
-        },
-        "contact": "Contacto"
-    }
+        }
+    },
+    "contact": "Contacto"
 }

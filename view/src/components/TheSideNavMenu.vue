@@ -31,7 +31,7 @@
                 <v-list-item-icon>
                     <v-icon class="icon-menu">mdi-church</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>{{ $t('sidenav.contact') }}</v-list-item-title>
+                <v-list-item-title>{{ $t('contact') }}</v-list-item-title>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
