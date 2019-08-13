@@ -14,8 +14,8 @@
             <v-flex class="title-motto" md10 xs8>
                 <v-layout column align-center :class="{'ma-0': $vuetify.breakpoint.smAndDown}">
                     <v-layout row class="insa-title">
-                        <span>INSA</span>
-                        <span class="font-weight-light">
+                        <span class="title">INSA</span>
+                        <span class="font-weight-light motto">
                             ~ Instituto Nuestra Señora de la Asunción
                         </span>
                     </v-layout>
@@ -97,6 +97,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/settings.scss";
 .container-nav-bar {
     width: 100% !important;
     padding: 0px !important;
@@ -118,7 +119,7 @@ export default {
             .menu-btn {
                 top: -23px;
                 background-color: transparent !important;
-                color: black !important;
+                color: $color-brown-base !important;
                 box-shadow: none !important;
                 padding-left: 0px !important;
                 padding-right: 0px !important;
@@ -145,6 +146,12 @@ export default {
 
             .insa-title {
                 padding-top: 10px;
+                .title {
+                    color: $color-brown-base;
+                }
+                .motto {
+                    padding: 4px 0px 0px 3px;
+                }
             }
         }
 

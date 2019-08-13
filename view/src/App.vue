@@ -30,7 +30,9 @@ export default {
 $color-pack: false;
 @import '~vuetify/src/styles/main.sass';
 .header {
-    background-color: transparent !important;
+    background-image: url('./assets/header.svg');
+    background-size: 16%;
+    background-position: right;
 }
 
 </style>

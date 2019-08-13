@@ -2,24 +2,34 @@
     "header": {
         "motto": "Teach me goodness, discipline, and knowledge"
     },
+    "about"  : "About us",
+    "history": "History",
+    "mission": "Mission",
+    "vision" : "Vision",
     "sidenav": {
-        "home": "Home",
+        "home"    : "Home",
         "about-us": {
             "title": "About us",
             "items": {
-                "about": "INSA",
-                "mission": "Mission",
-                "vision": "Vision",
-                "history": "History"
+                "about"  : "INSA"
             }
         },
         "basilians": {
             "title": "Basilians",
             "items": {
-                "about": "About us",
-                "history": "History",
-                "work": "Our Work"
+                "about"  : "About us",
+                "work"   : "Our work"
+            }
+        },
+        "academic": {
+            "title": "No translation yet",
+            "items": {
+                "student"   : "Student",
+                "teachers"  : "Teachers",
+                "courses"   : "No translation yet",
+                "study-plan": "No translation yet"
             }
         }
-    }
+    },
+    "contact": "Contact"
 }

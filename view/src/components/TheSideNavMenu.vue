@@ -5,7 +5,7 @@
         <v-list dense nav>
             <v-list-item @click="">
                 <v-list-item-icon>
-                    <v-icon class="icon-menu">mdi-church</v-icon>
+                    <v-icon class="icon-menu">mdi-home-plus</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>{{ $t('sidenav.home') }}</v-list-item-title>
             </v-list-item>
@@ -31,7 +31,7 @@
                 <v-list-item-icon>
                     <v-icon class="icon-menu">mdi-church</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>{{ $t('sidenav.contact') }}</v-list-item-title>
+                <v-list-item-title>{{ $t('contact') }}</v-list-item-title>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
@@ -58,14 +58,17 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/settings.scss";
 
 .nav-bar {
-    top: 65px !important;
+    top: 64px !important;
+    background-image: url('../assets/side.svg');
+    background-size: 70%;
+    background-position: bottom;
 }
 .icon-menu {
-    color: $color-base-gray !important;
+    color: $color-brown-base !important;
 }
 .submenu {
     padding-left: 64px !important;
