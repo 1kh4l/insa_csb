@@ -31,5 +31,22 @@
             }
         }
     },
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "content-insa": {
+        "about": [
+            "El Instituto Nuestra Señora de la Asunción, es una Comunidad Educativa, fundada el 4 de octubre de 1992. Ubicado en el barrio Andrés Sanín, centro parroquial de Nuestra Señora de la Asunción, desarrolla su proceso en jornada única, atendiendo prioritariamente a familias de estratos 1 y 2, de los barrios Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero y La Playa.",
+            "INSA, es una centro católico familiar para la educación formal, preescolar, básica y media, con énfasis en bellas artes (artes pláticas y música), y en idiomas modernos y clásicos (inglés, español, francés, mandarín, italiano y latín). Además tienen un trabajo sólido en las áreas de sistemas, matemáticas y formación ética.",
+             "Es una institución educativa de alta calidad de carácter privado, orientada por la Congregación de San Basilio, liderada por los padres Francisco Antonio Amico Ferrari y Rafael Ignacio Lopera Montoya, Rector y Director respectivamente.",
+             "\"No queríamos que el INSA fuera una institución más, como cualquiera de las que existen.La FAMILIA debería jugar un papel muy importante dentro de la filosofía del Instituto y así lo hemos venido haciendo desde los inicios.\"",
+             "(Padre Rafael Lopera, entrevista realizada por Luis Fernando Sánchez)",
+             "Proyecto Educativo Institucional: años 1996 – 1997",
+             "Los años 1996 y 1997 fueron para el INSA, los años del PEI. Se realizó una investigación dirigida por un experto en la materia. Se trabajó en torno a dos preguntas: ¿el INSA responde a la realidad que lo circunscribe?, ¿la formación que se da en el INSA, parte de la realidad de su entorno?",
+             "(Basilianos en Colombia 1987 1997. Luís Fernando Sánchez. P. 68.)",
+             "Problemas del contexto del INSA en el momento de su origen: inseguridad, manejo de la economía del hogar, conflictos y agresividad al interior del hogar, contaminación del espacio.",
+             "(Basilianos en Colombia 1987 1997. Luís Fernando Sánchez. P. 69)"
+        ],
+        "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "mission": "Construir una Comunidad Educativa Católica, centrada en la familia, que brinde una formación integral a los agentes educativos, partiendo de su ambiente socio-cultural y de los valores cristianos. (PEI)",
+        "vision": "Nosotros los miembros de esta Familia Educativa proyectamos: la construcción de un centro de formación integral para el estudiante y su familia, que posibilite el desarrollo de una comunidad educativa inspirado en Nuestro Señor Jesucristo y su Evangelio. Que fomente en todos los aspectos: el crecimiento, la liberación, la organización y participación de todos sus miembros, para vivir aquí plenamente en hermandad, el Reino de Dios, ahora y para siempre. (PEI)"
+    }
 }
