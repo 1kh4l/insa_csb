@@ -20,7 +20,7 @@
             <img class="img1" src="../assets/img1.jpg"/>
         </div>
         <div class="about-us-insa">
-            <v-card>
+            <v-card class="card-about">
                 <v-card-title class="display-1">{{ $t('about') }}</v-card-title>
                 <v-card-text class="body-2">
                     <p class="text-justify"> {{ $t('content-insa.about[0]') }} </p>
@@ -37,10 +37,11 @@
                 </v-card-text>
             </v-card>
         </div>
-        <div class="inter-images">
+        <div class="image-container-2">
+            <img class="img2" src="../assets/img1.jpg"/>
         </div>
         <div class="history-insa">
-            <v-card>
+            <v-card class="card-history">
                 <v-card-title class="display-1">{{ $t('history') }}</v-card-title>
                 <v-card-text class="body-2">
                     <p class="text-justify">{{ $t('content-insa.history') }}</p>
@@ -48,8 +49,12 @@
             </v-card>
         </div>
 
+        <div class="image-container-2">
+            <img class="img2" src="../assets/img1.jpg"/>
+        </div>
+
         <div class="mission-insa">
-            <v-card>
+            <v-card class="card-mission">
                 <v-card-title class="display-1">{{ $t('mission') }}</v-card-title>
                 <v-card-text class="body-2">
                     <p class="text-center">{{ $t('content-insa.mission') }}</p>
@@ -57,8 +62,12 @@
             </v-card>
         </div>
 
-        <div class="vission-insa">
-            <v-card>
+        <div class="image-container-2">
+            <img class="img2" src="../assets/img1.jpg"/>
+        </div>
+
+        <div class="vision-insa">
+            <v-card class="card-vision">
                 <v-card-title class="display-1">{{ $t('vision') }}</v-card-title>
                 <v-card-text class="body-2">
                     <p class="text-center">{{ $t('content-insa.vision') }}</p>
@@ -123,7 +132,77 @@ export default {
 
     .image-container-1 {
         width: 100%;
+        background-color: white;
         .img1 {
+            width: inherit;
+            mask-image: url('../assets/mask1.svg');
+            mask-size: cover;
+            mask-position: left bottom;
+            mask-repeat: no-repeat;
+        }
+    }
+
+    .about-us-insa {
+        width: 100%;
+        .card-about {
+            z-index: 2;
+            border: none !important;
+            border-radius: 0px !important;
+            width: inherit;
+            mask-image: url('../assets/mask1.svg');
+            mask-size: cover;
+            mask-position: left bottom;
+            mask-repeat: no-repeat;
+        }
+    }
+
+    .image-container-2 {
+        width: 100%;
+        background-color: white;
+        margin-top: -29px;
+        .img2 {
+            width: inherit;
+            mask-image: url('../assets/mask1.svg');
+            mask-size: cover;
+            mask-position: left bottom;
+            mask-repeat: no-repeat;
+        }
+    }
+
+    .history-insa {
+        width: 100%;
+        .card-history {
+            z-index: 2;
+            border: none !important;
+            border-radius: 0px !important;
+            width: inherit;
+            mask-image: url('../assets/mask1.svg');
+            mask-size: cover;
+            mask-position: left bottom;
+            mask-repeat: no-repeat;
+        }
+    }
+
+    .mission-insa {
+        width: 100%;
+        .card-mission {
+            z-index: 2;
+            border: none !important;
+            border-radius: 0px !important;
+            width: inherit;
+            mask-image: url('../assets/mask1.svg');
+            mask-size: cover;
+            mask-position: left bottom;
+            mask-repeat: no-repeat;
+        }
+    }
+
+    .vision-insa {
+        width: 100%;
+        .card-vision {
+            z-index: 2;
+            border: none !important;
+            border-radius: 0px !important;
             width: inherit;
             mask-image: url('../assets/mask1.svg');
             mask-size: cover;
