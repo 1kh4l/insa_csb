@@ -1,4 +1,5 @@
 import InsaHome from '@/components/InsaHome.vue';
+import Basilians from '@/components/Basilians.vue';
 
 export default [
     {
@@ -8,5 +9,9 @@ export default [
     {
         path: '/home',
         component: InsaHome,
+    },
+    {
+        path: '/basilians',
+        component: Basilians,
     },
 ];
