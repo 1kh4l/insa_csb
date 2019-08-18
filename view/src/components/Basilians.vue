@@ -1,10 +1,5 @@
 <template>
     <v-container class="basilians-page">
-        <!--<div class="container-video">
-            <video class="insa-video" autoplay muted loop id="myVideo">
-                <source src="../assets/landing-video.mp4" type="video/mp4">
-            </video>
-        </div>-->
         <div class="image-container-1">
             <img class="img1" src="../assets/img1.jpg"/>
         </div>
