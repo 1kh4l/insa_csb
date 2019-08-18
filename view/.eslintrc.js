@@ -7,12 +7,27 @@ module.exports = {
         'plugin:vue/essential',
         '@vue/airbnb',
     ],
+    // required to lint *.vue files
+    plugins: [
+        'vue'
+    ],
     rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        indent: ['error', 4],
+        // allow debugger during development
+        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+        'indent': ['error', 4],
+        'import/extensions': ['error', 'always', {
+            js: 'never',
+            vue: 'never'
+        }]
     },
     parserOptions: {
         parser: 'babel-eslint',
+    },
+    settings: {
+        'import/resolver': {
+            node: {
+                extensions: ['.js','.jsx','.vue']
+            }
+        },
     },
 };

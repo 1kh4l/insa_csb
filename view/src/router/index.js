@@ -1,5 +1,5 @@
-import InsaHome from '@/components/InsaHome.vue';
-import Basilians from '@/components/Basilians.vue';
+import InsaHome from '@/components/InsaHome';
+import Basilians from '@/components/Basilians';
 
 export default [
     {
