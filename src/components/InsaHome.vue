@@ -1,21 +1,5 @@
 <template>
     <v-container class="main-page">
-        <v-card v-if="testShow"  max-width="344" class="mx-auto">
-            <v-card-title>INSA CSB</v-card-title>
-            <v-card-text>Getting data: </v-card-text>
-            <v-card-text>{{ msg }}</v-card-text>
-            <v-card-text>{{ myData }}</v-card-text>
-            <v-card-text v-if="items.length">{{ items }}</v-card-text>
-            <v-card-actions>
-                <v-btn v-on:click="getData(); setData();"> GET </v-btn>
-            </v-card-actions>
-        </v-card>
-
-        <!--<div class="container-video">
-            <video class="insa-video" autoplay muted loop id="myVideo">
-                <source src="../assets/landing-video.mp4" type="video/mp4">
-            </video>
-        </div>-->
         <div class="image-container-1">
             <img class="img1" src="../assets/img1.jpg"/>
         </div>
@@ -79,9 +63,6 @@
 
 <script>
 import { mapState } from 'vuex';
-/* import APIService from '../services/APIService'; */
-
-/* const api = new APIService(); */
 
 export default {
     name: 'InsaHome',
@@ -89,15 +70,6 @@ export default {
         msg: String,
     },
     methods: {
-        /*
-         getData() {
-            api.getTodos().then((data) => {
-                this.myData = data;
-                console.log({ data });
-                console.log(this.items);
-            });
-            },
-        */
         setData() {
             this.$store.dispatch('items/addItem', {
                 name: 'example',
@@ -117,13 +89,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/settings.scss";
-
-.insa-video {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    /*filter:blur(5px);*/
-}
 .main-page {
     width: 100% !important;
     max-width: 100% !important;

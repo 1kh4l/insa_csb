@@ -3,12 +3,17 @@
     <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
         <!-- LIST ITEMS CONTAINER-->
         <v-list dense nav>
-            <v-list-item @click="">
-                <v-list-item-icon>
-                    <v-icon class="icon-menu">mdi-home-plus</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>{{ $t('sidenav.home') }}</v-list-item-title>
-            </v-list-item>
+            <!-- HOME -->
+            <router-link to="/home" v-slot="{ href, route, navigate, isActive, isExactActive }">
+                <v-list-item @click="navigate">
+                    <v-list-item-icon>
+                        <v-icon class="icon-menu">mdi-home-plus</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>
+                        {{ $t('sidenav.home') }}
+                    </v-list-item-title>
+                </v-list-item>
+            </router-link>
             <!-- NESTED SUBMENUS -->
             <v-list-group v-for="item in filteredMenu" :key="item.title">
                 <template v-slot:activator>
