@@ -1,0 +1,66 @@
+{
+    "menu": [
+        {
+            "title": "sidenav.about-us.title",
+            "icon": "mdi-account-group",
+            "items": [
+                    {
+                        "title": "sidenav.about-us.items.about",
+                        "icon": "mdi-school"
+                    },
+                    {
+                        "title": "history",
+                        "icon": "mdi-timer-sand"
+                    },
+                    {
+                        "title": "mission",
+                        "icon": "mdi-check"
+                    },
+                    {
+                        "title": "vision",
+                        "icon": "mdi-check"
+                    }
+            ]
+        },
+        {
+            "title": "sidenav.basilians.title",
+            "icon": "mdi-christianity",
+            "items": [
+                {
+                    "title": "sidenav.basilians.items.about",
+                    "icon": "mdi-account-group"
+                },
+                {
+                    "title": "history",
+                    "icon": "mdi-timer-sand"
+                },
+                {
+                    "title": "sidenav.basilians.items.work",
+                    "icon": "mdi-charity"
+                }
+            ]
+        },
+        {
+            "title": "sidenav.academic.title",
+            "icon": "mdi-school",
+            "items": [
+                {
+                    "title": "sidenav.academic.items.student",
+                    "icon": "mdi-account"
+                },
+                {
+                    "title": "sidenav.academic.items.teachers",
+                    "icon": "mdi-account-multiple"
+                },
+                {
+                    "title": "sidenav.academic.items.courses",
+                    "icon": "mdi-library"
+                },
+                {
+                    "title": "sidenav.academic.items.study-plan",
+                    "icon": "mdi-library-books"
+                }
+            ]
+        }
+     ]
+}
