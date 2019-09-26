@@ -23,7 +23,7 @@
                     <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
                 </template>
                 <v-list-item class="submenu" v-for="subItem in item.items"
-                 :key="subItem.title" link>
+                 :key="subItem.title" @click="routing(item)" link>
                     <v-list-item-content>
                         <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
                     </v-list-item-content>
@@ -51,6 +51,14 @@ export default {
     props: {
     },
     methods: {
+        routing(item) {
+            const route = this.$route.name;
+            if (item.title.includes('basilians') && route !== 'basilians') {
+                this.$router.push('/basilians');
+            } else if (item.title.includes('about-us') && route !== 'home' && route !== 'root') {
+                this.$router.push('/home');
+            }
+        },
     },
     computed: {
         ...mapState('items', ['visible']),

@@ -5,13 +5,16 @@ export default [
     {
         path: '/',
         component: InsaHome,
+        name: 'root',
     },
     {
         path: '/home',
         component: InsaHome,
+        name: 'home',
     },
     {
         path: '/basilians',
         component: Basilians,
+        name: 'basilians',
     },
 ];
