@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import InsaNavBar from './components/InsaNavBar.vue';
-import TheSideNavMenu from './components/TheSideNavMenu.vue';
+import InsaNavBar from './components/InsaNavBar';
+import TheSideNavMenu from './components/TheSideNavMenu';
 
 export default {
     name: 'App',
