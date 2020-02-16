@@ -1,7 +1,7 @@
 <template>
     <v-container class="main-page">
         <div class="image-container-1">
-            <img class="img1" src="../assets/kids_insa.jpg"/>
+            <img class="img1" src="https://d265iso2e2ktel.cloudfront.net/photos/cover_page_kids.jpg"/>
         </div>
         <div class="about-us-insa">
             <v-card class="card-about">
@@ -22,7 +22,7 @@
             </v-card>
         </div>
         <div class="image-container-2">
-            <img class="img2" src="../assets/we_are_insa.jpg"/>
+            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/school_life_1.jpg"/>
         </div>
         <div class="history-insa">
             <v-card class="card-history">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="image-container-2">
-            <img class="img2" src="../assets/insa_cultural.jpg"/>
+            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/cultural_week_1.jpg"/>
         </div>
 
         <div class="mission-insa">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="image-container-2">
-            <img class="img2" src="../assets/mission.jpg"/>
+            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/mission.jpg"/>
         </div>
 
         <div class="vision-insa">
