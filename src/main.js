@@ -14,7 +14,8 @@ Vue.config.productionTip = false;
 
 /* Router */
 const router = new VueRouter({
-    routes: Router,
+    mode: 'history',
+    routes: Router
 });
 
 new Vue({

@@ -3,7 +3,7 @@
         <div class="image-container-1">
             <img class="img1" src="https://d2461yysjut9f6.cloudfront.net/photos/cover_page_kids.jpg"/>
         </div>
-        <div class="about-us-insa">
+        <div class="about-us-insa" id="insa-about">
             <v-card class="card-about">
                 <v-card-title class="display-1">{{ $t('about') }}</v-card-title>
                 <v-card-text class="body-2">

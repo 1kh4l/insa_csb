@@ -23,7 +23,7 @@
                     <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
                 </template>
                 <v-list-item class="submenu" v-for="subItem in item.items"
-                 :key="subItem.title" @click="routing(item)" link>
+                 :key="subItem.title" @click="menuRouting(item)" link>
                     <v-list-item-content>
                         <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
                     </v-list-item-content>
@@ -51,7 +51,7 @@ export default {
     props: {
     },
     methods: {
-        routing(item) {
+        menuRouting(item) {
             const route = this.$route.name;
             if (item.title.includes('basilians') && route !== 'basilians') {
                 this.$router.push('/basilians');
