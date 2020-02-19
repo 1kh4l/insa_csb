@@ -55,13 +55,13 @@ export default {
             const route = this.$route.name;
 	    const lastItemPosition = subItem.title.split('.').length - 1;
 
-            if (route === "home") {
+            if (route === "home" || route === "root") {
               if (item.title.includes('basilians')) {
 		this.$router.push(`/basilians#${subItem.title.split('.')[lastItemPosition]}`);
               } else {
 		this.$router.push(`/home#${subItem.title.split('.').pop()}`);
               }
-            } else if (route === "basilians") {
+            } else if (route === "basilians" || route === "root") {
               if (item.title.includes('about-us')) {
 		this.$router.push(`/home#${subItem.title.split('.').pop()}`);
               } else {
