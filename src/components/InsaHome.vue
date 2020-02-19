@@ -1,9 +1,9 @@
 <template>
     <v-container class="main-page">
         <div class="image-container-1">
-            <img class="img1" src="https://d265iso2e2ktel.cloudfront.net/photos/cover_page_kids.jpg"/>
+            <img class="img1" src="https://d2461yysjut9f6.cloudfront.net/photos/cover_page_kids.jpg"/>
         </div>
-        <div class="about-us-insa">
+        <div class="about-us-insa" id="about">
             <v-card class="card-about">
                 <v-card-title class="display-1">{{ $t('about') }}</v-card-title>
                 <v-card-text class="body-2">
@@ -22,9 +22,9 @@
             </v-card>
         </div>
         <div class="image-container-2">
-            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/school_life_1.jpg"/>
+            <img class="img2" src="https://d2461yysjut9f6.cloudfront.net/photos/school_life_1.jpg"/>
         </div>
-        <div class="history-insa">
+        <div class="history-insa" id="history">
             <v-card class="card-history">
                 <v-card-title class="display-1">{{ $t('history') }}</v-card-title>
                 <v-card-text class="body-2">
@@ -34,10 +34,10 @@
         </div>
 
         <div class="image-container-2">
-            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/cultural_week_1.jpg"/>
+            <img class="img2" src="https://d2461yysjut9f6.cloudfront.net/photos/cultural_week_1.jpg"/>
         </div>
 
-        <div class="mission-insa">
+        <div class="mission-insa" id="mission">
             <v-card class="card-mission">
                 <v-card-title class="display-1">{{ $t('mission') }}</v-card-title>
                 <v-card-text class="body-2">
@@ -47,10 +47,10 @@
         </div>
 
         <div class="image-container-2">
-            <img class="img2" src="https://d265iso2e2ktel.cloudfront.net/photos/mission.jpg"/>
+            <img class="img2" src="https://d2461yysjut9f6.cloudfront.net/photos/mission.jpg"/>
         </div>
 
-        <div class="vision-insa">
+        <div class="vision-insa" id="vision">
             <v-card class="card-vision">
                 <v-card-title class="display-1">{{ $t('vision') }}</v-card-title>
                 <v-card-text class="body-2">

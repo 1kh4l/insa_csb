@@ -23,7 +23,7 @@
                     <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
                 </template>
                 <v-list-item class="submenu" v-for="subItem in item.items"
-                 :key="subItem.title" @click="routing(item)" link>
+                 :key="subItem.title" @click="menuRouting(item, subItem)" link>
                     <v-list-item-content>
                         <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
                     </v-list-item-content>
@@ -51,12 +51,22 @@ export default {
     props: {
     },
     methods: {
-        routing(item) {
+        menuRouting(item, subItem) {
             const route = this.$route.name;
-            if (item.title.includes('basilians') && route !== 'basilians') {
-                this.$router.push('/basilians');
-            } else if (item.title.includes('about-us') && route !== 'home' && route !== 'root') {
-                this.$router.push('/home');
+	    const lastItemPosition = subItem.title.split('.').length - 1;
+
+            if (route === "home" || route === "root") {
+              if (item.title.includes('basilians')) {
+		this.$router.push(`/basilians#${subItem.title.split('.')[lastItemPosition]}`);
+              } else {
+		this.$router.push(`/home#${subItem.title.split('.').pop()}`);
+              }
+            } else if (route === "basilians" || route === "root") {
+              if (item.title.includes('about-us')) {
+		this.$router.push(`/home#${subItem.title.split('.').pop()}`);
+              } else {
+		this.$router.push(`/basilians#${subItem.title.split('.')[lastItemPosition]}`);
+              }
             }
         },
     },
