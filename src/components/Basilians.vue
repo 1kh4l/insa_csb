@@ -1,9 +1,9 @@
 <template>
     <v-container class="basilians-page">
         <div class="image-container-1">
-            <img class="img1" src="../assets/img1.jpg"/>
+            <img class="img1" src="https://d2461yysjut9f6.cloudfront.net/photos/church_comunity.jpg"/>
         </div>
-        <div class="about-us-basilians">
+        <div class="about-us-basilians" id="about">
             <v-card class="card-about">
                 <v-card-title class="display-1">{{ $t('about') }}</v-card-title>
                 <v-card-text class="body-2">
@@ -17,9 +17,10 @@
             </v-card>
         </div>
         <div class="image-container-2">
-            <img class="img2" src="../assets/img1.jpg"/>
+            <img class="img2"
+            src="https://d2461yysjut9f6.cloudfront.net/photos/basilians_students.jpg"/>
         </div>
-        <div class="history-basilians">
+        <div class="history-basilians" id="history">
             <v-card class="card-history">
                 <v-card-title class="display-1">{{ $t('history') }}</v-card-title>
                 <v-card-text class="body-2">
@@ -35,10 +36,10 @@
         </div>
 
         <div class="image-container-2">
-            <img class="img2" src="../assets/img1.jpg"/>
+            <img class="img2" src="https://d2461yysjut9f6.cloudfront.net/photos/insa_work.jpg"/>
         </div>
 
-        <div class="basilians-work">
+        <div class="basilians-work" id="work">
             <v-card class="card-vision">
                 <v-card-title class="display-1">
                     {{ $t('sidenav.basilians.items.work') }}
