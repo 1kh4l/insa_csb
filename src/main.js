@@ -15,7 +15,15 @@ Vue.config.productionTip = false;
 /* Router */
 const router = new VueRouter({
     mode: 'history',
-    routes: Router
+    routes: Router,
+    scrollBehavior (to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          selector: to.hash,
+          offset: { x: 0, y: 100 }
+        }
+      }
+    }
 });
 
 new Vue({
