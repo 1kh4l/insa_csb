@@ -14,23 +14,24 @@ Vue.config.productionTip = false;
 
 /* Router */
 const router = new VueRouter({
-    mode: 'history',
-    routes: Router,
-    scrollBehavior (to, from, savedPosition) {
-      if (to.hash) {
-        return {
-          selector: to.hash,
-          offset: { x: 0, y: 100 }
-        }
-      }
+  mode: 'history',
+  routes: Router,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        offset: { x: 0, y: 100 },
+      };
     }
+    return false;
+  },
 });
 
 new Vue({
-    vuetify,
-    render: h => h(App),
-    store,
-    FlagIcon,
-    i18n,
-    router,
+  vuetify,
+  render: h => h(App),
+  store,
+  FlagIcon,
+  i18n,
+  router,
 }).$mount('#app');

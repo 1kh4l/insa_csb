@@ -59,9 +59,9 @@
 <script>
 
 export default {
-    name: 'Basilians',
-    data: () => ({
-    }),
+  name: 'Basilians',
+  data: () => ({
+  }),
 };
 </script>
 

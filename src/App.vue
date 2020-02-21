@@ -15,14 +15,14 @@ import InsaNavBar from './components/InsaNavBar';
 import TheSideNavMenu from './components/TheSideNavMenu';
 
 export default {
-    name: 'App',
-    components: {
-        InsaNavBar,
-        TheSideNavMenu,
-    },
-    data: () => ({
-        //
-    }),
+  name: 'App',
+  components: {
+    InsaNavBar,
+    TheSideNavMenu,
+  },
+  data: () => ({
+    //
+  }),
 };
 </script>
 

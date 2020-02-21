@@ -5,7 +5,7 @@ import items from './modules/items/items';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-    modules: {
-        items,
-    },
+  modules: {
+    items,
+  },
 });
