@@ -1,4 +1,5 @@
 {
+    "school-name": "Instituto Nuestra Señora de la Asunción",
     "header": {
         "motto": "Enseñanos bondad, disciplina y ciencia"
     },
@@ -68,5 +69,18 @@
             "Actualmente, año 2014, la Congregación de Sacerdotes Basilianos está organizando la Casa para el Noviciado en la ciudad de Santa Martha, como experiencia en ciernes, seguro va a requerir de inmensos esfuerzos, pero, redundantes en el futuro de frutos para la obra del Reino aquí en la Tierra, entre nuestro Pueblo."
         ],
         "our-work": "Desde nuestra experiencia y carisma basiliano, realizar una nueva evangelización, que fomente la vida, en todos sus sentidos, promoviendo una Comunidad en Cristo, que alimente y celebre la liberación, organización, desarrollo y participación de la gente, para vivir aquí plenamente en hermandad, el Reino de Dios, ahora y por siempre."
+    },
+    "content-education": {
+      "students": [
+        "El INSA quiere que el Estudiante",
+        "Se conozca y valore a sí mismo.",
+        "Valore a su familia y goce de ella, y ante los conflictos familiares brinde soluciones.",
+        "Sea una persona crítica y sensible ante la realidad que lo circunda.",
+        "Desarrolle sus potencialidades y habilidades personales que le permitan insertarse en el sector productivo.",
+        "Sea capaz de vivir en comunidad y trabajar en equipo.",
+        "Sea capaz de tomar decisiones ante necesidades y problemas que se le presenten.",
+        "Utilice una parte importante de su tiempo libre para su autoformación.",
+        "Sea altamente imaginativo y creativo."
+      ]
     }
 }

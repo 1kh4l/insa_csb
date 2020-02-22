@@ -1,5 +1,6 @@
 import InsaHome from '@/components/InsaHome';
 import Basilians from '@/components/Basilians';
+import Students from '@/components/Students';
 
 export default [
   {
@@ -16,5 +17,10 @@ export default [
     path: '/basilians',
     component: Basilians,
     name: 'basilians',
+  },
+  {
+    path: '/students',
+    component: Students,
+    name: 'students',
   },
 ];
