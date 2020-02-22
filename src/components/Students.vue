@@ -30,7 +30,11 @@
                             align="center"
                             justify="center"
                           >
-                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            >
+                            </v-progress-circular>
                           </v-row>
                         </template>
                       </v-img>
@@ -48,16 +52,60 @@
       >
         <div class="about-us-insa" id="about">
           <v-card class="card-about">
-            <v-card-title class="display-1 justify-center">{{ $t('content-education.students[0]') }}</v-card-title>
-              <v-timeline>
-                <v-timeline-item class="bubbles" color="brown">{{ $t('content-education.students[1]') }}</v-timeline-item>
-                <v-timeline-item class="text-right bubbles" color="brown">{{ $t('content-education.students[2]') }}</v-timeline-item>
-                <v-timeline-item class="bubbles" color="brown">{{ $t('content-education.students[3]') }}</v-timeline-item>
-                <v-timeline-item class="text-right bubbles" color="brown">{{ $t('content-education.students[4]') }}</v-timeline-item>
-                <v-timeline-item class="bubbles" color="brown">{{ $t('content-education.students[5]') }}</v-timeline-item>
-                <v-timeline-item class="text-right bubbles" color="brown">{{ $t('content-education.students[6]') }}</v-timeline-item>
-                <v-timeline-item class="bubbles" color="brown">{{ $t('content-education.students[7]') }}</v-timeline-item>
-                <v-timeline-item class="text-right bubbles" color="brown">{{ $t('content-education.students[8]') }}</v-timeline-item>
+            <v-card-title
+              class="display-1 justify-center"
+            >
+              {{ $t('content-education.students[0]') }}
+            </v-card-title>
+            <v-timeline>
+              <v-timeline-item
+                class="bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[1]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="text-right bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[2]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[3]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="text-right bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[4]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[5]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="text-right bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[6]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[7]') }}
+              </v-timeline-item>
+              <v-timeline-item
+                class="text-right bubbles"
+                color="brown"
+              >
+                {{ $t('content-education.students[8]') }}
+              </v-timeline-item>
             </v-timeline>
           </v-card>
         </div>

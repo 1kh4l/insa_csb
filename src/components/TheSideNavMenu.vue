@@ -52,7 +52,6 @@ export default {
   },
   methods: {
     menuRouting(item, subItem) {
-      const route = this.$route.name;
       const lastItemPosition = subItem.title.split('.').length - 1;
 
       if (item.title.includes('about-us')) {
@@ -60,7 +59,7 @@ export default {
       } else if (item.title.includes('basilians')) {
         this.$router.push(`/basilians#${subItem.title.split('.')[lastItemPosition]}`);
       } else if (subItem.title.includes('student')) {
-        this.$router.push("/students");
+        this.$router.push('/students');
       }
     },
   },
