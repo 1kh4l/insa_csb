@@ -13,6 +13,7 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-analytics": "^5.22.1",
     "vue-flag-icon": "^1.0.6",
     "vue-i18n": "^8.12.0",
     "vue-router": "^3.1.1",

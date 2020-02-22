@@ -1,12 +1,16 @@
 import FlagIcon from 'vue-flag-icon';
 import VueRouter from 'vue-router';
 import Vue from 'vue';
+import VueAnalytics from 'vue-analytics';
 import App from './App';
 import store from './store';
 import vuetify from './plugins/vuetify';
 import i18n from './plugins/i18n';
 import Router from './router';
 
+Vue.use(VueAnalytics, {
+  id: 'UA-158916892-1',
+});
 Vue.use(VueRouter);
 Vue.use(FlagIcon);
 
