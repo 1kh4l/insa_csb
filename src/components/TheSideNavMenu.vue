@@ -60,6 +60,8 @@ export default {
         this.$router.push(`/basilians#${subItem.title.split('.')[lastItemPosition]}`);
       } else if (subItem.title.includes('student')) {
         this.$router.push('/students');
+      } else if (subItem.title.includes('teachers')) {
+        this.$router.push('/teachers');
       }
     },
   },
