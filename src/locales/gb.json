@@ -31,5 +31,42 @@
             }
         }
     },
-    "contact": "Contact"
+    "contact": "Contact",
+    "content-insa": {
+        "about": [
+            "The Institute Nuestra Señora de la Asunción, is an Educational Community, founded on October 4, 1992. It is located in the Andrés Sanín neighborhood and it is the parish center of  Nuestra Señora de la Asunción, its process is developed in an unique scholar day time, serving primarily families of strata 1 and 2, from the neighborhoods Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero and La Playa.",
+            "INSA, is a family Catholic center for formal, preschool, basic and middle school education, with an emphasis on fine arts (plastic arts and music), and in modern and classical languages (English, Spanish, French, Mandarin, Italian and Latin). It also has a solid job in the areas of systems, mathematics and ethical training.",
+             "It is a high quality private educational institution, guided by the Congregation of San Basilio, led by fathers Francisco Antonio Amico Ferrari and Rafael Ignacio Lopera Montoya, Rector and Director respectively.",
+             "\"We did not want the INSA to be one more institution, like any of those that exist. The FAMILY should play a very important role in the philosophy of the Institute and we have been doing so since the beginning.\"",
+             "(Father Rafael Lopera, interview conducted by Luis Fernando Sánchez)",
+             "Institutional Educational Project: years 1996 - 1997",
+             "The years 1996 and 1997 were for the INSA, the years of the PEI( Institutional educational project). An investigation conducted by an expert in the field was carried out. This work was done around two questions: does the INSA respond to the reality that circumscribes it? Does the training given in the INSA, departs of the reality of its surroundings?",
+             "(Basilians in Colombia 1987 1997. Luís Fernando Sánchez. P. 68)",
+             "INSA context problems at the time of its origin: Insecurity. Management of the home economy. Conflicts and aggressiveness inside the home. Pollution of space.",
+             "(Basilians in Colombia 1987 1997. Luís Fernando Sánchez. P. 69)"
+        ],
+        "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "mission": "Build a Catholic Educational Community, family-centered, that provides integral training to educational agents, based on its socio-cultural environment and Christian values. (PEI)",
+        "vision": "We, the members of this Educational Family, project: the construction of an integral training center for the student and his family, which enables the development of an educational community inspired by Our Lord Jesus Christ and his Gospel. May it foster in all aspects: growth, liberation, organization and participation of all its members, to live here fully in brotherhood, the Kingdom of God, now and forever. (PEI)"
+    },
+    "content-basilians": {
+        "about": [
+            "The Congregation of St. Basil is a Catholic male religious community of French origin, settled with greater force in Canada and United States. In Latin America it is present in Mexico and since 1987 in Colombia.",
+            "In our country it was first installed in the parish of Nuestra Señora de la Asunción in Cali city, by 1995 it established  its second national headquarter in the city of Medellin and at the beginning of the third millennium was founded a house destined for training in the city of Santa Fe de Bogotá.",
+            "Among the group of Basilian religious who participated in the first settlement of the community in Colombia were Father Francisco and Father Roberto and Rafael Lópera, at that time a candidate. In the last twenty-five years, Father Rafael, Father Pedro, Father Juan Carlos and Father Oscar have been ordained as priests of the Congregation of St. Basil. In addition, many men of faith have shared several years of their life with the Congregation, although they have subsequently retired, their work helped to build the Community, while this deeply permeated their Christians beings.",
+            "Today Colombia is favored with the presence of seven Basilian priests, two in the city of Cali, two in Medellín and three in the city of Bogotá, including Father Felipe Platt in the latter, along with them a significant group of candidates, postulants and scholastics advance their formation process, projecting at least two priestly ordinations in the next three years. The project of constituting a Female Community of San Basilio, with two religious and a candidate for this 2012, is added to the work of the brothers.",
+            "As for the overtaken labor, we can refer that the parishes of Cali and Medellín are articulating the work of evangelization with support for development; The dynamics of Cali promotes the Basilian charism from formal education at the Institute Nuestra Señora de la Asunción, while the Basilian being is cultivated in the Antioquia capital through popular education. The two parishes boost productive projects, although with more force in Medellín. Bogotá emphasizes the formation of people interested in entering the Congregation and pastoral collaboration is provided tangentially in the parish of Egipto and others.",
+            "In relation to the presence of the religious woman in the Congregation of San Basilio, during the last years, the Basilian Sisters have been officially constituted. This is the unique experience in the field of the Congregation at international level. Although they were born in the Basilian Parish in Medellín, they are currently located in the Parish of Nuestra Señora de la Asunción in the city of Cali, performing their work both in the educational pastoral of the INSA, as in the pastoral in the neighborhoods, especially in the formation and organization of women."
+        ],
+        "history": [
+            "Fueron fundados en Francia, región de Annonay, por diez sacerdotes diocesanos que decidieron vivir radicalmente la Vida Comunitaria, siguiendo a Jesús. Movidos por la necesidad de la época, dedicaron sus esfuerzos a enseñar a los jóvenes y a predicar el Evangelio.",
+            "Firmes en su propósito, unidos por la Vida en Común, profesaron los votos de Castidad, Pobreza y Obediencia en 1822.",
+            "En los últimos 192 años se han establecido en Canadá, Estados Unidos, México, Santa Lucía y Colombia.",
+            "En Colombia están presentes desde 1987 en la ciudad de Cali, Parroquia Nuestra Señora de la Asunción, en el barrio Andrés Sanín. Consecuentes con su opción, fieles a su carisma por la Educación y la Predicación, lideran la parroquia y el instituto Nuestra Señora de la Asunción.",
+            "Con el firme propósito de responder a fondo a la realidad de Colombia, la Congregación de San Basilio, realizó su segunda fundación en Colombia en el año de 1995. Se estableció la segunda casa en la ciudad de Medellín, inicialmente en la Parroquia en Prado Centro, posteriormente en la Parroquia Divino Ecce Homo en el barrio Blanquizal, actual y definitivamente en la Parroquia San Basilio, barrio Olaya Herrera, donde se construyó un templo y se consolida un proceso pastoral liderado por el Padre Roberto Seguín",
+            "Conscientes de la importancia de la educación de los futuros Basilianos, en el año de 1997 se estableció una casa en la ciudad de Bogotá. Aunque se exploró en los barrios El Campín y 20 de Julio con el Noviciado y el Escolásticado, en el año de 1999 se optó por un espacio propio llamado Casa de Formación Basiliana Annonay, en el barrio Egipto.",
+            "Actualmente, año 2014, la Congregación de Sacerdotes Basilianos está organizando la Casa para el Noviciado en la ciudad de Santa Martha, como experiencia en ciernes, seguro va a requerir de inmensos esfuerzos, pero, redundantes en el futuro de frutos para la obra del Reino aquí en la Tierra, entre nuestro Pueblo."
+        ],
+        "our-work": "Desde nuestra experiencia y carisma basiliano, realizar una nueva evangelización, que fomente la vida, en todos sus sentidos, promoviendo una Comunidad en Cristo, que alimente y celebre la liberación, organización, desarrollo y participación de la gente, para vivir aquí plenamente en hermandad, el Reino de Dios, ahora y por siempre."
+    }
 }
