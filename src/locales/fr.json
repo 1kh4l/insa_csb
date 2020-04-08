@@ -1,0 +1,94 @@
+{
+    "header": {
+        "motto": "Apprenez-nous la gentillesse, la discipline et la science"
+    },
+    "about"  : "Qui nous sommes",
+    "history": "Histoire",
+    "mission": "Mission",
+    "vision" : "Vision",
+    "sidenav": {
+        "home"    : "Accueil",
+        "about-us": {
+            "title": "Qui nous sommes",
+            "items": {
+                "about"  : "INSA"
+            }
+        },
+        "basilians": {
+            "title": "Basiliens",
+            "items": {
+                "about"  : "Qui nous sommes",
+                "work"   : "Ce que nous faisonss"
+            }
+        },
+        "academic": {
+            "title": "Académique",
+            "items": {
+                "student"   : "Étudiant",
+                "teachers"  : "Enseignants",
+                "courses"   : "Electives",
+                "study-plan": "Curriculum"
+            }
+        }
+    },
+    "contact": "Contactez",
+    "content-insa": {
+        "about": [
+            "L'Institut Notre-Dame de l'Assomption est une communauté éducative fondée le 4 octobre 1992. Situé dans le quartier d'Andrés Sanín, centre paroissial de Nuestra Señora de la Asunción, il développe son processus en une seule journée, en donnant la priorité aux familles des couches 1 et 2, des quartiers d'Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero et La Playa",
+            "INSA, est un centre familial catholique pour l'éducation formelle, préscolaire, élémentaire et secondaire, avec un accent sur les beaux-arts (arts parlés et musique), et les langues modernes et classiques (anglais, espagnol, français, mandarin, italien et latin). Ils ont également un travail solide dans les domaines des systèmes, des mathématiques et de la formation éthique",
+            "C'est une institution éducative privée de grande qualité, guidée par la Congrégation de Saint-Basile, dirigée par les Pères Francisco Antonio Amico Ferrari et Rafael Ignacio Lopera Montoya, respectivement Recteur et Directeur.",
+            "Nous ne voulions pas que l'INSA soit une institution comme une autre, comme toutes celles qui existent. La FAMILLE devrait jouer un rôle très important dans la philosophie de l'Institut et nous l'avons fait depuis le début.\"",
+            "(Basiliens en Colombie 1987 1997. Luis Fernando Sanchez. P. 68.)",
+            "Problèmes dans le contexte de l'INSA à l'époque de son origine : insécurité, gestion de l'économie domestique, conflits et agressivité au sein du foyer, pollution de l'espace.",
+            "(Basiliens en Colombie 1987 1997. Luis Fernando Sanchez. P. 69)"
+        ],
+        "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "mission" : "Construire une Communauté éducative catholique, centrée sur la famille, qui assure une formation intégrale aux agents éducatifs, à partir de leur environnement socioculturel et des valeurs chrétiennes (PEI)",
+        "vision":  "Nous, les membres de cette Famille éducative, projetons : la construction d'un centre de formation intégrale pour l'élève et sa famille, qui rendra possible le développement d'une communauté éducative inspirée par Notre Seigneur Jésus-Christ et son Évangile. Qu'elle promeut dans tous ses aspects : la croissance, la libération, l'organisation et la participation de tous ses membres, pour vivre ici pleinement dans la fraternité, le Royaume de Dieu, maintenant et pour toujours. (PEI)"
+    },
+    "content-basilians": {
+        "about": [
+            "La Congrégation de Saint-Basile est une communauté religieuse masculine catholique d'origine française, établie avec plus de force au Canada et aux États-Unis. En Amérique latine, elle est présente au Mexique et, depuis 1987, en Colombie",
+            "Dans notre pays, elle a d'abord été installée dans la paroisse de Notre-Dame de l'Assomption dans la ville de Cali, puis, en 1995, elle a établi son deuxième siège national dans la ville de Medellin et, au début du troisième millénaire, elle a fondé une maison destinée à la formation dans la ville de Santa Fe de Bogotá",
+            "Parmi le groupe de religieux basiliens qui ont participé à la première installation de la communauté en Colombie, il y avait le père Francisco et les pères Roberto et Rafael Lópera, qui étaient candidats à l'époque. Au cours des vingt-cinq dernières années, le père Rafael, le père Pedro, le père Juan Carlos et le père Oscar ont été ordonnés prêtres de la congrégation de Saint-Basile. De plus, de nombreux hommes de foi ont partagé plusieurs années de leur vie avec la Congrégation, même s'ils ont ensuite pris leur retraite, leur travail a contribué à la construction de la Communauté, tout en imprégnant profondément leur être de chrétiens",
+            "Aujourd'hui, la Colombie est favorisée par la présence de sept prêtres basiliens, deux dans la ville de Cali, deux à Medellín et trois dans la ville de Bogotá, dont dans cette dernière le père Felipe Platt, ainsi qu'un groupe important de candidats, postulants et scolastiques qui avancent dans leur processus de formation, prévoyant au moins deux ordinations sacerdotales dans les trois prochaines années. Outre le travail des frères, il existe actuellement un projet visant à créer une communauté de femmes de Saint-Basile, avec deux religieuses et une candidate pour 2012",
+            "Quant au travail effectué, on peut dire que les paroisses de Cali et de Medellín articulent le travail d'évangélisation avec celui de soutien au développement ; la dynamique de Cali promeut le charisme basilien du point de vue de l'éducation formelle dans l'Institut Notre-Dame de l'Assomption, tandis que dans la capitale d'Antioquia, l'être basilien est cultivé par l'éducation populaire. Les deux paroisses encouragent les projets productifs, bien qu'elles soient plus fortes à Medellín. Bogotá met l'accent sur la formation des personnes intéressées à rejoindre la congrégation et offre tangentiellement une collaboration pastorale dans la paroisse d'Egypte et d'autres.",
+            "En ce qui concerne la présence de religieuses dans la Congrégation de Saint Basile, ces dernières années, les Sœurs Basiliennes ont été officiellement constituées. Une expérience unique dans le domaine de la congrégation au niveau international. Bien qu'elles soient nées dans la paroisse basilienne de Medellín, elles sont actuellement situées dans la paroisse de Notre-Dame de l'Assomption dans la ville de Cali, où elles exercent leur travail à la fois dans le ministère éducatif de l'INSA et dans la pastorale des quartiers, en particulier dans la formation et l'organisation des femmes"
+        ],
+        "history": [
+            "Ils ont été fondés en France, dans la région d'Annonay, par dix prêtres diocésains qui ont décidé de vivre radicalement la vie communautaire, à la suite de Jésus. Motivés par les besoins de l'époque, ils ont consacré leurs efforts à l'enseignement des jeunes et à la prédication de l'Evangile",
+            "Fermés dans leur but, unis par la Vie en commun, ils ont fait vœu de chasteté, de pauvreté et d'obéissance en 1822",
+            "Au cours des 192 dernières années, ils se sont établis au Canada, aux États-Unis, au Mexique, à Sainte-Lucie et en Colombie",
+            "En Colombie, ils sont présents depuis 1987 dans la ville de Cali, paroisse de Notre-Dame de l'Assomption, dans le quartier d'Andrés Sanín. Conformément à leur option, fidèles à leur charisme pour l'éducation et la prédication, ils dirigent la paroisse et l'Institut Notre-Dame de l'Assomption",
+            "Avec le ferme objectif de répondre en profondeur à la réalité de la Colombie, la Congrégation de Saint-Basile, a fait sa deuxième fondation en Colombie en 1995. La deuxième maison a été établie dans la ville de Medellín, d'abord dans la paroisse du Prado Centro, puis dans la Parroquia Divino Ecce Homo dans le quartier de Blanquizal, et maintenant et définitivement dans la Parroquia San Basilio, quartier de Olaya Herrera, où une église a été construite et où un processus pastoral dirigé par le père Roberto Seguín a été consolidé",
+            "Consciente de l'importance de l'éducation des futurs Basiliens, une maison a été créée en 1997 dans la ville de Bogota. Bien qu'il ait été exploré dans les quartiers El Campín et 20 de Julio avec le Noviciat et le Scolasticat, en 1999 un espace propre a été choisi, appelé la Maison de Formation Basilienne Annonay, dans le quartier Egipto",
+            "Actuellement, en 2014, la Congrégation des Prêtres Basiliens organise la Maison du Noviciat dans la ville de Santa Martha. En tant qu'expérience en devenir, elle nécessitera certainement d'immenses efforts, mais, redondante à l'avenir, elle portera ses fruits pour le travail du Royaume ici sur terre, parmi notre peuple."
+        ],
+        "our-work": "A partir de notre expérience et du charisme basilien, réaliser une nouvelle évangélisation, qui favorise la vie, dans tous ses sens, en promouvant une Communauté dans le Christ, qui nourrit et célèbre la libération, l'organisation, le développement et la participation du peuple, pour vivre ici pleinement dans la fraternité, le Royaume de Dieu, maintenant et pour toujours."
+    },
+    "content-education": {
+      "students": [
+        "L'INSA veut l'étudiant",
+        "Apprenez à vous connaître et à vous apprécier",
+        "Valorisez et appréciez votre famille et apportez des solutions aux conflits familiaux",
+        "Soyez une personne critique et sensible à la réalité qui vous entoure",
+        "Développez votre potentiel personnel et des compétences qui vous permettent de vous insérer dans le secteur productif",
+        "Être capable de vivre en communauté et de travailler en équipe",
+        "Être capable de prendre des décisions face aux besoins et aux problèmes qui se présentent",
+        "Utilisez une partie importante de votre temps libre pour l'auto-éducation",
+        "Soyez très imaginatifs et créatifs"
+      ],
+      "teachers": [
+        "L'Institution cherche le maître",
+        "Connaître Jésus-Christ et son Père et le faire connaître aux autres",
+        "Engagez-vous dans le travail éducatif que vous faites",
+        "Soyez démocratique, en donnant toutes les possibilités de prendre des décisions",
+        "Soyez responsable de la mission qui vous est confiée par la direction du campus dans le cadre de l'IEP",
+        "Être innovant face aux nouveaux défis de l'éducation colombienne",
+        "Soyez persévérant dans votre travail, en observant jour après jour le processus éducatif de chaque élève. Soyez persévérant dans votre travail, en observant jour après jour le processus éducatif de chaque élève",
+        "Connaître et être sensible à la situation que vit chaque famille",
+        "Être conscient et connaître la réalité du pays"
+        
+      ]
+    }
+}
