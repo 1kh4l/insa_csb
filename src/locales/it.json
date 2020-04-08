@@ -1,0 +1,97 @@
+{
+    "header": {
+        "motto": "Insegnateci la gentilezza, la disciplina e la scienza"
+    },
+    "about"  : "Chi siamo",
+    "history": "Storia",
+    "mission": "Missione",
+    "vision" : "Visione",
+    "sidenav": {
+        "home"    : "Inicio",
+        "about-us": {
+            "title": "Chi siamo",
+            "items": {
+                "about"  : "INSA"
+            }
+        },
+        "basilians": {
+            "title": "Basilianos",
+            "items": {
+                "about"  : "Chi siamo",
+                "work"   : "Cosa facciamo"
+            }
+        },
+        "academic": {
+            "title": "Accademico",
+            "items": {
+                "student"   : "Studente",
+                "teachers"  : "Insegnanti",
+                "courses"   : "Electives",
+                "study-plan": "Riprende"
+            }
+        }
+    },
+    "contact": "Contatto",
+    "content-insa": {
+        "about": [
+             "L'Istituto di Nostra Signora Assunta è una comunità educativa fondata il 4 ottobre 1992. Situato nel quartiere di Andrés Sanín, centro parrocchiale di Nuestra Señora de la Asunción, sviluppa il suo processo in un solo giorno, dando priorità alle famiglie degli strati 1 e 2, dei quartieri di Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero e La Playa",
+             "INSA, è un centro familiare cattolico per l'educazione formale, prescolare, elementare e media, con particolare attenzione alle belle arti (arti parlate e musica), e alle lingue moderne e classiche (inglese, spagnolo, francese, mandarino, italiano e latino). Hanno anche un solido lavoro nei settori dei sistemi, della matematica e della formazione etica",
+             "Si tratta di un'istituzione educativa privata di alta qualità, guidata dalla Congregazione di San Basilio, guidata dai Padri Francisco Antonio Amico Ferrari e Rafael Ignacio Lopera Montoya, rispettivamente Rettore e Direttore",
+             "\"Non volevamo che l'INSA fosse solo un'altra istituzione, come tutte quelle esistenti. La FAMIGLIA dovrebbe avere un ruolo molto importante nella filosofia dell'Istituto e lo abbiamo fatto fin dall'inizio.\"",
+             "(Padre Rafael Lopera, intervista di Luis Fernando Sanchez)",
+             "Progetto Educativo Istituzionale: anni 1996 - 1997",
+             "Gli anni 1996 e 1997 sono stati per l'INSA, gli anni della PEI. La ricerca è stata condotta da un esperto del settore. Sono state affrontate due domande: l'INSA risponde alla realtà che la circonda e la formazione che si svolge all'INSA fa parte della realtà del suo ambiente?",
+             "(Basilianos en Colombia 1987 1997. Luís Fernando Sánchez. P. 68.)",
+             "Problemi nel contesto dell'INSA al momento della sua nascita: insicurezza, gestione dell'economia domestica, conflitti e aggressività all'interno della casa, inquinamento dello spazio",
+             "(Basilianos en Colombia 1987 1997. Luís Fernando Sánchez. P. 69)"
+        ],
+        "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "mission": "Costruire una Comunità Educativa Cattolica, centrata sulla famiglia, che fornisca una formazione integrale agli agenti educativi, a partire dal loro ambiente socio-culturale e dai valori cristiani. (PEI)",
+        "vision": "Noi, membri di questa Famiglia Educativa, progettiamo: la costruzione di un centro di formazione integrale per l'alunno e la sua famiglia, che renda possibile lo sviluppo di una comunità educativa ispirata da Nostro Signore Gesù Cristo e dal suo Vangelo. Che promuove in tutti gli aspetti: crescita, liberazione, organizzazione e partecipazione di tutti i suoi membri, per vivere qui pienamente in fraternità, il Regno di Dio, ora e per sempre. (PEI)"
+    },
+    "content-basilians": {
+        "about": [
+            "La Congregazione di San Basilio è una comunità religiosa cattolica maschile di origine francese, fondata con maggiore forza in Canada e negli Stati Uniti. In America Latina è presente in Messico e dal 1987 in Colombia",
+            "Nel nostro Paese è stata inizialmente installata nella Parrocchia di Nostra Signora Assunta nella città di Cali, nel 1995 ha stabilito la sua seconda sede nazionale nella città di Medellin e all'inizio del terzo millennio ha fondato una casa destinata alla formazione nella città di Santa Fe de Bogotá.",
+            "Tra il gruppo di religiosi basiliani che hanno partecipato al primo insediamento della comunità in Colombia c'erano padre Francisco e padre Roberto e Rafael Lópera, il candidato di allora. Negli ultimi venticinque anni, padre Rafael, padre Pedro, padre Juan Carlos e padre Oscar sono stati ordinati sacerdoti della Congregazione di San Basilio. Inoltre, molti uomini di fede hanno condiviso diversi anni della loro vita con la Congregazione, anche se successivamente sono andati in pensione, il loro lavoro ha contribuito a costruire la Comunità, mentre allo stesso tempo ha permeato profondamente il loro essere cristiani.",
+            "Oggi la Colombia è favorita dalla presenza di sette sacerdoti basiliani, due nella città di Cali, due a Medellín e tre nella città di Bogotá, tra cui quest'ultimo p. Kentenich. Oltre all'opera dei frati, c'è attualmente un progetto per la creazione di una Comunità femminile di San Basilio, con due religiose e una candidata per il 2012.",
+            "Per quanto riguarda il lavoro svolto, possiamo dire che le parrocchie di Cali e Medellín articolano l'opera di evangelizzazione con quella di sostegno allo sviluppo; la dinamica di Cali promuove il carisma basiliano dal punto di vista dell'educazione formale presso l'Istituto di Nostra Signora Assunta, mentre nella capitale di Antioquia l'essere basiliano è coltivato attraverso l'educazione popolare. Le due parrocchie promuovono progetti produttivi, anche se con più forza a Medellín. Bogotá sottolinea la formazione di persone interessate ad entrare nella Congregazione e offre tangenzialmente una collaborazione pastorale nella parrocchia d'Egitto e in altre parrocchie.",
+            "Per quanto riguarda la presenza di religiose nella Congregazione di San Basilio, negli ultimi anni sono state ufficialmente costituite le Suore Basiliane. Un'esperienza unica nel campo della Congregazione a livello internazionale. Pur essendo nati nella parrocchia basiliana di Medellín, attualmente si trovano nella parrocchia di Nostra Signora Assunta nella città di Cali, svolgendo il loro lavoro sia nel ministero educativo dell'INSA, sia nella pastorale dei quartieri, soprattutto nella formazione e nell'organizzazione delle donne."
+        ],
+        "history": [
+            "Sono stati fondati in Francia, nella regione di Annonay, da dieci sacerdoti diocesani che hanno deciso di vivere radicalmente la vita comunitaria, alla sequela di Gesù. Mossi dalle esigenze del tempo, si sono dedicati all'insegnamento ai giovani e alla predicazione del Vangelo",
+            "Saldi nel loro scopo, uniti dalla vita comune, professarono i voti di castità, povertà e obbedienza nel 1822.",
+            "Negli ultimi 192 anni si sono stabiliti in Canada, negli Stati Uniti, in Messico, a Santa Lucia e in Colombia.",
+            "In Colombia sono presenti dal 1987 nella città di Cali, parrocchia di Nostra Signora Assunta, nel quartiere di Andrés Sanín. Coerentemente con la loro scelta, fedeli al loro carisma per l'educazione e la predicazione, guidano la parrocchia e l'Istituto dell'Assunzione.",
+            "Con il fermo proposito di rispondere in profondità alla realtà della Colombia, la Congregazione di San Basilio ha fatto la sua seconda fondazione in Colombia nel 1995. La seconda casa è nata nella città di Medellín, inizialmente nella Parrocchia del Prado Centro, poi nella Parroquia Divino Ecce Homo nel quartiere Blanquizal, e ora definitivamente nella Parroquia San Basilio, quartiere Olaya Herrera, dove è stata costruita una chiesa e si è consolidato un processo pastorale guidato da padre Roberto Seguín",
+            "Consapevole dell'importanza dell'educazione dei futuri basiliani, nel 1997 è stata fondata una casa nella città di Bogotà. Anche se è stata esplorata nei quartieri El Campín e 20 de Julio con il Noviziato e lo Scolasticato, nel 1999 è stato scelto uno spazio a sé stante, chiamato Casa di Formazione Basiliana Annonay, nel quartiere Egipto.",
+            "Attualmente, nell'anno 2014, la Congregazione dei Sacerdoti Basiliani sta organizzando la Casa del Noviziato nella città di Santa Marta, come esperienza in divenire, sicuramente richiederà sforzi immensi, ma, ridondanti nel futuro di frutti per l'opera del Regno qui sulla Terra, tra il nostro Popolo."
+        ],
+        "our-work": "Dalla nostra esperienza e dal carisma basiliano, per realizzare una nuova evangelizzazione, che favorisca la vita, in tutti i suoi sensi, promuovendo una Comunità in Cristo, che nutra e celebri la liberazione, l'organizzazione, lo sviluppo e la partecipazione del popolo, per vivere qui pienamente in fraternità, il Regno di Dio, ora e per sempre."
+    },
+    "content-education": {
+      "students": [
+        "L'INSA vuole lo studente",
+        "Impara a conoscere e a valorizzarti",
+        "Valorizzate e godetevi la vostra famiglia e fornite soluzioni ai conflitti familiari",
+        "Sii critico e sensibile alla realtà che ti circonda",
+        "Sviluppa il tuo potenziale personale e le competenze che ti permettono di inserirti nel settore produttivo",
+        "Essere capaci di vivere in comunità e di lavorare in gruppo",
+        "Essere in grado di prendere decisioni di fronte alle esigenze e ai problemi che si presentano",
+        "Utilizzate una parte importante del vostro tempo libero per l'autoformazione",
+        "Sii molto fantasioso e creativo"
+        
+      ],
+      "teachers": [
+        "L'Istituzione cerca il maestro",
+        "Conoscete Gesù Cristo e suo Padre e fatelo conoscere agli altri",
+        "Impegnatevi nel lavoro educativo che state facendo",
+        "Siate democratici, date piena opportunità nel processo decisionale",
+        "Siate responsabili della missione che vi è stata affidata dalla direzione del campus come parte del PEI",
+        "Siate innovativi di fronte alle nuove sfide dell'educazione colombiana",
+        "Siate perseveranti nel vostro lavoro, osservando giorno per giorno il processo educativo di ogni studente. Siate perseveranti nel vostro lavoro, osservando giorno per giorno il processo educativo di ogni studente",
+        "Conoscere ed essere sensibili alla situazione che ogni famiglia sta vivendo",
+        "Siate consapevoli e consapevoli della realtà del Paese"
+      ]
+    }
+}
