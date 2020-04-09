@@ -9,29 +9,29 @@
     "deploy": "rm -rf .dist/ && vue-cli-service build && aws s3 sync ./dist s3://insa-csb.education"
   },
   "dependencies": {
-    "@mdi/font": "^3.9.97",
-    "axios": "^0.19.0",
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-analytics": "^5.22.1",
-    "vue-flag-icon": "^1.0.6",
-    "vue-i18n": "^8.12.0",
-    "vue-router": "^3.1.1",
-    "vuetify": "^2.0.0",
-    "vuex": "^3.1.1"
+    "@mdi/font": "3.9.97",
+    "axios": "0.19.2",
+    "core-js": "2.6.11",
+    "vue": "2.6.11",
+    "vue-analytics": "5.22.1",
+    "vue-flag-icon": "1.0.6",
+    "vue-i18n": "8.15.3",
+    "vue-router": "3.1.5",
+    "vuetify": "2.2.12",
+    "vuex": "3.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.4.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "sass": "^1.17.4",
-    "sass-loader": "^7.1.0",
-    "vue-cli-plugin-vuetify": "^0.6.1",
-    "vue-template-compiler": "^2.6.10",
-    "vuetify-loader": "^1.2.2"
+    "@vue/cli-plugin-babel": "3.12.1",
+    "@vue/cli-plugin-eslint": "3.12.1",
+    "@vue/cli-service": "3.12.1",
+    "@vue/eslint-config-airbnb": "4.0.1",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.8.0",
+    "eslint-plugin-vue": "5.2.3",
+    "sass": "1.25.0",
+    "sass-loader": "7.3.1",
+    "vue-cli-plugin-vuetify": "0.6.3",
+    "vue-template-compiler": "2.6.11",
+    "vuetify-loader": "1.4.3"
   }
 }
