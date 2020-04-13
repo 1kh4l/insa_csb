@@ -33,7 +33,7 @@ const router = new VueRouter({
 
 new Vue({
   vuetify,
-  render: h => h(App),
+  render: (h) => h(App),
   store,
   FlagIcon,
   i18n,

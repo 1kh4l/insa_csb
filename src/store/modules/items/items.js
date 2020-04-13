@@ -41,6 +41,6 @@ export default {
     },
   },
   getters: {
-    byeItems: state => state.items.filter(item => item.data === 'bye'),
+    byeItems: (state) => state.items.filter((item) => item.data === 'bye'),
   },
 };
