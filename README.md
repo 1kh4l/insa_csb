@@ -1,5 +1,4 @@
-# INSTITUTO NUESTRA SEÑORA DE LA ASUNCIÓN
-# LADY OF THE ASSUMPTION INSTITUTE
+# INSA
 
 ## This project was dedicated in honor to the great mission from the INSA school
 
