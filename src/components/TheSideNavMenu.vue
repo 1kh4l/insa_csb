@@ -4,7 +4,7 @@
     <!-- LIST ITEMS CONTAINER-->
     <v-list dense nav>
       <!-- HOME -->
-      <router-link to="/home" v-slot="{ href, route, navigate, isActive, isExactActive }">
+      <router-link to="/home" v-slot="{ href, route, navigate }">
         <v-list-item @click="navigate">
           <v-list-item-icon>
             <v-icon class="icon-menu">mdi-home-plus</v-icon>
@@ -32,7 +32,7 @@
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
-      <v-list-item @click="">
+      <v-list-item>
         <v-list-item-icon>
           <v-icon class="icon-menu">mdi-church</v-icon>
         </v-list-item-icon>
@@ -68,7 +68,7 @@ export default {
   computed: {
     ...mapState('items', ['visible']),
     ...mapState('items', ['lang']),
-    filteredMenu() { return this.menuItems.filter(n => n.title !== 'Home'); },
+    filteredMenu() { return this.menuItems.filter((n) => n.title !== 'Home'); },
   },
   data: () => ({
     menuItems: sideNav.menu,
