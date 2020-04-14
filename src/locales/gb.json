@@ -29,7 +29,19 @@
                 "courses"   : "No translation yet",
                 "study-plan": "No translation yet"
             }
-        }
+        },
+        "insa-access": {
+            "title": "INSA Access",
+            "items": {
+                "admissions-processes": "Admissions process"
+            }
+        },
+        "support-us": {
+            "title": "Support us",
+            "items": {
+                "support-stu": "Student support"
+            }
+        } 
     },
     "contact": "Contact",
     "content-insa": {

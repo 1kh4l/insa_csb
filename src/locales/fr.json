@@ -29,7 +29,19 @@
                 "courses"   : "Electives",
                 "study-plan": "Curriculum"
             }
-        }
+        },
+        "insa-access": {
+            "title": "Accès à l'INSA",
+            "items": {
+                "admissions-processes": "Processus d'admission"
+            }
+        },
+        "support-us": {
+            "title": "Soutenez-nous",
+            "items": {
+                "support-stu": "Soutien aux étudiants"
+            }
+        } 
     },
     "contact": "Contactez",
     "content-insa": {

@@ -29,7 +29,19 @@
                 "courses"   : "Electives",
                 "study-plan": "Riprende"
             }
-        }
+        },
+        "insa-access": {
+            "title": "Accesso INSA",
+            "items": {
+                "admissions-processes": "Processo di ammissione"
+            }
+        },
+        "support-us": {
+            "title": "Sostienici",
+            "items": {
+                "support-stu": "Sostegno agli studenti"
+            }
+        } 
     },
     "contact": "Contatto",
     "content-insa": {

@@ -61,6 +61,26 @@
                     "icon": "mdi-library-books"
                 }
             ]
+        },
+        {
+            "title": "sidenav.insa-access.title",
+            "icon": "mdi-alpha-a",
+            "items": [
+                {
+                    "title": "sidenav.insa-access.items.admissions-processes",
+                    "icon": "mdi-calendar-month"
+                }
+            ]
+        },
+        {
+            "title": "sidenav.support-us.title",
+            "icon": "mdi-charity",
+            "items": [
+                {
+                    "title": "sidenav.support-us.items.support-stu",
+                    "icon": "mdi-human-male-female"
+                }
+            ]
         }
      ]
 }
