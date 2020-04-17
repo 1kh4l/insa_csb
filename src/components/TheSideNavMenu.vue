@@ -4,8 +4,9 @@
     <!-- LIST ITEMS CONTAINER-->
     <v-list dense nav>
       <!-- HOME -->
-      <router-link to="/home" v-slot="{ href, route, navigate }">
-        <v-list-item @click="navigate">
+      <router-link to= '/home' v-slot="{href, route, navigate, isActive, isExactActive }">
+      <!-- Creates home menu without subitem -->
+        <v-list-item  @click="menuRouting({ title: 'home' })">
           <v-list-item-icon>
             <v-icon class="icon-menu">mdi-home-plus</v-icon>
           </v-list-item-icon>
@@ -44,16 +45,20 @@
 
 <script>
 import { mapState } from 'vuex';
-import sideNav from '../assets/sidenav-menu.json';
+import sideNavTree from '../assets/sidenav-menu.json';
 
 export default {
   name: 'SideNavMenu',
   props: {
   },
   methods: {
-    menuRouting(item, subItem) {
+    menuRouting(item, subItem = null) {
+      // Allows to go to top of the home page
+      if (item.title.includes('home') && !subItem) {
+        this.$router.push('/home');
+        window.scrollTo(0, 0);
+      }
       const lastItemPosition = subItem.title.split('.').length - 1;
-
       if (item.title.includes('about-us')) {
         this.$router.push(`/home#${subItem.title.split('.').pop()}`);
       } else if (item.title.includes('basilians')) {
@@ -71,7 +76,7 @@ export default {
     filteredMenu() { return this.menuItems.filter((n) => n.title !== 'Home'); },
   },
   data: () => ({
-    menuItems: sideNav.menu,
+    menuItems: sideNavTree.menu,
   }),
 };
 </script>
