@@ -5,22 +5,22 @@
     <v-layout row align-center class="row-logo">
       <!-- LOGO | SIDENAV MENU -->
       <v-flex class="logo-btn" md1 xs3>
-        <img class="insa-logo" src="./../assets/insa_logo.png">
+        <img class="insa-logo" src="./../assets/insa_logo.png" />
         <v-btn class="menu-btn" @click="showUpMenu()">
           <v-icon>mdi-menu</v-icon>
         </v-btn>
       </v-flex>
       <!-- TITLE AND MOTTO -->
       <v-flex class="title-motto" md10 xs8>
-        <v-layout column align-center :class="{'ma-0': $vuetify.breakpoint.smAndDown}">
+        <v-layout column align-center :class="{ 'ma-0': $vuetify.breakpoint.smAndDown }">
           <v-layout row class="insa-title">
             <span class="title">INSA</span>
             <span class="font-weight-light motto">
-                ~ Instituto Nuestra Señora de la Asunción
+              ~ Instituto Nuestra Señora de la Asunción
             </span>
           </v-layout>
           <span class="overline motto-insa text-end">
-            {{ $t('header.motto') }}
+            {{ $t("header.motto") }}
           </span>
         </v-layout>
       </v-flex>
@@ -30,14 +30,17 @@
           <v-menu>
             <template v-slot:activator="{ on }">
               <v-btn class="btn-flag" v-on="on">
-                <flag class="flag" :iso="flagSelected.id"/>
+                <flag class="flag" :iso="flagSelected.id" />
               </v-btn>
             </template>
             <v-list class="flag-list">
-              <v-list-item v-for="insaFlag in flags"
-                @click="selectFlag(insaFlag)" :key="insaFlag.id">
+              <v-list-item
+                v-for="insaFlag in flags"
+                @click="selectFlag(insaFlag)"
+                :key="insaFlag.id"
+              >
                 <v-list-item-title>
-                    <flag :iso="insaFlag.id"/>
+                  <flag :iso="insaFlag.id" />
                 </v-list-item-title>
               </v-list-item>
             </v-list>
@@ -49,13 +52,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import i18n from '@/plugins/i18n';
+import { mapState } from "vuex";
+import i18n from "@/plugins/i18n";
 
 export default {
   methods: {
     showUpMenu() {
-      this.$store.dispatch('items/setVisibility', {
+      this.$store.dispatch("items/setVisibility", {
         visible: true,
       });
     },
@@ -63,34 +66,34 @@ export default {
       const flagFiltered = this.flags.filter((f) => f.id === flag.id)[0];
       this.flagSelected = flagFiltered;
       i18n.locale = this.flagSelected.id;
-      this.$store.dispatch('items/setLanguage', i18n.locale);
+      this.$store.dispatch("items/setLanguage", i18n.locale);
     },
   },
   computed: {
-    ...mapState('items', ['items']),
+    ...mapState("items", ["items"]),
   },
   data: () => ({
     flags: [
       {
-        country: 'Colombia',
-        id: 'co',
+        country: "Colombia",
+        id: "co",
       },
       {
-        country: 'England',
-        id: 'gb',
+        country: "England",
+        id: "gb",
       },
       {
-        country: 'France',
-        id: 'fr',
+        country: "France",
+        id: "fr",
       },
       {
-        country: 'Italy',
-        id: 'it',
+        country: "Italy",
+        id: "it",
       },
     ],
     flagSelected: {
-      country: 'Colombia',
-      id: 'co',
+      country: "Colombia",
+      id: "co",
     },
   }),
 };
