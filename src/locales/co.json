@@ -30,7 +30,19 @@
                 "courses"   : "Electivas",
                 "study-plan": "Currículos"
             }
-        }
+        },
+        "insa-access": {
+            "title": "Acceso al INSA",
+            "items": {
+                "admissions-processes": "Proceso de admisión"
+            }
+        },
+        "support-us": {
+            "title": "Apóyanos",
+            "items": {
+                "support-stu": "Apoyo a los estudiantes"
+            }
+        } 
     },
     "contact": "Contacto",
     "content-insa": {
