@@ -1,97 +1,64 @@
 <template>
   <v-container class="main-page">
     <v-row>
-      <v-col
-        cols="12"
-        md="8"
-      >
+      <v-col cols="12" md="8">
         <div class="teacher-goals" id="about">
           <v-card class="card-about">
-            <v-card-title
-              class="display-1 justify-center"
-            >
-              {{ $t('content-education.teachers[0]') }}
+            <v-card-title class="display-1 justify-center">
+              {{ $t("content-education.teachers[0]") }}
             </v-card-title>
             <v-timeline>
-              <v-timeline-item
-                class="bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[1]') }}
+              <v-timeline-item class="bubbles" color="brown">
+                {{ $t("content-education.teachers[1]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="text-right bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[2]') }}
+              <v-timeline-item class="text-right bubbles" color="brown">
+                {{ $t("content-education.teachers[2]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[3]') }}
+              <v-timeline-item class="bubbles" color="brown">
+                {{ $t("content-education.teachers[3]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="text-right bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[4]') }}
+              <v-timeline-item class="text-right bubbles" color="brown">
+                {{ $t("content-education.teachers[4]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[5]') }}
+              <v-timeline-item class="bubbles" color="brown">
+                {{ $t("content-education.teachers[5]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="text-right bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[6]') }}
+              <v-timeline-item class="text-right bubbles" color="brown">
+                {{ $t("content-education.teachers[6]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[7]') }}
+              <v-timeline-item class="bubbles" color="brown">
+                {{ $t("content-education.teachers[7]") }}
               </v-timeline-item>
-              <v-timeline-item
-                class="text-right bubbles"
-                color="brown"
-              >
-                {{ $t('content-education.teachers[8]') }}
+              <v-timeline-item class="text-right bubbles" color="brown">
+                {{ $t("content-education.teachers[8]") }}
               </v-timeline-item>
             </v-timeline>
           </v-card>
         </div>
       </v-col>
-      <v-col
-        cols="6"
-        md="4"
-      >
-      </v-col>
+      <v-col cols="6" md="4"></v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
-  name: 'Teachers',
+  name: "Teachers",
   props: {
     msg: String,
   },
   methods: {
     setData() {
-      this.$store.dispatch('items/addItem', {
-        name: 'example',
-        data: 'bye',
+      this.$store.dispatch("items/addItem", {
+        name: "example",
+        data: "bye",
       });
     },
   },
   computed: {
-    ...mapState('items', ['items']),
+    ...mapState("items", ["items"]),
   },
   data: () => ({
     myData: [],
@@ -120,7 +87,7 @@ export default {
       border: none !important;
       border-radius: 0px !important;
       width: inherit;
-      mask-image: url('../assets/mask1.svg');
+      mask-image: url("../assets/mask1.svg");
       mask-size: cover;
       mask-position: left bottom;
       mask-repeat: no-repeat;

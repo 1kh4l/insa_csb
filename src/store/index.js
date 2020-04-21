@@ -1,6 +1,6 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import items from './modules/items/items';
+import Vue from "vue";
+import Vuex from "vuex";
+import items from "./modules/items/items";
 
 Vue.use(Vuex);
 

@@ -1,32 +1,32 @@
-import InsaHome from '@/components/InsaHome';
-import Basilians from '@/components/Basilians';
-import Students from '@/components/Students';
-import Teachers from '@/components/Teachers';
+import InsaHome from "@/components/InsaHome";
+import Basilians from "@/components/Basilians";
+import Students from "@/components/Students";
+import Teachers from "@/components/Teachers";
 
 export default [
   {
-    path: '/',
+    path: "/",
     component: InsaHome,
-    name: 'root',
+    name: "root",
   },
   {
-    path: '/home',
+    path: "/home",
     component: InsaHome,
-    name: 'home',
+    name: "home",
   },
   {
-    path: '/basilians',
+    path: "/basilians",
     component: Basilians,
-    name: 'basilians',
+    name: "basilians",
   },
   {
-    path: '/students',
+    path: "/students",
     component: Students,
-    name: 'students',
+    name: "students",
   },
   {
-    path: '/teachers',
+    path: "/teachers",
     component: Teachers,
-    name: 'teachers',
+    name: "teachers",
   },
 ];
