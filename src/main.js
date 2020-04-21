@@ -1,15 +1,15 @@
-import FlagIcon from 'vue-flag-icon';
-import VueRouter from 'vue-router';
-import Vue from 'vue';
-import VueAnalytics from 'vue-analytics';
-import App from './App';
-import store from './store';
-import vuetify from './plugins/vuetify';
-import i18n from './plugins/i18n';
-import Router from './router';
+import FlagIcon from "vue-flag-icon";
+import VueRouter from "vue-router";
+import Vue from "vue";
+import VueAnalytics from "vue-analytics";
+import App from "./App";
+import store from "./store";
+import vuetify from "./plugins/vuetify";
+import i18n from "./plugins/i18n";
+import Router from "./router";
 
 Vue.use(VueAnalytics, {
-  id: 'UA-158916892-1',
+  id: "UA-158916892-1",
 });
 Vue.use(VueRouter);
 Vue.use(FlagIcon);
@@ -18,7 +18,7 @@ Vue.config.productionTip = false;
 
 /* Router */
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes: Router,
   scrollBehavior(to) {
     if (to.hash) {
@@ -38,4 +38,4 @@ new Vue({
   FlagIcon,
   i18n,
   router,
-}).$mount('#app');
+}).$mount("#app");

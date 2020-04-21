@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from "vue";
 
 export default {
   namespaced: true,
@@ -6,41 +6,41 @@ export default {
     items: [],
     status: null,
     visible: true,
-    lang: 'co',
+    lang: "co",
   },
   mutations: {
     setItems(state, items) {
-      Vue.set(state, 'items', items);
+      Vue.set(state, "items", items);
     },
     setVisibility(state) {
-      Vue.set(state, 'visible', !state.visible);
+      Vue.set(state, "visible", !state.visible);
     },
     setLanguage(state, lang) {
-      Vue.set(state, 'lang', lang);
+      Vue.set(state, "lang", lang);
     },
     addItem(state, item) {
       let newItems = [];
       newItems = state.items;
       newItems.push(item);
-      Vue.set(state, 'items', newItems);
+      Vue.set(state, "items", newItems);
     },
   },
   actions: {
     addItem(context, item) {
-      context.commit('addItem', item);
+      context.commit("addItem", item);
     },
     setVisibility(context) {
-      context.commit('setVisibility');
+      context.commit("setVisibility");
     },
     setLanguage(context, lang) {
-      context.commit('setLanguage', lang);
+      context.commit("setLanguage", lang);
     },
     getItems(context) {
-      const newItems = [{ name: 'newOne', data: 'bye' }];
-      context.commit('setItems', newItems);
+      const newItems = [{ name: "newOne", data: "bye" }];
+      context.commit("setItems", newItems);
     },
   },
   getters: {
-    byeItems: (state) => state.items.filter((item) => item.data === 'bye'),
+    byeItems: (state) => state.items.filter((item) => item.data === "bye"),
   },
 };
