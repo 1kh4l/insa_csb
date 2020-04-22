@@ -9,8 +9,6 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY 
   bucket: "insa-csb.education"
   region: "us-east-2"
-  skip_cleanup: true
-  local_dir: build
 
 after_deploy:
   - aws configure set preview.cloudfront true
