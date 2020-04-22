@@ -1,21 +1,21 @@
 <template>
-    <v-app>
-        <v-app-bar class="header" clipped-left app>
-            <InsaNavBar/>
-        </v-app-bar>
-        <TheSideNavMenu/>
-        <v-content>
-            <router-view/>
-        </v-content>
-    </v-app>
+  <v-app>
+    <v-app-bar class="header" clipped-left app>
+      <InsaNavBar />
+    </v-app-bar>
+    <TheSideNavMenu />
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import InsaNavBar from './components/InsaNavBar';
-import TheSideNavMenu from './components/TheSideNavMenu';
+import InsaNavBar from "./components/InsaNavBar";
+import TheSideNavMenu from "./components/TheSideNavMenu";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     InsaNavBar,
     TheSideNavMenu,
@@ -28,11 +28,10 @@ export default {
 
 <style lang="scss">
 $color-pack: false;
-@import '~vuetify/src/styles/main.sass';
+@import "~vuetify/src/styles/main.sass";
 .header {
-    background-image: url('./assets/header.svg');
-    background-size: 16%;
-    background-position: right;
+  background-image: url("./assets/header.svg");
+  background-size: 16%;
+  background-position: right;
 }
-
 </style>
