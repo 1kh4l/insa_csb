@@ -9,8 +9,10 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY 
   bucket: "insa-csb.education"
   region: "us-east-2"
+  skip_cleanup: true
+  local_dir: build
 
-after_success:
-  - chmod +x cloudfront-invalidation.sh
-  - "./cloudfront-invalidation.sh"
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
 
