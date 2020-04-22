@@ -11,6 +11,6 @@ deploy:
   region: "us-east-2"
 
 after_success:
-  - chmod +x deploy.sh
-  - "./deploy.sh"
+  - chmod +x cloudfront-invalidation.sh
+  - "./cloudfront-invalidation.sh"
 
