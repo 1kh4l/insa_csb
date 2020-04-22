@@ -10,3 +10,7 @@ deploy:
   bucket: "insa-csb.education"
   region: "us-east-2"
 
+after_success:
+  - chmod +x deploy.sh
+  - "./deploy.sh"
+
