@@ -1,6 +1,7 @@
 {
     "header": {
-        "motto": "Apprenez-nous la gentillesse, la discipline et la science"
+        "motto": "Apprenez-nous la gentillesse, la discipline et la science",
+        "contact": "Contactez-nous"
     },
     "about"  : "Qui nous sommes",
     "history": "Histoire",
@@ -102,5 +103,20 @@
         "Être conscient et connaître la réalité du pays"
         
       ]
-    }
+    },
+    "content-contact": {
+        "telephones" :  [
+            "6629977",
+            "6620885"
+        ],
+        "direction": [
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+        ],
+        "days-and-hours": [
+            "Du lundi au vendredi de 8h00 à 16h30"
+        ],
+        "public-attention": [
+            "Attention au public"
+        ]
+      }
 }
