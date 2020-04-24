@@ -1,27 +1,33 @@
 module.exports = {
   root: true,
+
   env: {
     node: true,
   },
+
   extends: [
-    'eslint:recommended',
-    'plugin:vue/essential',
-    '@vue/airbnb',
+    "eslint:recommended",
+    "plugin:vue/essential",
+    "@vue/airbnb",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
   ],
+
   // required to lint *.vue files
-  plugins: [
-    'vue',
-  ],
+  plugins: ["vue"],
+
   rules: {
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    indent: ['error', 2],
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      vue: 'never',
-    }],
+    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
+    indent: ["error", 2],
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        js: "never",
+        vue: "never",
+      },
+    ],
     "no-useless-escape": 1,
     "no-else-return": 1,
     "spaced-comment": 1,
@@ -32,20 +38,20 @@ module.exports = {
     "accessor-pairs": 0,
     "block-scoped-var": 0,
     "callback-return": 0,
-    "camelcase": 0,
-    "complexity": 0,
+    camelcase: 0,
+    complexity: 0,
     "consistent-return": 0,
     "consistent-this": 0,
     "default-case": 2,
     "dot-notation": 0,
-    "eqeqeq": [2, "allow-null"],
+    eqeqeq: [2, "allow-null"],
     "func-names": 0,
     "func-style": [
       2,
       "expression",
       {
-        "allowArrowFunctions": true
-      }
+        allowArrowFunctions: true,
+      },
     ],
     "global-require": 0,
     "guard-for-in": 2,
@@ -62,8 +68,8 @@ module.exports = {
     "new-cap": [
       2,
       {
-        "capIsNew": false
-      }
+        capIsNew: false,
+      },
     ],
     "newline-after-var": 0,
     "no-alert": 0,
@@ -76,8 +82,8 @@ module.exports = {
     "no-console": [
       2,
       {
-        "allow": ["warn", "error"]
-      }
+        allow: ["warn", "error"],
+      },
     ],
     "no-constant-condition": 2,
     "no-continue": 0,
@@ -103,10 +109,10 @@ module.exports = {
     "no-implicit-coercion": [
       1,
       {
-        "boolean": true,
-        "number": true,
-        "string": true
-      }
+        boolean: true,
+        number: true,
+        string: true,
+      },
     ],
     "no-implied-eval": 2,
     "no-inline-comments": 0,
@@ -170,24 +176,35 @@ module.exports = {
     "no-with": 2,
     "one-var": [1, "never"],
     "operator-assignment": [2, "always"],
-    "radix": [2, "always"],
+    radix: [2, "always"],
     "require-jsdoc": 0,
     "sort-vars": 0,
-    "strict": 0,
+    strict: 0,
     "use-isnan": 2,
     "valid-jsdoc": 0,
     "valid-typeof": 2,
     "vars-on-top": 0,
-    "yoda": 2
+    yoda: 2,
   },
+
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
   },
+
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       node: {
-        extensions: ['.js', '.jsx', '.vue'],
+        extensions: [".js", ".jsx", ".vue"],
       },
     },
   },
+
+  overrides: [
+    {
+      files: ["**/__tests__/*.{j,t}s?(x)", "**/tests/unit/**/*.spec.{j,t}s?(x)"],
+      env: {
+        mocha: true,
+      },
+    },
+  ],
 };
