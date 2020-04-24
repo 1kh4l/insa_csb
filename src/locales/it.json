@@ -1,6 +1,7 @@
 {
     "header": {
-        "motto": "Insegnateci la gentilezza, la disciplina e la scienza"
+        "motto": "Insegnateci la gentilezza, la disciplina e la scienza",
+        "contact": "Contattaci"
     },
     "about"  : "Chi siamo",
     "history": "Storia",
@@ -105,5 +106,20 @@
         "Conoscere ed essere sensibili alla situazione che ogni famiglia sta vivendo",
         "Siate consapevoli e consapevoli della realtà del Paese"
       ]
-    }
+    },
+    "content-contact": {
+        "telephones" :  [
+            "6629977",
+            "6620885"
+        ],
+        "direction": [
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+        ],
+        "days-and-hours": [
+            "Dal lunedì al venerdì dalle 8:00 alle 16:30"
+        ],
+        "public-attention": [
+            "Attenzione al pubblico"
+        ]
+      }
 }

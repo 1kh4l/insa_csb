@@ -38,7 +38,7 @@
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
-      <v-list-item>
+      <v-list-item @click="menuRouting({ title: 'contact' })">
         <v-list-item-icon>
           <v-icon class="icon-menu">mdi-church</v-icon>
         </v-list-item-icon>
@@ -60,6 +60,10 @@ export default {
       // Allows to go to top of the home page
       if (item.title.includes("home") && !subItem) {
         this.$router.push("/home");
+        window.scrollTo(0, 0);
+      }
+      if (item.title.includes("contact") && !subItem) {
+        this.$router.push("/contact");
         window.scrollTo(0, 0);
       }
       const lastItemPosition = subItem.title.split(".").length - 1;
