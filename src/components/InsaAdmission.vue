@@ -25,6 +25,9 @@
               </v-card-text>
             </v-row>
           </v-card>
+          <v-row v-for="step in stepsAdmission" :key="step">
+            {{ $t(`content-insa-admission.step-${step}[0]`) }}
+          </v-row>
           <v-row>
             <v-col>
               <v-card class="steps" shaped>
@@ -110,6 +113,14 @@
     </v-layout>
   </v-container>
 </template>
+<script>
+export default {
+  name: "SideNavMenu",
+  data: () => ({
+    stepsAdmission: [1, 2, 3, 4, 5],
+  }),
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../styles/settings.scss";
