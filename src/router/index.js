@@ -3,6 +3,7 @@ import Basilians from "@/components/Basilians";
 import Students from "@/components/Students";
 import Teachers from "@/components/Teachers";
 import Contact from "@/components/Contact";
+import InsaAdmission from "@/components/InsaAdmission";
 
 export default [
   {
@@ -29,6 +30,11 @@ export default [
     path: "/teachers",
     component: Teachers,
     name: "teachers",
+  },
+  {
+    path: "/insa-admission",
+    component: InsaAdmission,
+    name: "insa-admission",
   },
   {
     path: "/contact",
