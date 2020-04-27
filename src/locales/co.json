@@ -42,7 +42,7 @@
         "insa-admission": {
             "title": "Admisión INSA",
             "items": {
-                "how-to-apply": "Cómo aplicar?"
+                "how-to-apply": "¿Cómo aplicar?"
             }
         },
         "support-insa": {
@@ -130,8 +130,15 @@
       ]
     },
     "content-insa-admission": {
+        "requirements": [
+            "Requisitos para acceder al proceso de admisión",
+            "1. Residir en barrios aledaños al plantel que estén ubicados en estratos 1 y 2 únicamente.",
+            "2. Para los estudiantes de transición la edad requerida es de 5 años cumplidos antes del inicio del periodo lectivo para el cual aspiran.",
+            "3. Cumplir con cada uno de los documentos requeridos para la inscripción al proceso."
+        ],
         "how-to-apply" :  [
-            "Las familias interesadas en participar del proyecto educativo del colegio deberán cumplir con el siguien-te proceso"
+            "¿Cómo aplicar?",
+            "Las familias interesadas en participar del proyecto educativo del colegio deberán cumplir con el siguiente proceso"
         ],
         "step-1": [
             "Paso 1",

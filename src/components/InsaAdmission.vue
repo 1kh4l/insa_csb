@@ -1,110 +1,45 @@
 <template>
   <v-container>
     <v-layout>
-      <v-row>
+      <v-row align="center" justify="center">
         <v-col class="dense">
-          <div class="insa-admission" id="insa-admission">
+          <div>
             <span class="brown--text display-2">
-              {{ $t("How to apply?") }}
+              {{ $t("content-insa-admission.requirements[0]") }}
             </span>
             <p class="text-justify">
-              {{ $t("content-insa-admission.how-to-apply[0]") }}
+              {{ $t("content-insa-admission.requirements[1]") }}
+            </p>
+            <p class="text-justify">
+              {{ $t("content-insa-admission.requirements[2]") }}
+            </p>
+            <p class="text-justify">
+              {{ $t("content-insa-admission.requirements[3]") }}
             </p>
           </div>
-          <v-card shaped>
-            <v-row>
-              <v-avatar color="orange" class="ma-3" size="64" title>
-                <span class="white--text font-weight-medium">
-                  {{ $t("content-insa-admission.step-1[0]") }}
-                </span>
-              </v-avatar>
-              <v-card-text class="text-justify">
-                <div class="comment-body">
-                  {{ $t("content-insa-admission.step-1[1]") }}
-                </div>
-              </v-card-text>
-            </v-row>
-          </v-card>
+          <div class="insa-admission" id="insa-admission">
+            <span class="brown--text display-2">
+              {{ $t("content-insa-admission.how-to-apply[0]") }}
+            </span>
+            <p class="text-justify">
+              {{ $t("content-insa-admission.how-to-apply[1]") }}
+            </p>
+          </div>
           <v-row v-for="step in stepsAdmission" :key="step">
-            {{ $t(`content-insa-admission.step-${step}[0]`) }}
-          </v-row>
-          <v-row>
             <v-col>
-              <v-card class="steps" shaped>
-                <v-avatar color="orange" class="ma-3" size="64" title>
-                  <span class="white--text font-weight-medium">
-                    {{ $t("content-insa-admission.step-2[0]") }}
-                  </span>
-                </v-avatar>
-                <v-card-text class="text-center">
-                  <div class="comment-body">
-                    {{ $t("content-insa-admission.step-2[1]") }}
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              <v-card class="steps" shaped>
-                <v-avatar color="orange" class="ma-3" size="64" title>
-                  <span class="white--text font-weight-medium">
-                    {{ $t("content-insa-admission.step-3[0]") }}
-                  </span>
-                </v-avatar>
-                <v-card-text class="text-">
-                  <div class="comment-body">
-                    {{ $t("content-insa-admission.step-3[1]") }}
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              <v-card class="steps" shaped>
-                <v-avatar color="orange" class="ma-3" size="64" title>
-                  <span class="white--text font-weight-medium">
-                    {{ $t("content-insa-admission.step-4[0]") }}
-                  </span>
-                </v-avatar>
-                <v-card-text class="text-">
-                  <div class="comment-body">
-                    {{ $t("content-insa-admission.step-4[1]") }}
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              <v-card class="steps" shaped>
-                <v-avatar color="orange" class="ma-3" size="64" title>
-                  <span class="white--text font-weight-medium">
-                    {{ $t("content-insa-admission.step-5[0]") }}
-                  </span>
-                </v-avatar>
-                <v-card-text class="text-">
-                  <div class="comment-body">
-                    {{ $t("content-insa-admission.step-5[1]") }}
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              <v-card class="steps" shaped>
-                <v-avatar color="orange" class="ma-3" size="64" title>
-                  <span class="white--text font-weight-medium">
-                    {{ $t("content-insa-admission.step-6[0]") }}
-                  </span>
-                </v-avatar>
-                <v-card-text class="text-">
-                  <div class="comment-body">
-                    {{ $t("content-insa-admission.step-6[1]") }}
-                  </div>
-                </v-card-text>
+              <v-card max-width="500" color="orange lighten-5" shaped>
+                <v-row>
+                  <v-avatar color="orange" class="ma-3" size="90" title>
+                    <span class="white--text font-weight-medium">
+                      {{ $t(`content-insa-admission.step-${step}[0]`) }}
+                    </span>
+                  </v-avatar>
+                  <v-card-text>
+                    <div class="admission-step">
+                      {{ $t(`content-insa-admission.step-${step}[1]`) }}
+                    </div>
+                  </v-card-text>
+                </v-row>
               </v-card>
             </v-col>
           </v-row>
@@ -115,23 +50,21 @@
 </template>
 <script>
 export default {
-  name: "SideNavMenu",
+  name: "InsaAdmission",
   data: () => ({
-    stepsAdmission: [1, 2, 3, 4, 5],
+    stepsAdmission: [1, 2, 3, 4, 5, 6],
+    justify: ["space-between"],
   }),
 };
 </script>
-
 <style lang="scss" scoped>
 @import "../styles/settings.scss";
-
-.steps {
-  justify: flex-end;
+.admission-step {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
 }
-.comment-bodt {
-  justify: flex-end;
-}
-.item {
-  align-self: flex-start;
+.v-card__text {
+  width: unset;
 }
 </style>

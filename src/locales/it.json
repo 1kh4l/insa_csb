@@ -31,16 +31,23 @@
                 "study-plan": "Riprende"
             }
         },
-        "insa-access": {
-            "title": "Accesso INSA",
+        "life-stu": {
+            "title": "Vita studentesca",
             "items": {
-                "admissions-processes": "Processo di ammissione"
+                "arts"   : "Arti",
+                "athletic"  : "Atletico"
             }
         },
-        "support-us": {
-            "title": "Sostienici",
+        "insa-admission": {
+            "title": "Ammissione INSA",
             "items": {
-                "support-stu": "Sostegno agli studenti"
+                "how-to-apply": "Come applicare?"
+            }
+        },
+        "support-insa": {
+            "title": "Sostieni l'INSA",
+            "items": {
+                "financial-aid": "Aiuto finanziario"
             }
         } 
     },
@@ -120,6 +127,42 @@
         ],
         "public-attention": [
             "Attenzione al pubblico"
+        ]
+      },
+      "content-insa-admission": {
+        "requirements" : [
+            "Requisiti per accedere al processo di ammissione",
+            "1. Risiedere nei quartieri limitrofi al campus che si trovano solo negli strati 1 e 2.",
+            "2. Per gli studenti in transizione l'età richiesta è di 5 anni prima dell'inizio del periodo scolastico per il quale aspirano.",
+            "3. Rispettare tutti i documenti richiesti per la registrazione al processo."
+        ],
+        "how-to-apply" :  [
+            "Come applicare?",
+            "Le famiglie interessate a partecipare al progetto educativo della scuola devono attenersi al seguente processo"
+        ],
+        "step-1": [
+            "Passaggio 1",
+            "Registrazione per un esame di ammissione con documentazione completa precedentemente consegnata personalmente presso l'Istituto."
+        ],
+        "step-2": [
+            "Passaggio 2",
+            "Presentazione del test di ammissione da parte dello studente."
+        ],
+        "step-3": [
+            "Passaggio 3",
+            "Partecipazione del nucleo familiare alla presentazione dell'Istituto dal programma Open House che si svolge lo stesso giorno dell'esame di ammissione."
+        ],
+        "step-4": [
+            "Passaggio 4",
+            "Revisione da parte dei genitori dell'elenco preselezionato alla data stabilita dall'Istituto."
+        ],
+        "step-5": [
+            "Passaggio 5",
+            "Visita a casa"
+        ],
+        "step-6": [
+            "Passaggio 6",
+            "Intervista all'Istituto con il rettore o il direttore in cui la quota sarà ufficialmente concessa."
         ]
       }
 }
