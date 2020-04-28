@@ -63,21 +63,35 @@
             ]
         },
         {
-            "title": "sidenav.insa-access.title",
-            "icon": "mdi-alpha-a",
+            "title": "sidenav.life-stu.title",
+            "icon": "mdi-human-handsup",
             "items": [
                 {
-                    "title": "sidenav.insa-access.items.admissions-processes",
-                    "icon": "mdi-calendar-month"
+                    "title": "sidenav.life-stu.items.arts",
+                    "icon": "mdi-draw"
+                },
+                {
+                    "title": "sidenav.life-stu.items.athletic",
+                    "icon": "mdi-swim"
                 }
             ]
         },
         {
-            "title": "sidenav.support-us.title",
+            "title": "sidenav.insa-admission.title",
+            "icon": "mdi-application",
+            "items": [
+                {
+                    "title": "sidenav.insa-admission.items.how-to-apply",
+                    "icon": "mdi-account-question"
+                }
+            ]
+        },
+        {
+            "title": "sidenav.support-insa.title",
             "icon": "mdi-charity",
             "items": [
                 {
-                    "title": "sidenav.support-us.items.support-stu",
+                    "title": "sidenav.support-insa.items.financial-aid",
                     "icon": "mdi-human-male-female"
                 }
             ]

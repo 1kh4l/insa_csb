@@ -32,16 +32,23 @@
                 "study-plan": "Currículos"
             }
         },
-        "insa-access": {
-            "title": "Acceso al INSA",
+        "life-stu": {
+            "title": "Vida de estudiante",
             "items": {
-                "admissions-processes": "Proceso de admisión"
+                "arts"   : "Arte",
+                "athletic"  : "Atlético"
             }
         },
-        "support-us": {
-            "title": "Apóyanos",
+        "insa-admission": {
+            "title": "Admisión INSA",
             "items": {
-                "support-stu": "Apoyo a los estudiantes"
+                "how-to-apply": "¿Cómo aplicar?"
+            }
+        },
+        "support-insa": {
+            "title": "Soporte INSA",
+            "items": {
+                "financial-aid": "Ayuda financiera"
             }
         } 
     },
@@ -121,5 +128,41 @@
       "public-attention": [
           "Atención al publico"
       ]
-    }
+    },
+    "content-insa-admission": {
+        "requirements": [
+            "Requisitos para acceder al proceso de admisión",
+            "1. Residir en barrios aledaños al plantel que estén ubicados en estratos 1 y 2 únicamente.",
+            "2. Para los estudiantes de transición la edad requerida es de 5 años cumplidos antes del inicio del periodo lectivo para el cual aspiran.",
+            "3. Cumplir con cada uno de los documentos requeridos para la inscripción al proceso."
+        ],
+        "how-to-apply" :  [
+            "¿Cómo aplicar?",
+            "Las familias interesadas en participar del proyecto educativo del colegio deberán cumplir con el siguiente proceso"
+        ],
+        "step-1": [
+            "Paso 1",
+            "Inscripción a examen de admisión con documentación completa previamente entregada de manera personal en el Instituto."
+        ],
+        "step-2": [
+            "Paso 2",
+            "Presentación de la prueba de admisión por parte del estudiante."
+        ],
+        "step-3": [
+            "Paso 3",
+            "Participación del núcleo familiar en la presentación del Instituto desde el programa del Open House que se lleva a cabo el mismo día del examen de admisión."
+        ],
+        "step-4": [
+            "Paso 4",
+            "Revisión por parte de los padres de familia del listado de preseleccionados en la fecha establecida por el Instituto."
+        ],
+        "step-5": [
+            "Paso 5",
+            "Visita domiciliaria"
+        ],
+        "step-6": [
+            "Paso 6",
+            "Entrevista en el Instituto con el rector o director donde será otorgado oficialmente el cupo."
+        ]
+      }
 }

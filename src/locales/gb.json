@@ -31,16 +31,23 @@
                 "study-plan": "No translation yet"
             }
         },
-        "insa-access": {
-            "title": "INSA Access",
+        "life-stu": {
+            "title": "Student Life",
             "items": {
-                "admissions-processes": "Admissions process"
+                "arts"   : "Arts",
+                "athletic"  : "Athletic"
             }
         },
-        "support-us": {
-            "title": "Support us",
+        "insa-admission": {
+            "title": "INSA Admission",
             "items": {
-                "support-stu": "Student support"
+                "how-to-apply": "How to Apply?"
+            }
+        },
+        "support-insa": {
+            "title": "Support INSA",
+            "items": {
+                "financial-aid": "Financial Aid"
             }
         } 
     },
@@ -119,6 +126,42 @@
         ],
         "public-attention": [
             "Public attention"
+        ]
+      },
+      "content-insa-admission": {
+        "requirements" : [
+            "Requirements to access the admission process",
+            "1. Reside in neighborhoods bordering the campus that are located in strata 1 and 2 only.",
+            "2. For transition students the required age is 5 years old before the beginning of the school period for which they aspire.",
+            "3. Comply with each of the documents required for registration to the process."
+        ],
+        "how-to-apply" :  [
+            "How to apply?",
+            "Families interested in participating in the educational project of the school must comply with the following process"
+        ],
+        "step-1": [
+            "Step 1",
+            "Registration for an admission exam with complete documentation previously delivered personally at the Institute."
+        ],
+        "step-2": [
+            "Step 2",
+            "Presentation of the admission test by the student."
+        ],
+        "step-3": [
+            "Step 3",
+            "Participation of the family nucleus in the presentation of the Institute from the Open House program that takes place the same day of the admission exam."
+        ],
+        "step-4": [
+            "Step 4",
+            "Review by parents of the shortlisted list on the date established by the Institute."
+        ],
+        "step-5": [
+            "Step 5",
+            "Home visit"
+        ],
+        "step-6": [
+            "Step 6",
+            "Interview at the Institute with the rector or director where the quota will be officially granted."
         ]
       }
 }

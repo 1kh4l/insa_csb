@@ -31,16 +31,23 @@
                 "study-plan": "Curriculum"
             }
         },
-        "insa-access": {
-            "title": "Accès à l'INSA",
+        "life-stu": {
+            "title": "Vida de estudiante",
             "items": {
-                "admissions-processes": "Processus d'admission"
+                "arts"   : "L'art",
+                "athletic"  : "Athlétique"
             }
         },
-        "support-us": {
-            "title": "Soutenez-nous",
+        "insa-admission": {
+            "title": "Admission INSA",
             "items": {
-                "support-stu": "Soutien aux étudiants"
+                "how-to-apply": "Comment s'inscrire?"
+            }
+        },
+        "support-insa": {
+            "title": "soutenir l'INSA",
+            "items": {
+                "financial-aid": "Aide financière"
             }
         } 
     },
@@ -117,6 +124,42 @@
         ],
         "public-attention": [
             "Attention au public"
+        ]
+      },
+      "content-insa-admission": {
+        "requirements" : [
+            "Conditions d'accès au processus d'admission",
+            "1. Résider dans des quartiers limitrophes du campus situés uniquement dans les strates 1 et 2.",
+            "2. Pour les élèves en transition, l'âge requis est de 5 ans avant le début de la période scolaire à laquelle ils aspirent.",
+            "3. Se conformer à chacun des documents requis pour l'inscription au processus."
+        ],
+        "how-to-apply" :  [
+            "Comment s'inscrire?",
+            "Les familles intéressées à participer au projet éducatif de l'école doivent se conformer au processus suivant"
+        ],
+        "step-1": [
+            "Étape 1",
+            "Inscription à un examen d'admission avec une documentation complète préalablement délivrée personnellement à l'Institut."
+        ],
+        "step-2": [
+            "Étape 2",
+             "Présentation du test d'admission par l'étudiant."
+        ],
+        "step-3": [
+            "Étape 3",
+            "Participation du noyau familial à la présentation de l'Institut du programme Portes Ouvertes qui a lieu le même jour de l'examen d'admission."
+        ],
+        "step-4": [
+            "Étape 4",
+            "Examen par les parents de la liste restreinte à la date établie par l'Institut."
+        ],
+        "step-5": [
+            "Étape 5",
+            "Visite à domicile"
+        ],
+        "step-6": [
+            "Étape 6",
+            "Entretien à l'Institut avec le recteur ou le directeur où le quota sera officiellement accordé."
         ]
       }
 }
