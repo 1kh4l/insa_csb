@@ -28,7 +28,8 @@
                 "student"   : "Étudiant",
                 "teachers"  : "Enseignants",
                 "courses"   : "Electives",
-                "study-plan": "Curriculum"
+                "study-plan": "Curriculum",
+                "education-levels": "Niveaux de scolarité offerts"
             }
         },
         "life-stu": {
@@ -109,6 +110,23 @@
         "Connaître et être sensible à la situation que vit chaque famille",
         "Être conscient et connaître la réalité du pays"
         
+      ],
+      "education-levels": [
+        "Niveaux d'enseignement offerts",
+        "Préscolaire (Transition)",
+        "Enseignement de base primaire (1er au 5ème)",
+        "Enseignement secondaire de base (6e au 9e)",
+        "Moyenne académique (10e au 11e)",
+        "Journée d'étude",
+        "Unique (6h50 à 15h00)",
+        "Calendrier scolaire",
+        "Calendrier scolaire privé A",
+        "Notre éducation globale est basée sur:",
+        "Jésus-Christ comme pierre angulaire de notre projet.",
+        "Qualité et excellence de la formation.",
+        "Environnements éducatifs enrichis de l'application des TIC.",
+        "Formation aux langues et cultures étrangères.",
+        "Potentialisation de compétences artistiques telles que la musique, les beaux-arts, etc."
       ]
     },
     "content-contact": {

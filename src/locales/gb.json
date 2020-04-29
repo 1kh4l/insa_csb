@@ -23,12 +23,13 @@
             }
         },
         "academic": {
-            "title": "No translation yet",
+            "title": "Academics",
             "items": {
                 "student"   : "Student",
                 "teachers"  : "Teachers",
                 "courses"   : "No translation yet",
-                "study-plan": "No translation yet"
+                "study-plan": "No translation yet",
+                "education-levels": "Levels of education offered"
             }
         },
         "life-stu": {
@@ -111,7 +112,24 @@
             "Be persistent in your work, observing day by day the educational process in each student. Providing solutions to the difficulties that may arise",
             "Know and be sensitive to the situation that each family is experiencing.",
             "Be aware and knowledgeable about the reality of the country."
-        ]
+        ],
+        "education-levels": [
+            "Levels of education offered",
+            "Pre-school (Transition)",
+            "Primary Basic Education (1st to 5th)",
+            "Basic Secondary Education (6th to 9th)",
+            "Academic Average (10th to 11th)",
+            "Study day",
+            "Unique (6:50 a.m. to 3:00 p.m.)",
+            "School calendar",
+            "Private school calendar A",
+            "Our comprehensive education is based on:",
+            "Jesus Christ as the cornerstone of our project.",
+            "Quality and excellence in training.",
+            "Educational environments enriched from the application of TIC’S.",
+            "Training in foreign languages and cultures.",
+            "Potentialization of artistic skills such as music, fine arts, etc."
+          ]
     },
     "content-contact": {
         "telephones" :  [

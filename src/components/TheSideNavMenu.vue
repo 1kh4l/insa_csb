@@ -75,6 +75,8 @@ export default {
         this.$router.push("/students");
       } else if (subItem.title.includes("teachers")) {
         this.$router.push("/teachers");
+      } else if (subItem.title.includes("education-levels")) {
+        this.$router.push("/education-levels");
       } else if (item.title.includes("insa-admission")) {
         this.$router.push(`/insa-admission#${subItem.title.split(".").pop()}`);
       } else if (subItem.title.includes("support-insa")) {
