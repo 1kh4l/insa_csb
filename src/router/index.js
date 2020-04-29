@@ -4,6 +4,7 @@ import Students from "@/components/Students";
 import Teachers from "@/components/Teachers";
 import Contact from "@/components/Contact";
 import InsaAdmission from "@/components/InsaAdmission";
+import EducationLevels from "@/components/EducationLevels";
 
 export default [
   {
@@ -30,6 +31,11 @@ export default [
     path: "/teachers",
     component: Teachers,
     name: "teachers",
+  },
+  {
+    path: "/education-levels",
+    component: EducationLevels,
+    name: "education-levels",
   },
   {
     path: "/insa-admission",

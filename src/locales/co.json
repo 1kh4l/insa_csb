@@ -29,7 +29,8 @@
                 "student"   : "Estudiante",
                 "teachers"  : "Maestros",
                 "courses"   : "Electivas",
-                "study-plan": "Currículos"
+                "study-plan": "Currículos",
+                "education-levels": "Niveles de escolaridad ofrecidos"
             }
         },
         "life-stu": {
@@ -112,6 +113,23 @@
         "Sea persistente en su labor, observando día a día el proceso educativo en cada estudiante. Brindando a soluciones ante las dificultades que se puedan presentar.",
         "Conozca y sea sensible ante la situación que vive cada familia.",
         "Sea consciente y conocedor de la realidad del país."
+      ],
+      "education-levels": [
+        "Niveles de escolaridad ofrecidos",
+        "Pre-escolar (Transición)",
+        "Educación Básica Primaria (1° a 5°)",
+        "Educación Básica Secundaria (6° a 9°)",
+        "Media Académica (10° a 11°)",
+        "Jornada de estudio",
+        "Única (6:50 a.m. a 3:00 p.m.)",
+        "Calendario Escolar",
+        "Plantel educativo de carácter privado calendario A",
+        "Nuestra educación integral se fundamenta en:",
+        "Jesucristo como piedra angular de nuestro proyecto.",
+        "Calidad y excelencia en la formación.",
+        "Ambientes pedagógicos enriquedidos desde la aplicación de la TIC’S.",
+        "Formacion en idiomas y culturas extranjeras.",
+        "Potencializacion de las comptencias artísticas como música, artes plásticas, etc."
       ]
     },
     "content-contact": {

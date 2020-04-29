@@ -28,7 +28,8 @@
                 "student"   : "Studente",
                 "teachers"  : "Insegnanti",
                 "courses"   : "Electives",
-                "study-plan": "Riprende"
+                "study-plan": "Riprende",
+                "education-levels": "Livelli di scolarizzazione offerti"
             }
         },
         "life-stu": {
@@ -112,6 +113,23 @@
         "Siate perseveranti nel vostro lavoro, osservando giorno per giorno il processo educativo di ogni studente. Siate perseveranti nel vostro lavoro, osservando giorno per giorno il processo educativo di ogni studente",
         "Conoscere ed essere sensibili alla situazione che ogni famiglia sta vivendo",
         "Siate consapevoli e consapevoli della realtà del Paese"
+      ],
+      "education-levels": [
+        "Livelli di istruzione offerti",
+        "Scuola materna (transizione)",
+        "Istruzione di base elementare (dal 1 ° al 5 °)",
+        "Istruzione secondaria di base (dal 6 al 9)",
+        "Academic Average (dal 10 all'11)",
+        "Giornata di studio",
+        "Unico (dalle 6:50 alle 15:00)",
+        "Calendario scolastico",
+        "Calendario scolastico privato A",
+        "La nostra formazione globale si basa su:",
+        "Gesù Cristo come pietra angolare del nostro progetto.",
+        "Qualità ed eccellenza nella formazione.",
+        "Ambienti educativi arricchiti dall'applicazione di TIC’S.",
+        "Formazione in lingue e culture straniere.",
+        "Potenziamento di abilità artistiche come musica, belle arti, ecc."
       ]
     },
     "content-contact": {

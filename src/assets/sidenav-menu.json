@@ -59,6 +59,10 @@
                 {
                     "title": "sidenav.academic.items.study-plan",
                     "icon": "mdi-library-books"
+                },
+                {
+                    "title": "sidenav.academic.items.education-levels",
+                    "icon": "mdi-library-books"
                 }
             ]
         },
