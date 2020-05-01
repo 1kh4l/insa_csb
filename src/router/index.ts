@@ -3,6 +3,7 @@ import Contact from "@/components/Contact.vue";
 import EducationLevels from "@/components/EducationLevels.vue";
 import InsaAdmission from "@/components/InsaAdmission.vue";
 import InsaHome from "@/components/InsaHome.vue";
+import StudentLife from "@/components/StudentLife.vue";
 import Students from "@/components/Students.vue";
 import Teachers from "@/components/Teachers.vue";
 import { RouteConfig } from "vue-router";
@@ -42,6 +43,11 @@ const Routes: RouteConfig[] = [
     component: InsaAdmission,
     name: "insa-admission",
     path: "/insa-admission",
+  },
+  {
+    path: "/student-life",
+    component: StudentLife,
+    name: "student-life",
   },
   {
     component: Contact,

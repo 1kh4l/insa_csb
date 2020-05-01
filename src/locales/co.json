@@ -33,13 +33,6 @@
                 "education-levels": "Niveles de escolaridad ofrecidos"
             }
         },
-        "life-stu": {
-            "title": "Vida de estudiante",
-            "items": {
-                "arts"   : "Arte",
-                "athletic"  : "Atlético"
-            }
-        },
         "insa-admission": {
             "title": "Admisión INSA",
             "items": {
@@ -53,6 +46,7 @@
             }
         } 
     },
+    "life-stu": "Vida de estudiante",
     "contact": "Contacto",
     "content-insa": {
         "about": [
@@ -156,6 +150,31 @@
           "Aprobado por Secretaria de Educación Municipal según resolución No. 4143.2.21.3063 de abril 23 de 2009"
       ]
     },
+    "content-life-stu": {
+      "benefits": [
+        "Vida estudiantil en INSA",
+        "Además de contar con amplias y modernas instalaciones decoradas con obras de arte que enriquecen el ambiente de aprendizaje, el instituto posee las siguientes bondades:",
+        "• Salas de audiovisuales",
+        "• Biblioteca escolar",
+        "• Sala de lectura interactiva",
+        "• Salas de sistemas",
+        "• Laboratorio de idiomas",
+        "• Laboratorio de ciencias",
+        "• Centro de bellas artes",
+        "• Auditorios múltiples",
+        "• Salón de música",
+        "• Restaurante escolar",
+        "• Sistema de bibliobanco"
+      ],
+      "guaranteed": [
+        "Se garantiza que el estudiante durante su proceso de formación fortalezca integralmente dimensiones, tales como:",
+        "Una dimensión Cristiana Católica que le permita desarrollar un proyecto de vida desde los valores de Cristo.",
+        "Excelente formación desde las dimensiones académicas y disciplinarias, donde se fortalezca el ser, el hacer, el aprender y el convivir.",
+        "Una dimensión multicultural donde a través del conocimiento y manejos de idiomas como ingles, latín, francés, italiano y mandarín, descubran la riqueza de otras culturas.",
+        "Una dimensión interdisciplinaria (trabajo en equipo) que permite el enriquecimiento desde el uso de las tecnologías en información y comunicación en áreas del currículo regular.",
+        "Incentivación de la parte artística, especialmente en la música por medio de la Banda Filarmónica San Basilio."
+      ]
+    }, 
     "content-insa-admission": {
         "requirements": [
             "Requisitos para acceder al proceso de admisión",
