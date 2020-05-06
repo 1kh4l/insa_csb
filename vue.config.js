@@ -9,13 +9,18 @@ module.exports = {
     },
   },
   chainWebpack: (config) => {
-    if (process.env.NODE_ENV === 'test') {
-      const sassRule = config.module.rule('sass')
-      sassRule.uses.clear()
-      sassRule.use('null-loader').loader('null-loader')
-      const scssRule = config.module.rule('scss')
-      scssRule.uses.clear()
-      scssRule.use('null-loader').loader('null-loader')
+    config.module.rule('ts');
+    config.module.rule('ts').use('ts-loader');
+    config.module.rule('ts').use('babel-loader');
+    config.module.rule('ts').use('cache-loader');
+    config.plugin('fork-ts-checker');
+    if (process.env.NODE_ENV === "test") {
+      const sassRule = config.module.rule("sass");
+      sassRule.uses.clear();
+      sassRule.use("null-loader").loader("null-loader");
+      const scssRule = config.module.rule("scss");
+      scssRule.uses.clear();
+      scssRule.use("null-loader").loader("null-loader");
     }
     // Allow to mix SASS and SCSS
     ["vue-modules", "vue", "normal-modules", "normal"].forEach((match) => {

@@ -48,13 +48,22 @@
   </v-navigation-drawer>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import { mapState } from "vuex";
 import sideNavTree from "../assets/sidenav-menu.json";
 
-export default {
-  name: "SideNavMenu",
-  props: {},
+const SideNavMenu = Vue.extend({
+  computed: {
+    ...mapState("items", ["visible"]),
+    ...mapState("items", ["lang"]),
+    filteredMenu() {
+      return this.menuItems.filter((n) => n.title !== "Home");
+    },
+  },
+  data: () => ({
+    menuItems: sideNavTree.menu,
+  }),
   methods: {
     menuRouting(item, subItem = null) {
       // Allows to go to top of the home page
@@ -84,17 +93,11 @@ export default {
       }
     },
   },
-  computed: {
-    ...mapState("items", ["visible"]),
-    ...mapState("items", ["lang"]),
-    filteredMenu() {
-      return this.menuItems.filter((n) => n.title !== "Home");
-    },
-  },
-  data: () => ({
-    menuItems: sideNavTree.menu,
-  }),
-};
+  name: "SideNavMenu",
+  props: {},
+});
+
+export default SideNavMenu;
 </script>
 
 <style lang="scss" scoped>

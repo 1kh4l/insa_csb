@@ -17,7 +17,7 @@ const loadLocaleMessages = () => {
 };
 
 export default new VueI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || "co",
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "co",
+  locale: process.env.VUE_APP_I18N_LOCALE || "co",
   messages: loadLocaleMessages(),
 });
