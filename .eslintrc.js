@@ -176,25 +176,28 @@ module.exports = {
     "no-with": 2,
     "one-var": [1, "never"],
     "operator-assignment": [2, "always"],
-    radix: [2, "always"],
+    "radix": [2, "always"],
     "require-jsdoc": 0,
     "sort-vars": 0,
-    strict: 0,
+    "strict": 0,
     "use-isnan": 2,
     "valid-jsdoc": 0,
     "valid-typeof": 2,
     "vars-on-top": 0,
-    yoda: 2,
+    "yoda": 2,
   },
 
   parserOptions: {
-    parser: "babel-eslint",
+    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
+    sourceType: "module", // Allows for the use of imports
   },
+
+  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
 
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".vue"],
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".vue"],
       },
     },
   },
@@ -206,5 +209,13 @@ module.exports = {
         mocha: true,
       },
     },
+  ],
+
+  extends: [
+    "plugin:vue/essential",
+    "@vue/typescript",
+    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
   ],
 };

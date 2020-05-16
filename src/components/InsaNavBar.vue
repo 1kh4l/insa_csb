@@ -51,28 +51,20 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import { mapState } from "vuex";
-import i18n from "@/plugins/i18n";
+import i18n from "../plugins/i18n";
 
-export default {
-  methods: {
-    showUpMenu() {
-      this.$store.dispatch("items/setVisibility", {
-        visible: true,
-      });
-    },
-    selectFlag(flag) {
-      const flagFiltered = this.flags.filter((f) => f.id === flag.id)[0];
-      this.flagSelected = flagFiltered;
-      i18n.locale = this.flagSelected.id;
-      this.$store.dispatch("items/setLanguage", i18n.locale);
-    },
-  },
+const InsaNavBar = Vue.extend({
   computed: {
     ...mapState("items", ["items"]),
   },
   data: () => ({
+    flagSelected: {
+      country: "Colombia",
+      id: "co",
+    },
     flags: [
       {
         country: "Colombia",
@@ -91,12 +83,24 @@ export default {
         id: "it",
       },
     ],
-    flagSelected: {
-      country: "Colombia",
-      id: "co",
-    },
   }),
-};
+  methods: {
+    showUpMenu() {
+      this.$store.dispatch("items/setVisibility", {
+        visible: true,
+      });
+    },
+    selectFlag(flag) {
+      const flagFiltered = this.flags.filter((f) => f.id === flag.id)[0];
+      this.flagSelected = flagFiltered;
+      i18n.locale = this.flagSelected.id;
+      this.$store.dispatch("items/setLanguage", i18n.locale);
+    },
+  },
+  name: "InsaNavBar",
+});
+
+export default InsaNavBar;
 </script>
 
 <style lang="scss" scoped>

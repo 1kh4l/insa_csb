@@ -69,22 +69,11 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import { mapState } from "vuex";
 
-export default {
-  name: "Students",
-  props: {
-    msg: String,
-  },
-  methods: {
-    setData() {
-      this.$store.dispatch("items/addItem", {
-        name: "example",
-        data: "bye",
-      });
-    },
-  },
+const Students = Vue.extend({
   computed: {
     ...mapState("items", ["items"]),
   },
@@ -92,7 +81,21 @@ export default {
     myData: [],
     testShow: false,
   }),
-};
+  methods: {
+    setData() {
+      this.$store.dispatch("items/addItem", {
+        data: "bye",
+        name: "example",
+      });
+    },
+  },
+  name: "Students",
+  props: {
+    msg: String,
+  },
+});
+
+export default Students;
 </script>
 
 <style lang="scss" scoped>

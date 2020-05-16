@@ -10,20 +10,18 @@
   </v-app>
 </template>
 
-<script>
-import InsaNavBar from "./components/InsaNavBar";
-import TheSideNavMenu from "./components/TheSideNavMenu";
+<script lang="ts">
+import InsaNavBar from "@/components/InsaNavBar.vue";
+import TheSideNavMenu from "@/components/TheSideNavMenu.vue";
+import Vue from "vue";
 
-export default {
-  name: "App",
+export default Vue.extend({
   components: {
     InsaNavBar,
     TheSideNavMenu,
   },
-  data: () => ({
-    //
-  }),
-};
+  name: "App",
+});
 </script>
 
 <style lang="scss">

@@ -1,16 +1,16 @@
-import { expect } from "chai";
 import { mount } from "@vue/test-utils";
-import InsaHome from "../../src/components/InsaHome";
+import { expect } from "chai";
+import InsaHome from "../../src/components/InsaHome.vue";
 
 describe("InsaHome", () => {
   it("test the component mount", () => {
     const msg = "test";
     const wrapper = mount(InsaHome, {
-      propsData: { msg },
       mocks: {
-        $t: () => {},
+        $t: () => undefined,
       },
+      propsData: { msg },
     });
-    expect(wrapper.isVueInstance()).to.be.true;
+    expect(wrapper.isVueInstance()).to.equal(true);
   });
 });

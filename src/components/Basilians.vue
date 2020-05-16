@@ -55,11 +55,14 @@
   </v-container>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+const Basilians = Vue.extend({
   name: "Basilians",
-  data: () => ({}),
-};
+});
+
+export default Basilians;
 </script>
 
 <style lang="scss" scoped>
