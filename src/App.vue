@@ -7,16 +7,21 @@
     <v-content>
       <router-view />
     </v-content>
+    <v-footer>
+      <InsaFooter />
+    </v-footer>
   </v-app>
 </template>
 
 <script lang="ts">
+import InsaFooter from "@/components/InsaFooter.vue";
 import InsaNavBar from "@/components/InsaNavBar.vue";
 import TheSideNavMenu from "@/components/TheSideNavMenu.vue";
 import Vue from "vue";
 
 export default Vue.extend({
   components: {
+    InsaFooter,
     InsaNavBar,
     TheSideNavMenu,
   },
@@ -28,7 +33,6 @@ export default Vue.extend({
 $color-pack: false;
 @import "~vuetify/src/styles/main.sass";
 .header {
-  background-image: url("./assets/header.svg");
   background-size: 16%;
   background-position: right;
 }

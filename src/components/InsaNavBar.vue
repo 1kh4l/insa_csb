@@ -5,7 +5,6 @@
     <v-layout row align-center class="row-logo">
       <!-- LOGO | SIDENAV MENU -->
       <v-flex class="logo-btn" md1 xs3>
-        <img class="insa-logo" src="./../assets/insa_logo.png" />
         <v-btn class="menu-btn" @click="showUpMenu()">
           <v-icon>mdi-menu</v-icon>
         </v-btn>
@@ -14,17 +13,44 @@
       <v-flex class="title-motto" md10 xs8>
         <v-layout column align-center :class="{ 'ma-0': $vuetify.breakpoint.smAndDown }">
           <v-layout row class="insa-title">
+            <v-flex class="logo-btn" md1 xs3>
+              <img class="insa-logo" src="./../assets/insa_logo.png" />
+            </v-flex>
             <span class="title">INSA</span>
             <span class="font-weight-light motto">
               ~ Instituto Nuestra Señora de la Asunción
             </span>
           </v-layout>
-          <span class="overline motto-insa text-end">
+          <span class="overline motto-insa text-left">
             {{ $t("header.motto") }}
           </span>
         </v-layout>
       </v-flex>
-      <!-- INTERNATIONALIZATION FLAGS -->
+      <!-- CONTACT BUTTON -->
+      <v-flex class="international" md1 xs1>
+        <v-btn
+          class="contact"
+          outlined
+          color="brown"
+          v-on="on"
+          @click="contactRouting({ title: 'contact' })"
+        >
+          {{ $t("contact") }}
+        </v-btn>
+      </v-flex>
+      <!-- INTERNATIONALIZATION FLAGS-->
+      <v-flex class="international" md1 xs1>
+        <v-btn
+          class="contact"
+          outlined
+          color="brown"
+          v-on="on"
+          @click="contactRouting({ title: 'contact' })"
+        >
+          {{ $t("contact") }}
+        </v-btn>
+      </v-flex>
+      <!-- INTERNATIONALIZATION FLAGS-->
       <v-flex class="international" md1 xs1>
         <div class="lang-btn">
           <v-menu>
@@ -96,6 +122,10 @@ const InsaNavBar = Vue.extend({
       i18n.locale = this.flagSelected.id;
       this.$store.dispatch("items/setLanguage", i18n.locale);
     },
+    contactRouting() {
+      this.$router.push("/contact");
+      window.scrollTo(0, 0);
+    },
   },
   name: "InsaNavBar",
 });
@@ -116,24 +146,25 @@ export default InsaNavBar;
     margin-right: 0px !important;
 
     .logo-btn {
-      max-height: 64px;
+      max-height: 6px;
 
       .insa-logo {
-        padding-top: 4px;
-        max-height: 65px;
+        padding-top: -12px;
+        max-height: 46px;
         max-width: 52px;
       }
 
       .menu-btn {
-        top: -23px;
+        top: -12px;
         background-color: transparent !important;
         color: $color-brown-base !important;
         box-shadow: none !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 7px !important;
+        padding-right: 7px !important;
         min-width: 0px !important;
         border-radius: 50% !important;
         width: 36px !important;
+        left: 110px;
       }
       .menu-btn:hover {
         background-color: transparent !important;
@@ -143,45 +174,47 @@ export default InsaNavBar;
         width: 36px !important;
       }
     }
-
     .title-motto {
       height: 64px !important;
 
       .ma-0 {
         font-size: 0.5em;
       }
-
       .insa-title {
         padding-top: 10px;
+        padding-left: 9px;
         .title {
           color: $color-brown-base;
         }
         .motto {
-          padding: 4px 0px 0px 3px;
+          padding-top: 4px;
+          padding-left: 9px;
+          text-align: left;
+        }
+        .flex.md1 {
+          max-width: 100px;
+          padding-right: 10px;
         }
       }
     }
-
+    .contact {
+      top: 2px;
+      right: 300px !important;
+    }
     .international {
       .lang-btn {
+        position: absolute;
+        width: 21px;
+        height: 17px;
+        left: 1605px;
+        top: 17px;
+        color: #9a9696;
         .btn-flag {
-          min-width: 42px !important;
-          width: 42px !important;
-          border-radius: 50% !important;
           box-shadow: none !important;
           background-color: transparent !important;
-          .flag {
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-          }
         }
       }
     }
   }
-}
-
-.flag-list {
-  padding: 0px !important;
 }
 </style>
