@@ -32,6 +32,11 @@ export default Vue.extend({
 <style lang="scss">
 $color-pack: false;
 @import "~vuetify/src/styles/main.sass";
+
+.myFont {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 .header {
   background-size: 16%;
   background-position: right;

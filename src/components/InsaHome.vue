@@ -143,8 +143,19 @@ export default InsaHome;
     padding-top: 5%;
     padding-bottom: 15%;
     .card-about {
+      .display-1 {
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .body-2 {
+        font-family: "Montserrat", sans-serif !important;
+      }
       max-width: 816px;
-      max-height: 613px;
+      min-height: 613px;
+      .text-about {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 160%;
+      }
     }
     .about-us-image-container {
       .main-page-school {
@@ -171,6 +182,12 @@ export default InsaHome;
       bottom: -45%;
     }
     .card-about2 {
+      .display-1 {
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .body-2 {
+        font-family: "Montserrat", sans-serif !important;
+      }
       background-color: #f5f5f5;
       max-width: 1104px;
       .content-project {
@@ -186,11 +203,23 @@ export default InsaHome;
       max-height: 519px;
     }
     .card-history {
+      .display-1 {
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .body-2 {
+        font-family: "Montserrat", sans-serif !important;
+      }
       max-width: 672px;
     }
   }
   .mission-section {
     .card-mission {
+      .display-1 {
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .body-2 {
+        font-family: "Montserrat", sans-serif !important;
+      }
       top: 20%;
       max-width: 672px;
     }
