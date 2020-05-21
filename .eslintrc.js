@@ -19,15 +19,6 @@ module.exports = {
   rules: {
     // allow debugger during development
     "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
-    indent: ["error", 2],
-    "import/extensions": [
-      "error",
-      "always",
-      {
-        js: "never",
-        vue: "never",
-      },
-    ],
     "no-useless-escape": 1,
     "no-else-return": 1,
     "spaced-comment": 1,
@@ -38,8 +29,8 @@ module.exports = {
     "accessor-pairs": 0,
     "block-scoped-var": 0,
     "callback-return": 0,
-    camelcase: 0,
-    complexity: 0,
+    "camelcase": 0,
+    "complexity": 0,
     "consistent-return": 0,
     "consistent-this": 0,
     "default-case": 2,
@@ -186,13 +177,12 @@ module.exports = {
     "vars-on-top": 0,
     "yoda": 2,
   },
-
-  parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module", // Allows for the use of imports
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module", // Allows for the use of imports
+    "parser": "@typescript-eslint/parser",
   },
-
-  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
 
   settings: {
     "import/resolver": {
@@ -212,10 +202,12 @@ module.exports = {
   ],
 
   extends: [
+    "eslint:recommended",
     "plugin:vue/essential",
     "@vue/typescript",
+    "@vue/prettier",
     "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
   ],
 };
