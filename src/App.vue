@@ -40,5 +40,8 @@ $color-pack: false;
 .header {
   background-size: 16%;
   background-position: right;
+  min-height: 4% !important;
+  max-height: 80px;
+  width: 100vw;
 }
 </style>

@@ -104,10 +104,7 @@ export default SideNavMenu;
 @import "../styles/settings.scss";
 
 .nav-bar {
-  top: 64px !important;
-  background-image: url("../assets/side.svg");
-  background-size: 70%;
-  background-position: bottom;
+  top: 16% !important;
 }
 .icon-menu {
   color: $color-brown-base !important;
