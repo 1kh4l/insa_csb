@@ -51,17 +51,22 @@
               <v-menu>
                 <template v-slot:activator="{ on }">
                   <v-btn class="btn-flag" v-on="on">
-                    <flag class="flag" :iso="flagSelected.id" />
+                    <div class="flag" value="flagSelected.id">
+                      {{ flagSelected.label }}
+                      <v-icon class="arrow-icon">mdi-apple-keyboard-control</v-icon>
+                    </div>
                   </v-btn>
                 </template>
-                <v-list class="flag-list">
+                <v-list flat class="flag-list">
                   <v-list-item
                     v-for="insaFlag in flags"
                     @click="selectFlag(insaFlag)"
                     :key="insaFlag.id"
                   >
                     <v-list-item-title>
-                      <flag :iso="insaFlag.id" />
+                      <div class="flag" value="insaFlag.id">
+                        {{ insaFlag.label }}
+                      </div>
                     </v-list-item-title>
                   </v-list-item>
                 </v-list>
@@ -87,23 +92,28 @@ const InsaNavBar = Vue.extend({
     flagSelected: {
       country: "Colombia",
       id: "co",
+      label: "ES",
     },
     flags: [
       {
         country: "Colombia",
         id: "co",
+        label: "ES",
       },
       {
         country: "England",
         id: "gb",
+        label: "EN",
       },
       {
         country: "France",
         id: "fr",
+        label: "FR",
       },
       {
         country: "Italy",
         id: "it",
+        label: "IT",
       },
     ],
   }),
@@ -135,6 +145,7 @@ export default InsaNavBar;
 
 .container-nav-bar {
   height: inherit;
+
   .menu-btn {
     background-color: transparent !important;
     color: $color-brown-base !important;
@@ -142,15 +153,19 @@ export default InsaNavBar;
     border-radius: 50% !important;
     width: 36px;
   }
+
   .insa-logo {
     max-height: 46px;
     max-width: 52px;
   }
+
   .insa-title {
     font-size: 12px !important;
     max-height: 40%;
+
     .container-tittle {
       padding-top: 0px;
+
       .title {
         font-size: 12px !important;
         @media (min-width: 800px) {
@@ -159,9 +174,11 @@ export default InsaNavBar;
       }
     }
   }
+
   .school-name {
     padding-top: 1%;
     padding-bottom: 0px;
+
     .motto {
       font-size: 12px !important;
       @media (min-width: 800px) {
@@ -169,6 +186,7 @@ export default InsaNavBar;
       }
     }
   }
+
   .container-motto {
     padding-top: 0px;
     margin-top: -1%;
@@ -178,16 +196,35 @@ export default InsaNavBar;
       }
     }
   }
+
   .menu-btn:hover {
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 50% !important;
     justify-content: center !important;
   }
+
   .contact {
     font-family: "Montserrat", sans-serif !important;
     text-transform: none !important;
     font-size: 12px;
+  }
+
+  .btn-flag {
+    box-shadow: none;
+  }
+
+  .flag {
+    color: $color-gray-base !important;
+
+    .arrow-icon {
+      margin-top: -8px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .btn-flag:hover {
+    background-color: transparent !important;
   }
 }
 </style>
