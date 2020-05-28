@@ -27,7 +27,39 @@
             </span>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="2" xs="2" xl="2"></v-col>
+        <v-col cols="12" sm="2" xs="2" xl="2">
+          <v-row class="footer-home">
+            <li>
+              <a
+                href="https://insa-csb.education/home"
+                data-gps-track="footer.click({ location: 2, link: 16})"
+              >
+                {{ $t("sidenav.home") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-home">
+            <li>
+              <a href="https://insa-csb.education/home#about">
+                {{ $t("about") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-home">
+            <li>
+              <a href="https://insa-csb.education/basilians#about">
+                {{ $t("sidenav.basilians.title") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-home">
+            <li>
+              <a href="https://insa-csb.education/students">
+                {{ $t("sidenav.academic.title") }}
+              </a>
+            </li>
+          </v-row>
+        </v-col>
         <v-col cols="12" sm="2" xs="2" xl="2"></v-col>
         <v-col cols="12" sm="4" xs="4" xl="4"></v-col>
       </v-row>
@@ -50,19 +82,27 @@ $color-pack: false;
   .col-footer {
     height: inherit;
 
+    .footer-bottom {
+      opacity: 0.4;
+    }
+
     .row-footer {
       .first-col {
         .logo-motto {
+          .insa-logo {
+            width: 96px;
+          }
           .footer-school-name {
             .title-motto {
               font-weight: 500;
             }
-            padding-top: 25px;
+            padding-top: 30px;
+            margin-left: -130px;
           }
         }
 
         .rule {
-          width: 84%;
+          width: 62%;
           padding-left: 2%;
           font-size: 12px !important;
         }
