@@ -1,77 +1,88 @@
 <template>
-  <footer class="site-footer" id="footer" role="contentinfo">
-    <div class="site-footer--container">
-      <v-layout row align-center class="row-logo">
-        <div class="site-footer--logo">
-          <img class="insa-footer--logo" src="./../assets/insa_logo.png" />
-        </div>
-        <div class="title-motto" md10 xs8>
-          <v-layout column align-center :class="{ 'ma-0': $vuetify.breakpoint.smAndDown }">
-            <v-layout row class="insa-title">
-              <span class="title">INSA</span>
-              <span class="font-weight-light motto">
-                ~ Instituto Nuestra Señora de la Asunción
-              </span>
-            </v-layout>
-            <span class="overline motto-insa text-end">
-              {{ $t("header.motto") }}
-            </span>
-          </v-layout>
-          <div class="approve">
-            <span class="overline">
+  <footer class="footer-container" id="footer" role="contentinfo">
+    <v-col class="col-footer" cols="12" sm="12" xs="12" xl="12">
+      <v-row class="row-footer">
+        <v-col class="first-col" cols="12" sm="6" xs="6" xl="4">
+          <v-row class="logo-motto">
+            <v-col class="logo" cols="12" sm="4" xs="4" xl="2">
+              <v-img class="insa-logo" src="./../assets/insa_logo.png"></v-img>
+            </v-col>
+            <v-col class="footer-school-name" cols="12" sm="" xs="8" xl="10">
+              <v-row class="title-motto">
+                <span class="title-insa">INSA</span>
+                <span class="motto">
+                  ~ Instituto Nuestra Señora de la Asunción
+                </span>
+              </v-row>
+              <v-row>
+                <span class="motto-insa text-left">
+                  {{ $t("header.motto") }}
+                </span>
+              </v-row>
+            </v-col>
+          </v-row>
+          <v-row class="rule">
+            <span class="rule-comerce">
               {{ $t("content-contact.approve[0]") }}
             </span>
-          </div>
-        </div>
+          </v-row>
+        </v-col>
+        <v-col cols="12" sm="2" xs="2" xl="2"></v-col>
+        <v-col cols="12" sm="2" xs="2" xl="2"></v-col>
+        <v-col cols="12" sm="4" xs="4" xl="4"></v-col>
+      </v-row>
+      <v-row align="center" justify="center">
         <div class="footer-bottom">
           &copy; 2020 Copyright INSA
         </div>
-      </v-layout>
-    </div>
+      </v-row>
+    </v-col>
   </footer>
 </template>
 <style lang="scss">
 $color-pack: false;
 @import "~vuetify/src/styles/main.sass";
 
-.site-footer {
-  clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: 200px;
-  .insa-footer--logo {
-    width: 96px;
-    height: 99px;
-    margin-left: 121px;
-    top: 4962px;
+.footer-container {
+  width: 100%;
+  height: 440px;
+
+  .col-footer {
+    height: inherit;
+
+    .row-footer {
+      .first-col {
+        .logo-motto {
+          .footer-school-name {
+            .title-motto {
+              font-weight: 500;
+            }
+            padding-top: 25px;
+          }
+        }
+
+        .rule {
+          width: 84%;
+          padding-left: 2%;
+          font-size: 12px !important;
+        }
+      }
+      height: 96%;
+      padding-top: 5%;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+
+    .footer-school-name {
+      .motto-insa,
+      .tittle-insa,
+      .motto {
+        font-size: 16px !important;
+        @media (max-width: 768px) {
+          font-size: 10px !important;
+        }
+      }
+    }
   }
-  .insa-title {
-    padding-top: 2px;
-    padding-left: 9px;
-  }
-  .title-motto {
-    padding-top: 0px;
-    padding-left: 9px;
-    text-align: left;
-  }
-  .flex.md10 {
-    max-width: 100%;
-    left: 10px;
-  }
-  .footer-bottom {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 30px;
-    left: 640px !important;
-    padding-top: 20px;
-  }
-  .approve {
-    width: 400px;
-  }
-}
-.v-application .text-end {
-  text-align: end !important;
-  padding-right: 52px;
 }
 </style>
