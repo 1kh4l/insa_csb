@@ -1,8 +1,13 @@
 <template>
   <!-- SIDENAV -->
-  <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
+  <v-navigation-drawer :width="350" v-if="visible" permanent fixed app class="nav-bar">
+    <v-row no-gutters>
+      <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-img class="tree-left" src="../assets/tree_left.png"></v-img>
+      </v-col>
+    </v-row>
     <!-- LIST ITEMS CONTAINER-->
-    <v-list dense nav>
+    <v-list dense nav class="menu-list">
       <!-- HOME -->
       <router-link to="/home" v-slot="{}">
         <!-- Creates home menu without subitem -->
@@ -45,6 +50,11 @@
         <v-list-item-title>{{ $t("contact") }}</v-list-item-title>
       </v-list-item>
     </v-list>
+    <v-row no-gutters>
+      <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-img class="tree-right" src="../assets/tree_right.png"></v-img>
+      </v-col>
+    </v-row>
   </v-navigation-drawer>
 </template>
 
@@ -105,9 +115,24 @@ export default SideNavMenu;
 
 .nav-bar {
   top: 64px !important;
-  background-image: url("../assets/side.svg");
-  background-size: 70%;
-  background-position: bottom;
+  height: 100% !important;
+
+  .menu-list {
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+
+  .tree-left {
+    float: left;
+    max-width: 60%;
+  }
+
+  .tree-right {
+    position: relative;
+    float: right;
+    max-width: 60%;
+  }
 }
 .icon-menu {
   color: $color-brown-base !important;
