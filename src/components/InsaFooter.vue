@@ -89,21 +89,21 @@
         </v-col>
         <v-col class="footer-contact" cols="12" sm="4" xs="4" xl="4">
           <v-row class="phone">
-            <span class="contact-name">
-              {{ $t("content-contact.telephones[2]") }}
-            </span>
-            <span>
+            <span class="contact-name">{{ $t("content-contact.telephones[2]") }}:</span>
+            <span class="numbers">
               {{ $t("content-contact.telephones[0]") }},
               {{ $t("content-contact.telephones[1]") }}
             </span>
           </v-row>
           <v-row class="direction">
-            <span class="contact-name">
-              {{ $t("content-contact.direction[1]") }}
-            </span>
-            <span>
+            <span class="contact-name">{{ $t("content-contact.direction[1]") }}:</span>
+            <span class="address-location">
               {{ $t("content-contact.direction[0]") }}
             </span>
+          </v-row>
+          <v-row class="email">
+            <span class="contact-name">{{ $t("content-contact.email[0]") }}:</span>
+            <span class="address">{{ $t("content-contact.email[1]") }}</span>
           </v-row>
           <v-row class="footer-public-attention">
             <span class="footer-attention">
@@ -128,6 +128,7 @@ $color-pack: false;
 .footer-container {
   width: 100%;
   height: 440px;
+
   .col-footer {
     height: inherit;
 
@@ -135,6 +136,7 @@ $color-pack: false;
       opacity: 0.4;
       margin-top: -15px;
     }
+
     .footer-links-one {
       .footer-list {
         list-style: none;
@@ -145,9 +147,9 @@ $color-pack: false;
           text-decoration-line: none;
         }
       }
-      margin-left: -165px;
       margin-top: 20px;
     }
+
     .footer-links-two {
       .footer-list {
         list-style: none;
@@ -160,13 +162,22 @@ $color-pack: false;
       }
       margin-top: 20px;
     }
+
     .footer-contact {
       max-width: 420px;
       line-height: 1.9;
       margin-top: 20px;
+
       .contact-name {
         font-weight: 600;
       }
+
+      .address-location,
+      .numbers,
+      .address {
+        padding-left: 1%;
+      }
+
       .footer-public-attention {
         margin-top: 30px;
         .footer-attention {
@@ -186,7 +197,6 @@ $color-pack: false;
               font-weight: 500;
             }
             padding-top: 30px;
-            margin-left: -130px;
             max-width: 450px;
           }
         }
