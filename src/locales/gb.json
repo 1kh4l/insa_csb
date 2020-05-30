@@ -134,10 +134,12 @@
     "content-contact": {
         "telephones" :  [
             "6629977",
-            "6620885"
+            "6620885",
+            "Phones: "
         ],
         "direction": [
-            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín",
+            "Direction: "
         ],
         "days-and-hours": [
             "Monday through Friday 8:00 a.m. – 4:30 p.m."

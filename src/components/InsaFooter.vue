@@ -27,41 +27,91 @@
             </span>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="2" xs="2" xl="2">
-          <v-row class="footer-home">
-            <li>
-              <a
-                href="https://insa-csb.education/home"
-                data-gps-track="footer.click({ location: 2, link: 16})"
-              >
+        <v-col class="footer-links-one" cols="12" sm="2" xs="2" xl="2">
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="/home">
                 {{ $t("sidenav.home") }}
               </a>
             </li>
           </v-row>
-          <v-row class="footer-home">
-            <li>
-              <a href="https://insa-csb.education/home#about">
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="/home">
                 {{ $t("about") }}
               </a>
             </li>
           </v-row>
-          <v-row class="footer-home">
-            <li>
-              <a href="https://insa-csb.education/basilians#about">
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="/basilians">
                 {{ $t("sidenav.basilians.title") }}
               </a>
             </li>
           </v-row>
-          <v-row class="footer-home">
+          <v-row class="footer-list">
             <li>
-              <a href="https://insa-csb.education/students">
+              <a class="link" href="/students">
                 {{ $t("sidenav.academic.title") }}
               </a>
             </li>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="2" xs="2" xl="2"></v-col>
-        <v-col cols="12" sm="4" xs="4" xl="4"></v-col>
+        <v-col class="footer-links-two" cols="12" sm="2" xs="2" xl="2">
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="#">
+                {{ $t("sidenav.life-stu.title") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="/insa-admission">
+                {{ $t("sidenav.insa-admission.title") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="#">
+                {{ $t("sidenav.support-insa.title") }}
+              </a>
+            </li>
+          </v-row>
+          <v-row class="footer-list">
+            <li class="item">
+              <a class="link" href="/contact">
+                {{ $t("contact") }}
+              </a>
+            </li>
+          </v-row>
+        </v-col>
+        <v-col class="footer-contact" cols="12" sm="4" xs="4" xl="4">
+          <v-row class="phone">
+            <span class="contact-name">
+              {{ $t("content-contact.telephones[2]") }}
+            </span>
+            <span>
+              {{ $t("content-contact.telephones[0]") }},
+              {{ $t("content-contact.telephones[1]") }}
+            </span>
+          </v-row>
+          <v-row class="direction">
+            <span class="contact-name">
+              {{ $t("content-contact.direction[1]") }}
+            </span>
+            <span>
+              {{ $t("content-contact.direction[0]") }}
+            </span>
+          </v-row>
+          <v-row class="footer-public-attention">
+            <span class="footer-attention">
+              {{ $t("content-contact.public-attention[0]") }},
+              {{ $t("content-contact.days-and-hours[0]") }}
+            </span>
+          </v-row>
+        </v-col>
       </v-row>
       <v-row align="center" justify="center">
         <div class="footer-bottom">
@@ -78,14 +128,53 @@ $color-pack: false;
 .footer-container {
   width: 100%;
   height: 440px;
-
   .col-footer {
     height: inherit;
 
     .footer-bottom {
       opacity: 0.4;
+      margin-top: -15px;
     }
-
+    .footer-links-one {
+      .footer-list {
+        list-style: none;
+        padding: 4px 0;
+        line-height: 1.9;
+        .link {
+          color: #272727;
+          text-decoration-line: none;
+        }
+      }
+      margin-left: -165px;
+      margin-top: 20px;
+    }
+    .footer-links-two {
+      .footer-list {
+        list-style: none;
+        padding: 4px 0;
+        line-height: 1.9;
+        .link {
+          color: #272727;
+          text-decoration-line: none;
+        }
+      }
+      margin-top: 20px;
+    }
+    .footer-contact {
+      max-width: 420px;
+      line-height: 1.9;
+      margin-top: 20px;
+      .contact-name {
+        font-weight: 600;
+      }
+      .footer-public-attention {
+        margin-top: 30px;
+        .footer-attention {
+          font-style: italic;
+          font-size: 16px;
+        }
+      }
+    }
     .row-footer {
       .first-col {
         .logo-motto {
@@ -98,12 +187,14 @@ $color-pack: false;
             }
             padding-top: 30px;
             margin-left: -130px;
+            max-width: 450px;
           }
         }
 
         .rule {
           width: 62%;
           padding-left: 2%;
+          padding-top: 4%;
           font-size: 12px !important;
         }
       }
