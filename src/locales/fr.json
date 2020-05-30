@@ -46,7 +46,7 @@
             }
         },
         "support-insa": {
-            "title": "soutenir l'INSA",
+            "title": "Soutenir l'INSA",
             "items": {
                 "financial-aid": "Aide financière"
             }
@@ -132,10 +132,16 @@
     "content-contact": {
         "telephones" :  [
             "6629977",
-            "6620885"
+            "6620885",
+            "Téléphones"
         ],
         "direction": [
-            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín",
+            "Direction"
+        ],
+        "email": [
+          "E-mail",
+          "insa.csb@gmail.com"
         ],
         "days-and-hours": [
             "Du lundi au vendredi de 8h00 à 16h30"

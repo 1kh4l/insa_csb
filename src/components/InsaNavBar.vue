@@ -57,7 +57,7 @@
                     </div>
                   </v-btn>
                 </template>
-                <v-list flat class="flag-list">
+                <v-list class="flag-list" style="box-shadow: none;">
                   <v-list-item
                     v-for="insaFlag in flags"
                     @click="selectFlag(insaFlag)"
@@ -212,6 +212,14 @@ export default InsaNavBar;
 
   .btn-flag {
     box-shadow: none;
+    .flag-list {
+      min-width: 86px;
+      top: 3px;
+      left: 1413px;
+      transform-origin: left top 0px;
+      z-index: 8;
+      box-shadow: none;
+    }
   }
 
   .flag {
@@ -222,9 +230,11 @@ export default InsaNavBar;
       transform: rotate(180deg);
     }
   }
-
   .btn-flag:hover {
     background-color: transparent !important;
   }
+}
+.theme--light.v-list {
+  background: #f5f5f5 !important;
 }
 </style>

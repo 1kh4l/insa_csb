@@ -135,10 +135,16 @@
     "content-contact": {
         "telephones" :  [
             "6629977",
-            "6620885"
+            "6620885",
+            "Telefoni"
         ],
         "direction": [
-            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín",
+            "Direzione"
+        ],
+        "email": [
+          "E-mail",
+          "insa.csb@gmail.com"
         ],
         "days-and-hours": [
             "Dal lunedì al venerdì dalle 8:00 alle 16:30"
