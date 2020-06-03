@@ -2,9 +2,9 @@
   <footer class="footer-container" id="footer" role="contentinfo">
     <v-col class="col-footer" cols="12" sm="12" xs="12" xl="12">
       <v-row class="row-footer">
-        <v-col class="first-col" cols="12" sm="6" xs="6" xl="4">
+        <v-col class="first-col" cols="12" sm="4" xs="6" xl="4">
           <v-row class="logo-motto">
-            <v-col class="logo" cols="12" sm="4" xs="4" xl="2">
+            <v-col class="logo" cols="12" sm="2" xs="4" xl="2">
               <v-img class="insa-logo" src="./../assets/insa_logo.png"></v-img>
             </v-col>
             <v-col class="footer-school-name" cols="12" sm="" xs="8" xl="10">
@@ -27,7 +27,7 @@
             </span>
           </v-row>
         </v-col>
-        <v-col class="footer-links-one" cols="12" sm="2" xs="2" xl="2">
+        <v-col class="footer-links" cols="12" sm="2" xs="2" xl="2">
           <v-row class="footer-list">
             <li class="item">
               <a class="link" href="/home">
@@ -57,7 +57,7 @@
             </li>
           </v-row>
         </v-col>
-        <v-col class="footer-links-two" cols="12" sm="2" xs="2" xl="2">
+        <v-col class="footer-links" cols="12" sm="2" xs="2" xl="2">
           <v-row class="footer-list">
             <li class="item">
               <a class="link" href="#">
@@ -137,7 +137,7 @@ $color-pack: false;
       margin-top: -15px;
     }
 
-    .footer-links-one {
+    .footer-links {
       .footer-list {
         list-style: none;
         padding: 4px 0;
@@ -145,19 +145,20 @@ $color-pack: false;
         .link {
           color: #272727;
           text-decoration-line: none;
-        }
-      }
-      margin-top: 20px;
-    }
-
-    .footer-links-two {
-      .footer-list {
-        list-style: none;
-        padding: 4px 0;
-        line-height: 1.9;
-        .link {
           color: #272727;
           text-decoration-line: none;
+          position: relative;
+          overflow: hidden;
+          background: linear-gradient(to right, #2d992b, #2d992b 50%, #272727 50%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 200% 100%;
+          background-position: 100%;
+          transition: background-position 275ms ease;
+          &:hover {
+            background-position: 0 100%;
+          }
         }
       }
       margin-top: 20px;
@@ -202,7 +203,7 @@ $color-pack: false;
         }
 
         .rule {
-          width: 62%;
+          width: 87%;
           padding-left: 2%;
           padding-top: 4%;
           font-size: 12px !important;
