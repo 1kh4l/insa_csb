@@ -30,60 +30,90 @@
         <v-col class="footer-links" cols="12" sm="2" xs="2" xl="2">
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="/home">
+              <router-link
+                class="link"
+                :to="{ path: '/home' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("sidenav.home") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="/home">
+              <router-link
+                class="link"
+                :to="{ path: '/home' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("about") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="/basilians">
+              <router-link
+                class="link"
+                :to="{ path: '/basilians' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("sidenav.basilians.title") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li>
-              <a class="link" href="/students">
+              <router-link
+                class="link"
+                :to="{ path: '/students' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("sidenav.academic.title") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
         </v-col>
         <v-col class="footer-links" cols="12" sm="2" xs="2" xl="2">
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="#">
+              <router-link class="link" :to="{ path: '#' }" replace @click.native="scrollToTop()">
                 {{ $t("sidenav.life-stu.title") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="/insa-admission">
+              <router-link
+                class="link"
+                :to="{ path: '/insa-admission' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("sidenav.insa-admission.title") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="#">
+              <router-link class="link" :to="{ path: '#' }" replace @click.native="scrollToTop()">
                 {{ $t("sidenav.support-insa.title") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
           <v-row class="footer-list">
             <li class="item">
-              <a class="link" href="/contact">
+              <router-link
+                class="link"
+                :to="{ path: '/contact' }"
+                replace
+                @click.native="scrollToTop()"
+              >
                 {{ $t("contact") }}
-              </a>
+              </router-link>
             </li>
           </v-row>
         </v-col>
@@ -121,6 +151,18 @@
     </v-col>
   </footer>
 </template>
+<script>
+import Vue from "vue";
+
+const InsaFooter = Vue.extend({
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+});
+export default InsaFooter;
+</script>
 <style lang="scss">
 $color-pack: false;
 @import "~vuetify/src/styles/main.sass";
