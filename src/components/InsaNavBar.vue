@@ -208,10 +208,12 @@ export default InsaNavBar;
     font-family: "Montserrat", sans-serif !important;
     text-transform: none !important;
     font-size: 12px;
+    max-height: 36px;
   }
 
   .btn-flag {
     box-shadow: none;
+    max-height: 36px;
     .flag-list {
       min-width: 86px;
       top: 3px;
@@ -236,5 +238,10 @@ export default InsaNavBar;
 }
 .theme--light.v-list {
   background: #f5f5f5 !important;
+}
+.v-btn:not(.v-btn--round).v-size--default {
+  height: 47px;
+  min-width: 64px;
+  padding: 0 16px;
 }
 </style>

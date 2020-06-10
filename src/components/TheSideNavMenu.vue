@@ -21,7 +21,7 @@
         </v-list-item>
       </router-link>
       <!-- NESTED SUBMENUS -->
-      <v-list-group v-for="item in filteredMenu" :key="item.title">
+      <v-list-group color="#2d992b" v-for="item in filteredMenu" :key="item.title">
         <template v-slot:activator>
           <v-list-item-icon class="icon-menu">
             <v-icon class="icon-menu" v-text="item.icon"></v-icon>
@@ -36,10 +36,10 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
+            <v-list-item-title class="icon-menu">{{ $t(subItem.title) }}</v-list-item-title>
           </v-list-item-content>
           <v-list-item-icon class="icon-menu">
-            <v-icon class="icon-menu" v-text="subItem.icon"></v-icon>
+            <v-icon v-text="subItem.icon"></v-icon>
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
