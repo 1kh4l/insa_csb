@@ -43,6 +43,12 @@
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
+      <v-list-item @click="menuRouting({ title: 'life-stu' })">
+        <v-list-item-icon>
+          <v-icon class="icon-menu">mdi-human-handsup</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>{{ $t("life-stu") }}</v-list-item-title>
+      </v-list-item>
       <v-list-item @click="menuRouting({ title: 'contact' })">
         <v-list-item-icon>
           <v-icon class="icon-menu">mdi-church</v-icon>
@@ -83,6 +89,10 @@ const SideNavMenu = Vue.extend({
       }
       if (item.title.includes("contact") && !subItem) {
         this.$router.push("/contact");
+        window.scrollTo(0, 0);
+      }
+      if (item.title.includes("life-stu") && !subItem) {
+        this.$router.push("/student-life");
         window.scrollTo(0, 0);
       }
       const lastItemPosition = subItem.title.split(".").length - 1;

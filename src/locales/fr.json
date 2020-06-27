@@ -52,6 +52,7 @@
             }
         } 
     },
+    "life-stu": "La vie étudiante",
     "contact": "Contactez",
     "content-insa": {
         "about": [
@@ -153,6 +154,31 @@
             "Approuvé par le secrétaire à l'éducation municipale conformément à la résolution n ° 4143.2.21.3063 du 23 avril 2009"
         ]
       },
+      "content-life-stu": {
+        "benefits": [
+          "La vie étudiante à l'INSA",
+          "En plus d'avoir de grandes installations modernes décorées d'œuvres d'art qui enrichissent l'environnement d'apprentissage, l'institut présente les avantages suivants:",
+          "• Salles audiovisuelles",
+          "• Bibliothèque de l'école",
+          "• Salle de lecture interactive",
+          "• Salles de système",
+          "• Laboratoire des langues",
+          "• laboratoire de science",
+          "• Centre des beaux-arts",
+          "• Plusieurs auditoriums",
+          "• Chambre de musique",
+          "• Restaurant scolaire",
+          "• Système de bibliobanque"
+        ],
+        "guaranteed": [
+          "Il est garanti que pendant le processus de formation, l'étudiant renforce intégralement des dimensions telles que:",
+          "Une dimension chrétienne catholique qui vous permet de développer un projet de vie à partir des valeurs du Christ.",
+          "Excellente formation des dimensions académique et disciplinaire, où être, faire, apprendre et vivre ensemble sont renforcés.",
+          "Une dimension multiculturelle où à travers la connaissance et la manipulation de langues telles que l'anglais, le latin, le français, l'italien et le mandarin, ils découvrent la richesse d'autres cultures.",
+          "Une dimension interdisciplinaire (travail d'équipe) qui permet l'enrichissement de l'utilisation des technologies de l'information et de la communication dans les domaines du programme ordinaire.",
+          "Encouragement de la partie artistique, notamment en musique par le biais de l'orchestre philharmonique de San Basilio."
+        ]
+    },
       "content-insa-admission": {
         "requirements" : [
             "Conditions d'accès au processus d'admission",

@@ -52,6 +52,7 @@
             }
         } 
     },
+    "life-stu": "Student Life",
     "contact": "Contact",
     "content-insa": {
         "about": [
@@ -155,6 +156,31 @@
             "Approved by the Secretary of Municipal Education according to resolution No. 4143.2.21.3063 of April 23, 2009"
         ]
       },
+      "content-life-stu": {
+        "benefits": [
+          "Student life at INSA",
+          "In addition to having large and modern facilities decorated with works of art that enrich the learning environment, the institute has the following benefits:",
+          "• Audiovisual rooms",
+          "• School library",
+          "• Interactive reading room",
+          "• System rooms",
+          "• Language laboratory",
+          "• Science laboratory",
+          "• Fine arts center",
+          "• Multiple auditoriums",
+          "• Music room",
+          "• School restaurant",
+          "• Bibliobank system"
+        ],
+        "guaranteed": [
+          "It is guaranteed that during the training process the student integrally strengthens dimensions, such as:",
+          "A Catholic Christian dimension that allows you to develop a life project from the values of Christ.",
+          "Excellent training from the academic and disciplinary dimensions, where being, doing, learning and living together are strengthened.",
+          "A multicultural dimension where through the knowledge and handling of languages such as English, Latin, French, Italian and Mandarin, they discover the richness of other cultures.",
+          "An interdisciplinary dimension (teamwork) that allows enrichment from the use of information and communication technologies in areas of the regular curriculum.",
+          "Encouragement of the artistic part, especially in music through the San Basilio Philharmonic Band."
+        ]
+      }, 
       "content-insa-admission": {
         "requirements" : [
             "Requirements to access the admission process",
