@@ -32,18 +32,18 @@
         <v-container class="basilians-gallery-section">
           <v-row no-gutters align="center" justify="center">
             <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${images[0].src}`" />
+              <v-img id="img" :src="`${imgChange[0].src}`" />
             </v-col>
             <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${images[1].src}`" />
+              <v-img id="img" :src="`${imgChange[1].src}`" />
             </v-col>
             <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${images[2].src}`" />
+              <v-img id="img" :src="`${imgChange[2].src}`" />
             </v-col>
           </v-row>
           <v-row class="img-btn" align="center" justify="center">
             <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-              <v-btn outlined class="backward" id="newImg" @click="preImg()">
+              <v-btn outlined class="backward" id="newImg" @click="prevImg()">
                 <v-icon>mdi-arrow-left</v-icon>
               </v-btn>
             </v-col>
@@ -86,13 +86,10 @@
         <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
           <v-row justify="center">
             <div class="image-container-1" align="center">
-              <!--
-              <img
-                class="img1"
+              <v-img
+                class="img"
                 src="https://d2461yysjut9f6.cloudfront.net/photos/basilians_our_work.jpg"
               />
-              -->
-              <v-img class="img" src="../assets/basilians_our_work.jpg" />
             </div>
           </v-row>
         </v-col>
@@ -121,9 +118,6 @@
 import Vue from "vue";
 import { mapState } from "vuex";
 
-const images = this.images;
-const imgChange = this.imgChange;
-let imgElement = document.getElementById("es");
 const Basilians = Vue.extend({
   computed: {
     ...mapState("items", ["items"]),
@@ -133,61 +127,50 @@ const Basilians = Vue.extend({
     return {
       images: [
         {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/cover_page_kids.jpg",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_1.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_1.jpg",
         },
         {
           src: "https://d2461yysjut9f6.cloudfront.net/photos/church_comunity.jpg",
         },
         {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/school_life_1.jpg",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_2.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_2.jpg",
         },
         {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/main_page_mission.png",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_3.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_3.jpg",
         },
         {
-          src: "../assets/basilians_gallery_4.jpg",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_4.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_4.jpg",
         },
       ],
       imgChange: [
         {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/cover_page_kids.jpg",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_1.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_1.jpg",
         },
         {
           src: "https://d2461yysjut9f6.cloudfront.net/photos/church_comunity.jpg",
         },
         {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/school_life_1.jpg",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_2.jpg",
-        },
-        {
-          src: "https://d2461yysjut9f6.cloudfront.net/photos/main_page_mission.png",
-          // src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_3.jpg",
+          src: "https://d2461yysjut9f6.cloudfront.net/photos/basilians_gallery_2.jpg",
         },
       ],
     };
   },
   methods: {
     nextImg() {
-      for (let i = 0; i < images.length; i++) {
-        for (let j = 0; j < imgChange.length; j++) {
-          if (images[i] === imgChange[j]) {
-            imgElement = imgChange[j++];
-          }
-        }
+      const thirdImgPosition = this.images.findIndex((img) => img.src === this.imgChange[2].src);
+      const imgLen = this.images.length - 1;
+      if (thirdImgPosition < imgLen) {
+        this.imgChange[0].src = this.imgChange[1].src;
+        this.imgChange[1].src = this.imgChange[2].src;
+        this.imgChange[2].src = this.images[thirdImgPosition + 1].src;
       }
     },
-    preImg() {
-      for (let i = 0; i < images.length; i++) {
-        for (let j = 0; j < imgChange.length; j++) {
-          if (images[i] === imgChange[j]) {
-            imgElement = imgChange[j--];
-          }
-        }
+    prevImg() {
+      const firstImgPosition = this.images.findIndex((img) => img.src === this.imgChange[0].src);
+      if (firstImgPosition > 0) {
+        this.imgChange[2].src = this.imgChange[1].src;
+        this.imgChange[1].src = this.imgChange[0].src;
+        this.imgChange[0].src = this.images[firstImgPosition - 1].src;
       }
     },
   },
