@@ -30,53 +30,54 @@
         </v-container>
         <!-- Basilians Gallery Section-->
         <v-container class="basilians-gallery-section">
-          <v-row no-gutters align="center" justify="center">
-            <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${imgChange[0].src}`" />
-            </v-col>
-            <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${imgChange[1].src}`" />
-            </v-col>
-            <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-              <v-img id="img" :src="`${imgChange[2].src}`" />
-            </v-col>
-          </v-row>
+          <v-col class="carousel" cols="12" sm="12" xs="12" lg="12" xl="12">
+            <v-row class="carousel-row" no-gutters align="center" justify="center">
+              <v-col class="carousel-col" cols="12" sm="6" xs="4" lg="4" xl="4">
+                <v-img class="img" :src="`${imgChange[0].src}`" />
+              </v-col>
+              <v-col class="carousel-col hidden-sm-and-down" cols="12" sm="6" xs="" lg="4" xl="4">
+                <v-img class="img" :src="`${imgChange[1].src}`" />
+              </v-col>
+              <v-col class="carousel-col" cols="12" sm="6" xs="" lg="4" xl="4">
+                <v-img class="img" :src="`${imgChange[2].src}`" />
+              </v-col>
+            </v-row>
+          </v-col>
           <v-row class="img-btn" align="center" justify="center">
             <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-              <v-btn outlined class="backward" id="newImg" @click="prevImg()">
-                <v-icon>mdi-arrow-left</v-icon>
+              <v-btn flat class="direction-btn" style="float: right;" @click="prevImg()">
+                <v-icon class="arrow">mdi-arrow-left-circle-outline</v-icon>
               </v-btn>
             </v-col>
             <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-              <v-btn outlined class="forward" @click="nextImg()">
-                <v-icon>mdi-arrow-right</v-icon>
+              <v-btn flat class="direction-btn" style="float: left;" @click="nextImg()">
+                <v-icon class="arrow">mdi-arrow-right-circle-outline</v-icon>
               </v-btn>
             </v-col>
           </v-row>
         </v-container>
-
         <!-- Basilians History Section-->
         <v-container class="basilians-history-section">
           <v-row no gutters>
             <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
               <v-img class="history-tree-right" src="../assets/tree_right2.png"></v-img>
+              <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
+                <v-card flat class="card-history">
+                  <v-card-title class="display-1">
+                    {{ $t("history") }}
+                  </v-card-title>
+                  <v-card-text class="body-2">
+                    <p class="text-justify">{{ $t("content-basilians.history[0]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[1]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[2]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[3]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[4]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[5]") }}</p>
+                    <p class="text-justify">{{ $t("content-basilians.history[6]") }}</p>
+                  </v-card-text>
+                </v-card>
+              </v-col>
             </v-col>
-            <div class="history-basilians" id="history">
-              <v-card flat class="card-history">
-                <v-card-title class="display-1">
-                  {{ $t("history") }}
-                </v-card-title>
-                <v-card-text class="body-2">
-                  <p class="text-justify">{{ $t("content-basilians.history[0]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[1]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[2]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[3]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[4]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[5]") }}</p>
-                  <p class="text-justify">{{ $t("content-basilians.history[6]") }}</p>
-                </v-card-text>
-              </v-card>
-            </div>
             <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
               <v-img class="history-tree-left" src="../assets/tree_left2.png"></v-img>
             </v-col>
@@ -116,13 +117,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { mapState } from "vuex";
 
 const Basilians = Vue.extend({
-  computed: {
-    ...mapState("items", ["items"]),
-    ...mapState("items", ["visible"]),
-  },
   data() {
     return {
       images: [
@@ -158,18 +154,26 @@ const Basilians = Vue.extend({
   methods: {
     nextImg() {
       const thirdImgPosition = this.images.findIndex((img) => img.src === this.imgChange[2].src);
+      const state = null;
       const imgLen = this.images.length - 1;
-      if (thirdImgPosition < imgLen) {
+      if (thirdImgPosition < imgLen && state !== "mobile") {
         this.imgChange[0].src = this.imgChange[1].src;
         this.imgChange[1].src = this.imgChange[2].src;
         this.imgChange[2].src = this.images[thirdImgPosition + 1].src;
+      } else if (thirdImgPosition < imgLen && state === "mobile") {
+        this.imgChange[0].src = this.imgChange[2].src;
+        this.imgChange[2].src = this.images[thirdImgPosition - 1].src;
       }
     },
     prevImg() {
       const firstImgPosition = this.images.findIndex((img) => img.src === this.imgChange[0].src);
-      if (firstImgPosition > 0) {
+      const state = null;
+      if (firstImgPosition > 0 && state !== "mobile") {
         this.imgChange[2].src = this.imgChange[1].src;
         this.imgChange[1].src = this.imgChange[0].src;
+        this.imgChange[0].src = this.images[firstImgPosition - 1].src;
+      } else if (firstImgPosition > 0 && state === "mobile") {
+        this.imgChange[2].src = this.imgChange[0].src;
         this.imgChange[0].src = this.images[firstImgPosition - 1].src;
       }
     },
@@ -203,25 +207,38 @@ export default Basilians;
 
   .basilians-gallery-section {
     width: 100% !important;
+    max-width: 1700px !important;
+    .img {
+      width: 100%;
+      height: 410px;
+    }
     .img-btn {
       margin-top: 5%;
-      .forward {
+      .direction-btn {
+        box-shadow: none;
         background-color: white;
-        color: grey;
+        color: #b0b1b0;
         border-radius: 50% !important;
-        float: left;
-        height: 50px;
-      }
-      .backward {
-        float: right;
-        color: grey;
-        background-color: white;
-        border-radius: 50% !important;
-        height: 50px;
+        height: 70px;
+        width: 70px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(to right, #2d992b, #2d992b 50%, #b0b1b0 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        &:hover {
+          background-position: 0 100%;
+        }
       }
     }
   }
-
+  .arrow {
+    font-size: 90px;
+  }
   .basilians-about-us-section {
     max-width: 100% !important;
     padding: 0px !important;
@@ -230,7 +247,6 @@ export default Basilians;
       .card-about {
         z-index: 2;
         width: 100%;
-        justify-content: center;
         color: black;
       }
     }
@@ -246,18 +262,24 @@ export default Basilians;
     }
   }
 
+  .carousel-col {
+    flex: 33.33%;
+    padding: 10px;
+  }
+  .carousel-row {
+    display: flex;
+  }
+
   .basilians-history-section {
     background-color: #f5f5f5;
     margin: 0px;
     padding: 0px;
     max-width: 100% !important;
-    width: 100% !important;
     margin-top: 10% !important;
     .history-tree-right {
       position: relative;
       float: right;
       max-width: 27%;
-      bottom: -31px;
     }
     .history-tree-left {
       position: relative;
@@ -265,16 +287,13 @@ export default Basilians;
       width: 27%;
       top: 64%;
     }
-    .history-basilians {
-      width: 70%;
-      margin-top: -33%;
-      .card-history {
-        z-index: 2;
-        background-color: #f5f5f5;
-        width: inherit;
-        left: 12%;
-        color: black;
-      }
+    .card-history {
+      margin-top: 7%;
+      width: 45%;
+      position: relative;
+      background-color: #f5f5f5;
+      left: 8%;
+      color: black;
     }
   }
 
@@ -291,7 +310,7 @@ export default Basilians;
   }
   .body-2 {
     color: black;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif !important;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
