@@ -21,7 +21,7 @@
         </v-list-item>
       </router-link>
       <!-- NESTED SUBMENUS -->
-      <v-list-group v-for="item in filteredMenu" :key="item.title">
+      <v-list-group color="#2d992b" v-for="item in filteredMenu" :key="item.title">
         <template v-slot:activator>
           <v-list-item-icon class="icon-menu">
             <v-icon class="icon-menu" v-text="item.icon"></v-icon>
@@ -36,13 +36,19 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
+            <v-list-item-title class="icon-menu">{{ $t(subItem.title) }}</v-list-item-title>
           </v-list-item-content>
           <v-list-item-icon class="icon-menu">
-            <v-icon class="icon-menu" v-text="subItem.icon"></v-icon>
+            <v-icon v-text="subItem.icon"></v-icon>
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
+      <v-list-item @click="menuRouting({ title: 'life-stu' })">
+        <v-list-item-icon>
+          <v-icon class="icon-menu">mdi-human-handsup</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>{{ $t("life-stu") }}</v-list-item-title>
+      </v-list-item>
       <v-list-item @click="menuRouting({ title: 'contact' })">
         <v-list-item-icon>
           <v-icon class="icon-menu">mdi-church</v-icon>
@@ -83,6 +89,10 @@ const SideNavMenu = Vue.extend({
       }
       if (item.title.includes("contact") && !subItem) {
         this.$router.push("/contact");
+        window.scrollTo(0, 0);
+      }
+      if (item.title.includes("life-stu") && !subItem) {
+        this.$router.push("/student-life");
         window.scrollTo(0, 0);
       }
       const lastItemPosition = subItem.title.split(".").length - 1;

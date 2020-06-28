@@ -151,7 +151,7 @@
     </v-col>
   </footer>
 </template>
-<script>
+<script lang="ts">
 import Vue from "vue";
 
 const InsaFooter = Vue.extend({
@@ -169,7 +169,7 @@ $color-pack: false;
 
 .footer-container {
   width: 100%;
-  height: 440px;
+  height: inherit;
 
   .col-footer {
     height: inherit;
@@ -185,8 +185,6 @@ $color-pack: false;
         padding: 4px 0;
         line-height: 1.9;
         .link {
-          color: #272727;
-          text-decoration-line: none;
           color: #272727;
           text-decoration-line: none;
           position: relative;
