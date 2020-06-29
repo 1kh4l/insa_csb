@@ -6,7 +6,7 @@
     <!-- ABOUT US SECTION -->
     <v-container id="about" class="about-us-section">
       <v-row no-gutters>
-        <v-col cols="12" sm="12" xs="12" xl="6">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <v-card flat class="card-about">
             <v-card-title class="display-1">{{ $t("about") }}</v-card-title>
             <v-card-text class="body-2 text-about">
@@ -18,7 +18,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="6" class="about-us-image-container">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6" class="about-us-image-container">
           <v-img
             class="main-page-school"
             src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_school.png"
@@ -30,10 +30,10 @@
     <!-- EDUCATIONAL PROJECT SECTION -->
     <v-container id="project" class="project-section">
       <v-row no-gutters>
-        <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
           <v-img class="tree-right" src="../assets/tree_right.png"></v-img>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="12" align="center">
+        <v-col cols="12" sm="12" xs="12" lg="12" xl="12" align="center">
           <v-card flat class="card-about2">
             <v-card-title class="display-1 content-project">
               {{ $t("content-insa.about[5]") }}
@@ -46,7 +46,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
           <v-img class="tree-left" src="../assets/tree_left.png"></v-img>
         </v-col>
       </v-row>
@@ -54,7 +54,7 @@
     <!-- HISTORY SECTION -->
     <v-container id="history" class="history-section">
       <v-row no-gutters align="center">
-        <v-col cols="12" sm="12" xs="12" xl="6" align="right">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="right">
           <div class="history-image">
             <v-img
               class="img2"
@@ -63,7 +63,7 @@
             </v-img>
           </div>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="6" align="center" justify="center">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="center" justify="center">
           <v-card flat class="card-history">
             <v-card-title class="display-1">{{ $t("history") }}</v-card-title>
             <v-card-text class="body-2">
@@ -76,7 +76,7 @@
     <!-- MISSION SECTION -->
     <v-container id="mission" class="mission-section">
       <v-row no-gutters align="center">
-        <v-col cols="12" sm="12" xs="12" xl="6">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <v-card flat class="card-mission">
             <v-card-title class="display-1">{{ $t("mission") }}</v-card-title>
             <v-card-text class="body-2">
@@ -84,7 +84,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="6">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <div class="mission-image">
             <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_mission.png">
             </v-img>
@@ -94,12 +94,12 @@
     </v-container>
     <v-container id="vision" class="vision-section">
       <v-row no-gutters align="center">
-        <v-col cols="12" sm="12" xs="12" xl="6" align="right">
+        <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="right">
           <div class="vision-image">
             <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_vision.png"></v-img>
           </div>
         </v-col>
-        <v-col cols="12" sm="12" xs="12" xl="6">
+        <v-col cols="12" sm="12" xs="12" lg="6 " xl="6">
           <v-card flat class="card-vision">
             <v-card-title class="display-1">{{ $t("vision") }}</v-card-title>
             <v-card-text class="body-2">
@@ -142,6 +142,7 @@ export default InsaHome;
   .about-us-section {
     padding-top: 5%;
     padding-bottom: 15%;
+    max-width: 1400px;
     .card-about {
       .display-1 {
         font-family: "Montserrat", sans-serif !important;
@@ -149,12 +150,11 @@ export default InsaHome;
       .body-2 {
         font-family: "Montserrat", sans-serif !important;
       }
-      max-width: 816px;
-      min-height: 613px;
       .text-about {
         font-style: normal;
         font-weight: normal;
         line-height: 160%;
+        color: black;
       }
     }
     .about-us-image-container {
@@ -184,9 +184,11 @@ export default InsaHome;
     .card-about2 {
       .display-1 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       .body-2 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       background-color: #f5f5f5;
       max-width: 1104px;
@@ -198,6 +200,7 @@ export default InsaHome;
   .history-section {
     padding-top: 20%;
     padding-bottom: 20%;
+    max-width: 1268px;
     .history-image {
       max-width: 672px;
       max-height: 519px;
@@ -205,20 +208,25 @@ export default InsaHome;
     .card-history {
       .display-1 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       .body-2 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       max-width: 672px;
     }
   }
   .mission-section {
+    max-width: 1372px;
     .card-mission {
       .display-1 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       .body-2 {
         font-family: "Montserrat", sans-serif !important;
+        color: black;
       }
       top: 20%;
       max-width: 672px;
@@ -232,8 +240,19 @@ export default InsaHome;
   .vision-section {
     padding-top: 10%;
     padding-bottom: 10%;
+    .card-vision {
+      width: 100%;
+      .display-1 {
+        font-family: "Montserrat", sans-serif !important;
+        color: black;
+      }
+      .body-2 {
+        font-family: "Montserrat", sans-serif !important;
+        color: black;
+      }
+    }
     .vision-image {
-      max-width: 672px;
+      max-width: 542px;
       max-height: 447px;
       padding: 5%;
     }

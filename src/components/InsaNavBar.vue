@@ -3,19 +3,19 @@
   <v-container id="nav-bar" class="container-nav-bar">
     <!-- ROW WITH LOGO | SIDENAV MENU | INTERNATIONALIZATION CHANGE -->
     <v-row no-gutters>
-      <v-col cols="12" sm="2" xs="2" xl="5">
+      <v-col cols="12" sm="2" xs="2" lg="5" xl="5">
         <v-btn class="menu-btn" @click="showUpMenu()">
           <v-icon>mdi-menu</v-icon>
         </v-btn>
       </v-col>
-      <v-col cols="12" sm="7" xs="7" xl="5">
+      <v-col cols="12" sm="7" xs="7" lg="5" xl="5">
         <v-row no-gutters>
-          <v-col cols="12" sm="3" xs="1" xl="1">
+          <v-col cols="12" sm="3" xs="2" lg="2" xl="2">
             <v-img class="insa-logo" src="./../assets/insa_logo.png"></v-img>
           </v-col>
-          <v-col cols="12" sm="9" xs="11" xl="11">
+          <v-col cols="12" sm="9" xs="10" lg="10" xl="10">
             <v-row class="insa-title">
-              <v-col cols="12" sm="12" xs="12" xl="12" class="container-tittle">
+              <v-col cols="12" sm="12" xs="12" lg="12" xl="12" class="container-tittle">
                 <span class="title">INSA</span>
                 <span class="motto">
                   ~ Instituto Nuestra Señora de la Asunción
@@ -23,7 +23,7 @@
               </v-col>
             </v-row>
             <v-row no-gutters>
-              <v-col cols="12" sm="12" xs="12" xl="12" class="container-motto">
+              <v-col cols="12" sm="12" xs="12" lg="12" xl="12" class="container-motto">
                 <span class="overline motto-insa text-left">
                   {{ $t("header.motto") }}
                 </span>
@@ -32,7 +32,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" sm="3" xs="3" xl="2">
+      <v-col cols="12" sm="3" xs="3" lg="2" xl="2">
         <v-row no-gutters>
           <v-col class="international" align="right" justify="center">
             <v-btn
@@ -46,7 +46,7 @@
             </v-btn>
           </v-col>
           <!-- INTERNATIONALIZATION FLAGS-->
-          <v-col class="international" align="right" justify="center">
+          <v-col class="international hidden-sm-and-down" align="right" justify="center">
             <div class="lang-btn">
               <v-menu>
                 <template v-slot:activator="{ on }">
@@ -208,10 +208,12 @@ export default InsaNavBar;
     font-family: "Montserrat", sans-serif !important;
     text-transform: none !important;
     font-size: 12px;
+    max-height: 36px;
   }
 
   .btn-flag {
     box-shadow: none;
+    max-height: 36px;
     .flag-list {
       min-width: 86px;
       top: 3px;
@@ -236,5 +238,10 @@ export default InsaNavBar;
 }
 .theme--light.v-list {
   background: #f5f5f5 !important;
+}
+.v-btn:not(.v-btn--round).v-size--default {
+  height: 47px;
+  min-width: 64px;
+  padding: 0 16px;
 }
 </style>
