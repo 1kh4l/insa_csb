@@ -81,7 +81,7 @@
           <v-row class="footer-list">
             <li class="item">
               <router-link class="link" :to="{ path: '#' }" replace @click.native="scrollToTop()">
-                {{ $t("sidenav.life-stu.title") }}
+                {{ $t("life-stu") }}
               </router-link>
             </li>
           </v-row>
