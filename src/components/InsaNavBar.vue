@@ -145,6 +145,7 @@ export default InsaNavBar;
 
 .container-nav-bar {
   height: inherit;
+  max-width: 100%;
 
   .menu-btn {
     background-color: transparent !important;
