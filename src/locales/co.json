@@ -4,14 +4,14 @@
         "motto": "Enseñanos bondad, disciplina y ciencia",
         "contact": "Contacta con nosotros"
     },
-    "about"  : "Quiénes somos",
+    "about"  : "¿Quiénes somos?",
     "history": "Historia",
     "mission": "Misión",
     "vision" : "Visión",
     "sidenav": {
         "home"    : "Inicio",
         "about-us": {
-            "title": "Quiénes somos",
+            "title": "¿Quiénes somos?",
             "items": {
                 "about"  : "INSA"
             }
@@ -19,8 +19,8 @@
         "basilians": {
             "title": "Basilianos",
             "items": {
-                "about"  : "Quiénes somos",
-                "work"   : "Qué hacemos"
+                "about"  : "¿Quiénes somos?",
+                "work"   : "¿Qué hacemos?"
             }
         },
         "academic": {
