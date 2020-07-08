@@ -45,12 +45,12 @@
           </v-col>
           <v-row class="img-btn" align="center" justify="center">
             <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-              <v-btn flat class="direction-btn" style="float: right;" @click="prevImg()">
+              <v-btn text class="direction-btn" style="float: right;" @click="prevImg()">
                 <v-icon class="arrow">mdi-arrow-left-circle-outline</v-icon>
               </v-btn>
             </v-col>
             <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-              <v-btn flat class="direction-btn" style="float: left;" @click="nextImg()">
+              <v-btn text class="direction-btn" style="float: left;" @click="nextImg()">
                 <v-icon class="arrow">mdi-arrow-right-circle-outline</v-icon>
               </v-btn>
             </v-col>
