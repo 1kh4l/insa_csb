@@ -5,7 +5,7 @@
     </div>
     <!-- ABOUT US SECTION -->
     <v-container id="about" class="about-us-section">
-      <v-row no-gutters>
+      <v-row>
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <v-card flat class="card-about">
             <v-card-title class="display-1">{{ $t("about") }}</v-card-title>
@@ -29,7 +29,7 @@
     </v-container>
     <!-- EDUCATIONAL PROJECT SECTION -->
     <v-container id="project" class="project-section">
-      <v-row no-gutters>
+      <v-row>
         <v-col cols="12" sm="12" xs="12" lg="12" xl="12">
           <v-img class="tree-right" src="../assets/tree_right.png"></v-img>
         </v-col>
@@ -53,7 +53,7 @@
     </v-container>
     <!-- HISTORY SECTION -->
     <v-container id="history" class="history-section">
-      <v-row no-gutters align="center">
+      <v-row align="center">
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="right">
           <div class="history-image">
             <v-img
@@ -75,7 +75,7 @@
     </v-container>
     <!-- MISSION SECTION -->
     <v-container id="mission" class="mission-section">
-      <v-row no-gutters align="center">
+      <v-row align="center">
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <v-card flat class="card-mission">
             <v-card-title class="display-1">{{ $t("mission") }}</v-card-title>
@@ -93,7 +93,7 @@
       </v-row>
     </v-container>
     <v-container id="vision" class="vision-section">
-      <v-row no-gutters align="center">
+      <v-row align="center">
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="right">
           <div class="vision-image">
             <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_vision.png"></v-img>
