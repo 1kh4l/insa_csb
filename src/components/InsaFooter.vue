@@ -143,7 +143,7 @@
           </v-row>
         </v-col>
       </v-row>
-      <v-row align="center" justify="center">
+      <v-row class="copyright" align="center" justify="center">
         <div class="footer-bottom">
           &copy; 2020 Copyright INSA
         </div>
@@ -174,9 +174,13 @@ $color-pack: false;
   .col-footer {
     height: inherit;
 
-    .footer-bottom {
-      opacity: 0.4;
-      margin-top: -15px;
+    .copyright {
+      .footer-bottom {
+        opacity: 0.4;
+        margin-top: -15px;
+      }
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .footer-links {
