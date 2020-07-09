@@ -1,7 +1,7 @@
-import Vue from "vue";
+import Vue, { VNode } from "vue";
 import VueAnalytics from "vue-analytics";
 import FlagIcon from "vue-flag-icon";
-import VueRouter from "vue-router";
+import VueRouter, { Route } from "vue-router";
 import App from "./App.vue";
 import i18n from "./plugins/i18n";
 import vuetify from "./plugins/vuetify";
@@ -16,11 +16,21 @@ Vue.use(FlagIcon);
 
 Vue.config.productionTip = false;
 
+interface Position {
+  x: number;
+  y: number;
+}
+
+interface PositionSelector {
+  offset: Position;
+  selector: string;
+}
+
 /* Router */
 const router = new VueRouter({
   mode: "history",
   routes: Router,
-  scrollBehavior(to) {
+  scrollBehavior(to: Route): PositionSelector {
     if (to.hash) {
       return {
         offset: { x: 0, y: 100 },
@@ -33,7 +43,7 @@ const router = new VueRouter({
 
 new Vue({
   i18n,
-  render: (h) => h(App),
+  render: (h): VNode => h(App),
   router,
   store,
   vuetify,
