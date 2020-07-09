@@ -5,7 +5,13 @@
     ],
     "jsRules": {},
     "rules": {
-      "object-literal-sort-keys": false
+      "object-literal-sort-keys": false,
+      "typescript/explicit-function-return-type": [
+        "off",
+        {
+          "allowVoid": true
+        }
+      ]
     },
     "rulesDirectory": [],
     "linterOptions": {
