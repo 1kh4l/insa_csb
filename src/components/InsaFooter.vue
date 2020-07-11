@@ -156,7 +156,7 @@ import Vue from "vue";
 
 const InsaFooter = Vue.extend({
   methods: {
-    scrollToTop() {
+    scrollToTop(): void {
       window.scrollTo(0, 0);
     },
   },
