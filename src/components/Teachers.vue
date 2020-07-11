@@ -54,7 +54,7 @@ const Teachers = Vue.extend({
     testShow: false,
   }),
   methods: {
-    setData() {
+    setData(): void {
       this.$store.dispatch("items/addItem", {
         data: "bye",
         name: "example",

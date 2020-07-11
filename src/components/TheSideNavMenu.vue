@@ -73,7 +73,7 @@ const SideNavMenu = Vue.extend({
   computed: {
     ...mapState("items", ["visible"]),
     ...mapState("items", ["lang"]),
-    filteredMenu() {
+    filteredMenu(): void {
       return this.menuItems.filter((n) => n.title !== "Home");
     },
   },
@@ -81,7 +81,7 @@ const SideNavMenu = Vue.extend({
     menuItems: sideNavTree.menu,
   }),
   methods: {
-    menuRouting(item, subItem = null) {
+    menuRouting(item, subItem = null): void {
       // Allows to go to top of the home page
       if (item.title.includes("home") && !subItem) {
         this.$router.push("/home");

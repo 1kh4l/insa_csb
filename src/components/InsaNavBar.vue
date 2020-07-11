@@ -118,18 +118,18 @@ const InsaNavBar = Vue.extend({
     ],
   }),
   methods: {
-    showUpMenu() {
+    showUpMenu(): void {
       this.$store.dispatch("items/setVisibility", {
         visible: true,
       });
     },
-    selectFlag(flag) {
+    selectFlag(flag): void {
       const flagFiltered = this.flags.filter((f) => f.id === flag.id)[0];
       this.flagSelected = flagFiltered;
       i18n.locale = this.flagSelected.id;
       this.$store.dispatch("items/setLanguage", i18n.locale);
     },
-    contactRouting() {
+    contactRouting(): void {
       this.$router.push("/contact");
       window.scrollTo(0, 0);
     },

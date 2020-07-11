@@ -152,7 +152,7 @@ const Basilians = Vue.extend({
     };
   },
   methods: {
-    nextImg() {
+    nextImg(): void {
       const thirdImgPosition = this.images.findIndex((img) => img.src === this.imgChange[2].src);
       const state = null;
       const imgLen = this.images.length - 1;
@@ -165,7 +165,7 @@ const Basilians = Vue.extend({
         this.imgChange[2].src = this.images[thirdImgPosition - 1].src;
       }
     },
-    prevImg() {
+    prevImg(): void {
       const firstImgPosition = this.images.findIndex((img) => img.src === this.imgChange[0].src);
       const state = null;
       if (firstImgPosition > 0 && state !== "mobile") {
