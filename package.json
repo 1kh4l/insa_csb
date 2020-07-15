@@ -17,7 +17,7 @@
     "@types/node": "14.0.4",
     "axios": "0.19.2",
     "core-js": "3.6.5",
-    "mocha": "7.1.2",
+    "mocha": "8.0.1",
     "module-alias": "2.2.2",
     "vue": "2.6.11",
     "vue-analytics": "5.22.1",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/chai": "4.2.11",
-    "@types/mocha": "7.0.2",
+    "@types/mocha": "8.0.0",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "@vue/cli-plugin-babel": "4.3.1",
