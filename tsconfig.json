@@ -39,7 +39,9 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "src/plugins/i18n.js",
+    "src/store/modules/items/items.js"
   ],
   "exclude": [
     "node_modules",
