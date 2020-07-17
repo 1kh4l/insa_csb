@@ -4,7 +4,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        data: '@import "~@/sass/main.scss"',
+        additionalData: '@import "~@/sass/main.scss"',
       },
     },
   },
@@ -36,7 +36,7 @@ module.exports = {
         .rule("scss")
         .oneOf(match)
         .use("sass-loader")
-        .tap((opt) => Object.assign(opt, { data: "@import '~@/sass/main.scss';" }));
+        .tap((opt) => Object.assign(opt, { additionalData: "@import '~@/sass/main.scss';" }));
     });
   },
   pluginOptions: {
