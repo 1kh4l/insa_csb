@@ -1,8 +1,13 @@
 <template>
   <!-- SIDENAV -->
-  <v-navigation-drawer v-if="visible" permanent fixed app class="nav-bar">
+  <v-navigation-drawer :width="350" v-if="visible" permanent fixed app class="nav-bar">
+    <v-row no-gutters>
+      <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-img class="tree-left" src="../assets/tree_left.png"></v-img>
+      </v-col>
+    </v-row>
     <!-- LIST ITEMS CONTAINER-->
-    <v-list dense nav>
+    <v-list dense nav class="menu-list">
       <!-- HOME -->
       <router-link to="/home" v-slot="{}">
         <!-- Creates home menu without subitem -->
@@ -16,7 +21,7 @@
         </v-list-item>
       </router-link>
       <!-- NESTED SUBMENUS -->
-      <v-list-group v-for="item in filteredMenu" :key="item.title">
+      <v-list-group color="#2d992b" v-for="item in filteredMenu" :key="item.title">
         <template v-slot:activator>
           <v-list-item-icon class="icon-menu">
             <v-icon class="icon-menu" v-text="item.icon"></v-icon>
@@ -31,13 +36,19 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title>{{ $t(subItem.title) }}</v-list-item-title>
+            <v-list-item-title class="icon-menu">{{ $t(subItem.title) }}</v-list-item-title>
           </v-list-item-content>
           <v-list-item-icon class="icon-menu">
-            <v-icon class="icon-menu" v-text="subItem.icon"></v-icon>
+            <v-icon v-text="subItem.icon"></v-icon>
           </v-list-item-icon>
         </v-list-item>
       </v-list-group>
+      <v-list-item @click="menuRouting({ title: 'life-stu' })">
+        <v-list-item-icon>
+          <v-icon class="icon-menu">mdi-human-handsup</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>{{ $t("life-stu") }}</v-list-item-title>
+      </v-list-item>
       <v-list-item @click="menuRouting({ title: 'contact' })">
         <v-list-item-icon>
           <v-icon class="icon-menu">mdi-church</v-icon>
@@ -45,18 +56,32 @@
         <v-list-item-title>{{ $t("contact") }}</v-list-item-title>
       </v-list-item>
     </v-list>
+    <v-row no-gutters>
+      <v-col cols="12" sm="12" xs="12" xl="12">
+        <v-img class="tree-right" src="../assets/tree_right.png"></v-img>
+      </v-col>
+    </v-row>
   </v-navigation-drawer>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import { mapState } from "vuex";
 import sideNavTree from "../assets/sidenav-menu.json";
 
-export default {
-  name: "SideNavMenu",
-  props: {},
+const SideNavMenu = Vue.extend({
+  computed: {
+    ...mapState("items", ["visible"]),
+    ...mapState("items", ["lang"]),
+    filteredMenu(): void {
+      return this.menuItems.filter((n) => n.title !== "Home");
+    },
+  },
+  data: () => ({
+    menuItems: sideNavTree.menu,
+  }),
   methods: {
-    menuRouting(item, subItem = null) {
+    menuRouting(item, subItem = null): void {
       // Allows to go to top of the home page
       if (item.title.includes("home") && !subItem) {
         this.$router.push("/home");
@@ -64,6 +89,10 @@ export default {
       }
       if (item.title.includes("contact") && !subItem) {
         this.$router.push("/contact");
+        window.scrollTo(0, 0);
+      }
+      if (item.title.includes("life-stu") && !subItem) {
+        this.$router.push("/student-life");
         window.scrollTo(0, 0);
       }
       const lastItemPosition = subItem.title.split(".").length - 1;
@@ -84,17 +113,11 @@ export default {
       }
     },
   },
-  computed: {
-    ...mapState("items", ["visible"]),
-    ...mapState("items", ["lang"]),
-    filteredMenu() {
-      return this.menuItems.filter((n) => n.title !== "Home");
-    },
-  },
-  data: () => ({
-    menuItems: sideNavTree.menu,
-  }),
-};
+  name: "SideNavMenu",
+  props: {},
+});
+
+export default SideNavMenu;
 </script>
 
 <style lang="scss" scoped>
@@ -102,9 +125,24 @@ export default {
 
 .nav-bar {
   top: 64px !important;
-  background-image: url("../assets/side.svg");
-  background-size: 70%;
-  background-position: bottom;
+  height: 100% !important;
+
+  .menu-list {
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+
+  .tree-left {
+    float: left;
+    max-width: 60%;
+  }
+
+  .tree-right {
+    position: relative;
+    float: right;
+    max-width: 60%;
+  }
 }
 .icon-menu {
   color: $color-brown-base !important;

@@ -32,13 +32,6 @@
                 "education-levels": "Livelli di scolarizzazione offerti"
             }
         },
-        "life-stu": {
-            "title": "Vita studentesca",
-            "items": {
-                "arts"   : "Arti",
-                "athletic"  : "Atletico"
-            }
-        },
         "insa-admission": {
             "title": "Ammissione INSA",
             "items": {
@@ -52,6 +45,7 @@
             }
         } 
     },
+    "life-stu": "Vita studentesca",
     "contact": "Contatto",
     "content-insa": {
         "about": [
@@ -135,18 +129,51 @@
     "content-contact": {
         "telephones" :  [
             "6629977",
-            "6620885"
+            "6620885",
+            "Telefoni"
         ],
         "direction": [
-            "Cra 14 # 74 - 55 Barrio Andrés Sanín"
+            "Cra 14 # 74 - 55 Barrio Andrés Sanín",
+            "Direzione"
+        ],
+        "email": [
+          "E-mail",
+          "insa.csb@gmail.com"
         ],
         "days-and-hours": [
             "Dal lunedì al venerdì dalle 8:00 alle 16:30"
         ],
         "public-attention": [
             "Attenzione al pubblico"
+        ],
+        "approve": [
+            "Approvato dal Segretario per l'Educazione Comunale ai sensi della delibera n. 4143.2.21.3063 del 23 aprile 2009"
         ]
       },
+      "content-life-stu": {
+        "benefits": [
+          "Vita studentesca all'INSA",
+          "Oltre ad avere strutture ampie e moderne decorate con opere d'arte che arricchiscono l'ambiente di apprendimento, l'istituto ha i seguenti vantaggi:",
+          "• Sale audiovisive",
+          "• Biblioteca scolastica",
+          "• Sala di lettura interattiva",
+          "• Sale di sistema",
+          "• Laboratorio linguistico",
+          "• Laboratorio di Scienze",
+          "• Centro di belle arti",
+          "• Auditorium multipli",
+          "• Sala della musica",
+          "• Ristorante della scuola",
+          "• Sistema Bibliobank"
+        ],
+        "guaranteed": [
+          "È garantito che durante il processo di formazione lo studente rafforza integralmente dimensioni come:",
+          "Una dimensione cristiana cattolica che ti consente di sviluppare un progetto di vita dai valori di Cristo.",
+          "Ottima formazione dalle dimensioni accademiche e disciplinari, in cui si rafforza l'essere, il fare, l'apprendimento e la convivenza.",
+          "Una dimensione interdisciplinare (lavoro di squadra) che consente l'arricchimento dall'uso delle tecnologie dell'informazione e della comunicazione nelle aree del curriculum regolare.",
+          "Incoraggiamento della parte artistica, soprattutto nella musica attraverso la Filarmonica di San Basilio."
+        ]
+      }, 
       "content-insa-admission": {
         "requirements" : [
             "Requisiti per accedere al processo di ammissione",

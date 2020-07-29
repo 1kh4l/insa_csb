@@ -1,12 +1,23 @@
 import Vue from "vue";
 
 export default {
-  namespaced: true,
-  state: {
-    items: [],
-    status: null,
-    visible: true,
-    lang: "co",
+  actions: {
+    addItem(context, item) {
+      context.commit("addItem", item);
+    },
+    setVisibility(context) {
+      context.commit("setVisibility");
+    },
+    setLanguage(context, lang) {
+      context.commit("setLanguage", lang);
+    },
+    getItems(context) {
+      const newItems = [{ name: "newOne", data: "bye" }];
+      context.commit("setItems", newItems);
+    },
+  },
+  getters: {
+    byeItems: (state) => state.items.filter((item) => item.data === "bye"),
   },
   mutations: {
     setItems(state, items) {
@@ -25,22 +36,11 @@ export default {
       Vue.set(state, "items", newItems);
     },
   },
-  actions: {
-    addItem(context, item) {
-      context.commit("addItem", item);
-    },
-    setVisibility(context) {
-      context.commit("setVisibility");
-    },
-    setLanguage(context, lang) {
-      context.commit("setLanguage", lang);
-    },
-    getItems(context) {
-      const newItems = [{ name: "newOne", data: "bye" }];
-      context.commit("setItems", newItems);
-    },
-  },
-  getters: {
-    byeItems: (state) => state.items.filter((item) => item.data === "bye"),
+  namespaced: true,
+  state: {
+    items: [],
+    lang: "co",
+    status: null,
+    visible: true,
   },
 };

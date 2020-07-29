@@ -50,14 +50,18 @@
     </v-layout>
   </v-container>
 </template>
-<script>
-export default {
-  name: "InsaAdmission",
+<script lang="ts">
+import Vue from "vue";
+
+const InsaAdmission = Vue.extend({
   data: () => ({
-    stepsAdmission: [1, 2, 3, 4, 5, 6],
     justify: ["space-between"],
+    stepsAdmission: [1, 2, 3, 4, 5, 6],
   }),
-};
+  name: "InsaAdmission",
+});
+
+export default InsaAdmission;
 </script>
 <style lang="scss" scoped>
 @import "../styles/settings.scss";
