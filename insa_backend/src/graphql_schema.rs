@@ -1,7 +1,12 @@
+extern crate bcrypt;
 use diesel::prelude::*;
 use juniper::RootNode;
+use bcrypt::{hash, verify};
 
-use crate::db::PgPool;
+use crate::db::*;
+use crate::gql_types::*;
+// use crate::jwt::encode_jwt;
+use crate::models::*;
 use crate::schema::users;
 
 #[derive(Clone)]
@@ -35,29 +40,6 @@ impl MutationRoot {
       .values(&data)
       .get_result(&connection)
       .expect("Error saving new post")
-  }
-}
-
-#[derive(Queryable)]
-pub struct User {
-  pub id: i32,
-  pub name: String,
-}
-
-#[derive(juniper::GraphQLInputObject, Insertable)]
-#[table_name = "users"]
-pub struct NewUser {
-  pub name: String,
-}
-
-#[juniper::object(description = "An user in the system")]
-impl User {
-  pub fn id(&self) -> i32 {
-    self.id
-  }
-
-  pub fn name(&self) -> &str {
-    self.name.as_str()
   }
 }
 

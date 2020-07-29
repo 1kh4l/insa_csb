@@ -2,6 +2,7 @@
 extern crate diesel;
 extern crate dotenv;
 extern crate juniper;
+extern crate pretty_env_logger;
 
 use std::io;
 use std::sync::Arc;
@@ -12,8 +13,10 @@ use juniper::http::graphiql::graphiql_source;
 use juniper::http::GraphQLRequest;
 
 mod db;
+mod gql_types;
 mod graphql_schema;
 mod schema;
+mod models;
 
 use crate::db::establish_connection;
 use crate::graphql_schema::{create_schema, Context, Schema};
