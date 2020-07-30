@@ -11,7 +11,7 @@ use crate::schema::users;
 
 #[derive(Clone)]
 pub struct Context {
-  pub db: PgPool,
+    pub db: PgPool,
 }
 
 impl juniper::Context for Context {}
@@ -20,14 +20,31 @@ pub struct QueryRoot;
 
 #[juniper::object(Context = Context)]
 impl QueryRoot {
-  fn users(context: &Context) -> Vec<User> {
-    use crate::schema::users::dsl::*;
-    let connection = context.db.get().unwrap();;
-    users
-      .limit(100)
-      .load::<User>(&connection)
-      .expect("Error loading users")
-  }
+    fn users(context: &Context) -> Vec<User> {
+        use crate::schema::users::dsl::*;
+        let connection = context.db.get().unwrap();;
+        users
+          .limit(100)
+          .load::<User>(&connection)
+          .expect("Error loading users")
+    }
+
+    fn me(context: &Context, user_id: Option<i32>) -> UserResponse {
+        use crate::schema::users::dsl::*;
+
+        let user_id = match user_id {
+            Some(user_id) => user_id,
+            None => return UserResponse{ok:false, error:Some("Login required".to_string()), user:None},
+        };
+
+        let connection = context.db.get().unwrap();;
+
+
+        match users.find(user_id).first(&connection) {
+            Ok(user) => UserResponse{ok:true, error:None, user:Some(user)},
+            _ => UserResponse{ok:false, error:Some( "Not existing user".to_string() ), user:None},
+        }
+    }
 }
 
 pub struct MutationRoot;
