@@ -7,7 +7,7 @@ use chrono::prelude::*;
 pub struct User {
     pub id: i32,
     pub email: String,
-    pub fist_name: String,
+    pub first_name: String,
     pub last_name: String,
     pub password: String,
     pub bio: Option<String>,

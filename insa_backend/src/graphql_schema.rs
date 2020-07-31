@@ -51,13 +51,41 @@ pub struct MutationRoot;
 
 #[juniper::object(Context = Context)]
 impl MutationRoot {
-  fn create_user(context: &Context, data: NewUser) -> User {
-    let connection = context.db.get().unwrap();;
-    diesel::insert_into(users::table)
-      .values(&data)
-      .get_result(&connection)
-      .expect("Error saving new post")
-  }
+    fn create_user(context: &Context, data: NewUser) -> User {
+        let connection = context.db.get().unwrap();;
+        diesel::insert_into(users::table)
+            .values(&data)
+            .get_result(&connection)
+            .expect("Error saving new post")
+    }
+
+    fn signUp(context: &Context, email:String, first_name:String, last_name:String, password:String, bio:Option<String>, avatar:Option<String>) -> UserResponse {
+        use crate::schema::users;
+        let connection = context.db.get().unwrap();;
+
+        let hashed = hash(&password, 10);
+        let mut hashed = match hashed {
+            Ok(hashed) => hashed,
+            Err(e) => String::from("Error"),
+        };
+
+        let hashed_new_user = NewUser {
+            email:email,
+            first_name:first_name,
+            last_name:last_name,
+            password:hashed,
+            bio:bio,
+            avatar:avatar,
+        };
+
+        match diesel::insert_into(users::table)
+            .values(&hashed_new_user)
+            .get_result(&connection){
+                Ok(user) => UserResponse{ok:true,error:None, user:Some(user)},
+                _ => UserResponse{ok:false, error:None, user:None}
+            }
+
+    }
 }
 
 pub type Schema = RootNode<'static, QueryRoot, MutationRoot>;
