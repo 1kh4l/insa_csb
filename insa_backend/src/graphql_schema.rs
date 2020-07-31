@@ -1,11 +1,13 @@
 extern crate bcrypt;
+extern crate chrono;
 use diesel::prelude::*;
 use juniper::RootNode;
 use bcrypt::{hash, verify};
+use chrono::prelude::*;
 
 use crate::db::*;
 use crate::gql_types::*;
-// use crate::jwt::encode_jwt;
+use crate::jwt::encode_jwt;
 use crate::models::*;
 use crate::schema::users;
 
@@ -85,6 +87,34 @@ impl MutationRoot {
                 _ => UserResponse{ok:false, error:None, user:None}
             }
 
+    }
+
+    fn signIn(context: &Context, email:String, password:String) -> TokenResponse {
+        use crate::schema::users;
+        let connection = context.db.get().unwrap();;
+
+        let user = users::dsl::users.filter(users::dsl::email.eq(email)).load::<User>(&connection);
+
+        let mut user = match user {
+            Ok(user) => user,
+            Err(e) => return TokenResponse{token:None},
+        };
+
+        let valid = verify(password, &user[0].password);
+        let mut valid = match valid {
+            Ok(valid) => valid,
+            Err(e) => false,
+        };
+
+        if valid {
+            let token = match encode_jwt(user[0].id, 30){
+                Ok(t) => t,
+                _ => return TokenResponse{token:None},
+            };
+            TokenResponse{token:Some(token)}
+        } else {
+            TokenResponse{token:None}
+        }
     }
 }
 

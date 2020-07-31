@@ -1,5 +1,6 @@
 extern crate jsonwebtoken as jwt;
 extern crate serde_derive;
+use serde::{Serialize, Deserialize};
 
 use jwt::{decode, encode, Header, Validation};
 use std::time::{SystemTime, UNIX_EPOCH};

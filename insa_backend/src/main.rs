@@ -17,6 +17,7 @@ mod gql_types;
 mod graphql_schema;
 mod schema;
 mod models;
+mod jwt;
 
 use crate::db::establish_connection;
 use crate::graphql_schema::{create_schema, Context, Schema};
