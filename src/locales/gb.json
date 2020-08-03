@@ -3,14 +3,14 @@
         "motto": "Teach me goodness, discipline, and knowledge",
         "contact": "Contact us"
     },
-    "about"  : "About us",
+    "about"  : "About Us",
     "history": "History",
     "mission": "Mission",
     "vision" : "Vision",
     "sidenav": {
         "home"    : "Home",
         "about-us": {
-            "title": "About us",
+            "title": "About Us",
             "items": {
                 "about"  : "INSA"
             }
@@ -18,8 +18,8 @@
         "basilians": {
             "title": "Basilians",
             "items": {
-                "about"  : "About us",
-                "work"   : "Our work"
+                "about"  : "About Us",
+                "work"   : "Our Mission"
             }
         },
         "academic": {
@@ -56,70 +56,70 @@
     "contact": "Contact",
     "content-insa": {
         "about": [
-            "The Institute Nuestra Señora de la Asunción, is an Educational Community, founded on October 4, 1992. It is located in the Andrés Sanín neighborhood and it is the parish center of  Nuestra Señora de la Asunción, its process is developed in an unique scholar day time, serving primarily families of strata 1 and 2, from the neighborhoods Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero and La Playa.",
-            "INSA, is a family Catholic center for formal, preschool, basic and middle school education, with an emphasis on fine arts (plastic arts and music), and in modern and classical languages (English, Spanish, French, Mandarin, Italian and Latin). It also has a solid job in the areas of systems, mathematics and ethical training.",
+            "Our Lady of the Assumption School (INSA) is an educational community, founded on October 4, 1992. It is located in the Andrés Sanín neighborhood and it is the parish center of the Our Lady of the Assumption Parish. Its process is developed in a unique scholar day time, serving primarily families of strata 1 and 2, from the neighborhoods Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero and La Playa.",
+            "INSA, is a family Catholic family center for formal, preschool, basic and middle school education, with an emphasis on fine arts (plastic arts and music), and in modern and classical languages (English, Spanish, French, Mandarin, Italian and Latin). It also has a solid curriculum in the areas of systems, mathematics and ethical training.",
              "It is a high quality private educational institution, guided by the Congregation of San Basilio, led by fathers Francisco Antonio Amico Ferrari and Rafael Ignacio Lopera Montoya, Rector and Director respectively.",
-             "\"We did not want the INSA to be one more institution, like any of those that exist. The FAMILY should play a very important role in the philosophy of the Institute and we have been doing so since the beginning.\"",
+             "\"We did not want INSA to be one more institution, like any of those that exist. We believe that the FAMILY must play a central role in the philosophy of the school, and we have remained true to that ideal since the beginning.\"",
              "(Father Rafael Lopera, interview conducted by Luis Fernando Sánchez)",
-             "Institutional Educational Project: years 1996 - 1997",
-             "The years 1996 and 1997 were for the INSA, the years of the PEI( Institutional educational project). An investigation conducted by an expert in the field was carried out. This work was done around two questions: does the INSA respond to the reality that circumscribes it? Does the training given in the INSA, departs of the reality of its surroundings?",
-             "(Basilians in Colombia 1987 1997. Luís Fernando Sánchez. P. 68)",
-             "INSA context problems at the time of its origin: Insecurity. Management of the home economy. Conflicts and aggressiveness inside the home. Pollution of space.",
-             "(Basilians in Colombia 1987 1997. Luís Fernando Sánchez. P. 69)"
+             "Institutional Educational Project: Years 1996 - 1997",
+             "The years 1996 and 1997 were for the school, the years of the PEI( Institutional educational project). An investigation was carried out, led by an expert",
+             "(Basilians in Colombia 1987 1997. Luis Fernando Sánchez. p. 68)",
+             "INSA's contextual problems at the time of its inception: insecurity. management of home economics, conflicts and domestic violence, and pollution of space.",
+             "(Basilians in Colombia 1987 1997. Luis Fernando Sánchez. p. 69)"
         ],
         "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "mission": "Build a Catholic Educational Community, family-centered, that provides integral training to educational agents, based on its socio-cultural environment and Christian values. (PEI)",
-        "vision": "We, the members of this Educational Family, project: the construction of an integral training center for the student and his family, which enables the development of an educational community inspired by Our Lord Jesus Christ and his Gospel. May it foster in all aspects: growth, liberation, organization and participation of all its members, to live here fully in brotherhood, the Kingdom of God, now and forever. (PEI)"
+        "mission": "Build a family-centered, Catholic educational community that provides integral training to educational agents, based on its socio-cultural environment and Christian values. (PEI)",
+        "vision": "We, the members of this educational family, envision: the construction of an integral training center for students and their families, which enables the development of an educational community inspired by Our Lord Jesus Christ and his Gospel. May it foster in all aspects: growth, liberation, organization and participation of all its members, to live here fully in brotherhood within the Kingdom of God, now and forever. (PEI)"
     },
     "content-basilians": {
         "about": [
-            "The Congregation of St. Basil is a Catholic male religious community of French origin, settled with greater force in Canada and United States. In Latin America it is present in Mexico and since 1987 in Colombia.",
-            "In our country it was first installed in the parish of Nuestra Señora de la Asunción in Cali city, by 1995 it established  its second national headquarter in the city of Medellin and at the beginning of the third millennium was founded a house destined for training in the city of Santa Fe de Bogotá.",
-            "Among the group of Basilian religious who participated in the first settlement of the community in Colombia were Father Francisco and Father Roberto and Rafael Lópera, at that time a candidate. In the last twenty-five years, Father Rafael, Father Pedro, Father Juan Carlos and Father Oscar have been ordained as priests of the Congregation of St. Basil. In addition, many men of faith have shared several years of their life with the Congregation, although they have subsequently retired, their work helped to build the Community, while this deeply permeated their Christians beings.",
-            "Today Colombia is favored with the presence of seven Basilian priests, two in the city of Cali, two in Medellín and three in the city of Bogotá, including Father Felipe Platt in the latter, along with them a significant group of candidates, postulants and scholastics advance their formation process, projecting at least two priestly ordinations in the next three years. The project of constituting a Female Community of San Basilio, with two religious and a candidate for this 2012, is added to the work of the brothers.",
-            "As for the overtaken labor, we can refer that the parishes of Cali and Medellín are articulating the work of evangelization with support for development; The dynamics of Cali promotes the Basilian charism from formal education at the Institute Nuestra Señora de la Asunción, while the Basilian being is cultivated in the Antioquia capital through popular education. The two parishes boost productive projects, although with more force in Medellín. Bogotá emphasizes the formation of people interested in entering the Congregation and pastoral collaboration is provided tangentially in the parish of Egipto and others.",
-            "In relation to the presence of the religious woman in the Congregation of San Basilio, during the last years, the Basilian Sisters have been officially constituted. This is the unique experience in the field of the Congregation at international level. Although they were born in the Basilian Parish in Medellín, they are currently located in the Parish of Nuestra Señora de la Asunción in the city of Cali, performing their work both in the educational pastoral of the INSA, as in the pastoral in the neighborhoods, especially in the formation and organization of women."
+            "The Congregation of St. Basil is a Catholic male religious community of French origin, strongly established in Canada and the United States. In Latin America, it is present in Mexico and, since 1987, in Colombia as well.",
+            "In our country it was first based in the Our Lady of the Assumption Parish in Cali and, in 1995, it established its second national headquarters in the city of Medellín. The beginning of the third millennium saw the founding of a training house in the city of Bogotá.",
+            "Among the group of Basilians who participated in the first settlement of the community in Colombia were Father Francisco, Father Roberto, and Rafael Lopera, the latter a candidate at the time. In the last twenty-five years, Father Rafael, Father Pedro, Father Juan Carlos, and Father Óscar have been ordained as priests of the Congregation of St. Basil. In addition, many men of faith have shared several years of their life with the Congregation. Although they have subsequently retired, their work helped to lay the strong foundations that the community now rests on.",
+            "Today Colombia is graced with the presence of seven Basilian priests; two in the city of Cali, two in Medellín and three in the city of Bogotá, including Father Felipe Platt in the latter. Along with them, a significant group of candidates are undergoing their formation process, projecting at least two priestly ordinations in the next three years. We also initiated a project to constitute a female community of St. Basil, with two religious and a candidate to be implemented in 2012, which adds to the workload of the brothers.",
+            "As for the work carried out, we can say that the parishes of Cali and Medellín combine the work of evangelization with that of support for development; Cali’s dynamics promotes the Basilian charism from the perspective of formal education in the Our Lady of the Assumption School, while in the capital of Antioquia the Basilian being is cultivated through popular education. The two parishes boast productive projects, although more so in Medellín. Bogotá emphasizes the formation of people interested in joining the Congregation and tangentially providing pastoral collaboration in the Egipto Parish and others.",
+            "As for the presence of the religious women in the Congregation of St. Basil, over the last years, the Basilian Sisters have been officially constituted and are bona-fide members. This is a unique experience internationally for the Congregation. Although they were first constituted in the Basilian Parish in Medellín, they are currently located in the Our Lady of the Assumption Parish in the city of Cali, serving both in the educational pastoral of INSA, as in the pastoral of the neighborhoods; especially focusing on the formation and organization of local women."
         ],
         "history": [
-            "They were founded in France, the Annonay region, by ten diocesan priests who decided to radically live Community Life, following Jesus. Moved by the need of the time, they dedicated their efforts to teaching young people and preaching the Gospel.",
-            "Firm in their purpose, united by Common Life, they professed the vows of Chastity, Poverty and Obedience in 1822.",
-            "In the last 192 years they have been established in Canada, the United States, Mexico, Saint Lucia and Colombia.",
-            "In Colombia they have been present since 1987 in the city of Cali, Parroquia Nuestra Señora de la Asunción, in the Andrés Sanín neighborhood. Consistent with their choice, faithful to their charism for Education and Preaching, they lead the parish and the institute Nuestra Señora of the Assumption. ",
-            "With the firm purpose of responding thoroughly to the reality of Colombia, the Congregation of San Basilio made its second foundation in Colombia in 1995. The second house was established in the city of Medellín, initially in the Parish in Prado Center, later in the Divino Ecce Homo Parish in the Blanquizal neighborhood, currently and definitively in the San Basilio Parish, Olaya Herrera neighborhood, where a temple was built and a pastoral process led by Father Roberto Seguín was consolidated ",
-            "Aware of the importance of the education of future Basilians, in 1997 a house was established in the city of Bogotá. Although it was explored in the El Campín and July 20 neighborhoods with the Novitiate and the Scholasticate, in the year from 1999, we chose our own space called Basiliana Annonay House of Formation, in the Egypt neighborhood. ",
-            "Currently, in 2014, the Congregation of Basilian Priests is organizing the House for the Novitiate in the city of Santa Martha, as a budding experience, it will surely require immense efforts, but, redundant in the future of fruits for the work of the Kingdom here on Earth, among our People. "
+            "The Congregation was founded in the Annonay region of France by ten diocesan priests who decided to live by radical communal principles, following Jesus. Attuned to the need of the time, they dedicated their efforts to teaching young people and preaching the Gospel.",
+            "Firm in their purpose and united by common life, they professed vows of Chastity, Poverty, and Obedience in 1822.",
+            "Over the last 192 years they have expanded to Canada, the United States, Mexico, Saint Lucia, and Colombia.",
+            "In Colombia they have been present since 1987 in the Our Lady of the Assumption Parish in the Andrés Sanín neighborhood in Cali. Consistent with their choice and faithful to their charism in education and preaching, they lead the parish and the Our Lady of the Assumption School.",
+            "With the firm objective of responding thoroughly to the reality of Colombia, the Congregation of St. Basil established its second foundation in Colombia in 1995. The second house was erected in the city of Medellín, initially in the Prado Center Parish, later moving to the Divino Ecce Homo Parish in the Blanquizal neighborhood. Currently (and definitively), they are situated in the St. Basil Parish in the Olaya Herrera neighborhood, where a temple was built and a pastoral process led by Father Roberto Seguín was consolidated.",
+            "Aware of the importance of educating of future Basilians, a house was established in the city of Bogotá in 1997. Although possibilities were explored with the Novitiate and the Scholasticate in the El Campín and 20 de Julio neighborhoods, in 1999, we finally settled in our own space called Basilian Annonay House of Formation in the Egipto neighborhood.",
+            "In 2014, the Congregation organized the House of the Novitiate in the city of Santa Marta. As an experiment in the making, it certainly required immense effort (becoming redundant in the future); it will bear fruit for Kingdom work here on Earth among our people."
         ],
-        "our-work": "From our experience and Basilian charism carry out a new evangelization that fosters life in all its senses promoting a Community in Christ that nurtures and celebrates the liberation, organization, development and participation of people to live here fully in brotherhood the Kingdom of God, now and forever."
+        "our-work": "From our experience, and in keeping with our Basilian charism, carry out a new evangelization that fosters life in all its aspects while promoting a community in Christ that nurtures and celebrates the liberation, organization, development, and participation of people to live here fully in brotherhood within the Kingdom of God, now and forever."
     },
     "content-education": {
         "students": [
-            "The INSA wants the student to",
+            "The INSA wants the student to;",
             "Get to know and value himself.",
-            "Value and enjoy your family and provide solutions to family conflicts.",
-            "Be critical and sensitive to the reality around you.",
-            "Develop your personal potential and skills that allow you to insert yourself in the productive sector.",
+            "Value and enjoy their family and provide solutions to family conflicts.",
+            "Be critical and sensitive to the reality of his environment.",
+            "Develop your personal potential and skills to permit insertion in the productive sector.",
             "Be able to live in a community and work in a team.",
             "Be able to make decisions in the face of needs and problems that arise.",
-            "Use an important part of your free time for self-education.",
+            "Use a significant part of your free time for self-education.",
             "Be highly imaginative and creative."
         ],
         "teachers": [
-            "The Institution seeks the master.",
+            "INSA seeks that the teacher;",
             "Know Jesus Christ and his Father and make him known to others.",
-            "Commit yourself to the educational work you are doing.",
+            "Commit to their the educational work you are doing.",
             "Be democratic, giving full opportunity in decision making.",
-            "Be accountable to the mission entrusted to you by the campus leadership as part of the IEP.",
-            "Be innovative before the new challenges of Colombian Education.",
-            "Be persistent in your work, observing day by day the educational process in each student. Providing solutions to the difficulties that may arise",
+            "Be accountable to the mission entrusted to them by the campus leadership as part of the PEI.",
+            "Be innovative in the face of the new challenges of Colombian education.",
+            "Be persistent in their work, observing day by day the educational process in each student while providing solutions to the difficulties that may arise",
             "Know and be sensitive to the situation that each family is experiencing.",
             "Be aware and knowledgeable about the reality of the country."
         ],
         "education-levels": [
             "Levels of education offered",
-            "Pre-school (Transition)",
-            "Primary Basic Education (1st to 5th)",
-            "Basic Secondary Education (6th to 9th)",
-            "Academic Average (10th to 11th)",
+            "Pre-school (transition)",
+            "Basic primary education (1st to 5th grade)",
+            "Lower secondary education (6th to 9th grade)",
+            "Upper secondary education (10th to 11th grade)",
             "Study day",
             "Unique (6:50 a.m. to 3:00 p.m.)",
             "School calendar",
@@ -127,7 +127,7 @@
             "Our comprehensive education is based on:",
             "Jesus Christ as the cornerstone of our project.",
             "Quality and excellence in training.",
-            "Educational environments enriched from the application of TIC’S.",
+            "Educational environments enriched from the application of ICTs.",
             "Training in foreign languages and cultures.",
             "Potentialization of artistic skills such as music, fine arts, etc."
           ]
@@ -139,8 +139,8 @@
             "Phones"
         ],
         "direction": [
-            "Cra 14 # 74 - 55 Barrio Andrés Sanín",
-            "Direction"
+            "Cra 14 # 74 – 55, Andrés Sanín neighborhood",
+            "Direction = Address:"
         ],
         "email": [
           "E-mail",
@@ -158,12 +158,12 @@
       },
       "content-life-stu": {
         "benefits": [
-          "Student life at INSA",
-          "In addition to having large and modern facilities decorated with works of art that enrich the learning environment, the institute has the following benefits:",
+          "Student life at Our Lady of the Assumption School",
+          "In addition to having large and modern facilities decorated with works of art that enrich the learning environment, INSA offers the following benefits:",
           "• Audiovisual rooms",
           "• School library",
           "• Interactive reading room",
-          "• System rooms",
+          "• Computer rooms",
           "• Language laboratory",
           "• Science laboratory",
           "• Fine arts center",
@@ -173,28 +173,28 @@
           "• Bibliobank system"
         ],
         "guaranteed": [
-          "It is guaranteed that during the training process the student integrally strengthens dimensions, such as:",
-          "A Catholic Christian dimension that allows you to develop a life project from the values of Christ.",
-          "Excellent training from the academic and disciplinary dimensions, where being, doing, learning and living together are strengthened.",
+          "It is guaranteed that during the training process the student will integrally strengthen dimensions, such as:",
+          "A Catholic Christian dimension that allows one to develop a life project in keeping with the values of Christ.",
+          "Excellent training from the academic and disciplinary dimensions, where being, doing, learning and living together are promoted.",
           "A multicultural dimension where through the knowledge and handling of languages such as English, Latin, French, Italian and Mandarin, they discover the richness of other cultures.",
           "An interdisciplinary dimension (teamwork) that allows enrichment from the use of information and communication technologies in areas of the regular curriculum.",
-          "Encouragement of the artistic part, especially in music through the San Basilio Philharmonic Band."
+          "Encouragement of the artistic potential, especially in music through the St. Basil Philharmonic Band."
         ]
       }, 
       "content-insa-admission": {
         "requirements" : [
             "Requirements to access the admission process",
             "1. Reside in neighborhoods bordering the campus that are located in strata 1 and 2 only.",
-            "2. For transition students the required age is 5 years old before the beginning of the school period for which they aspire.",
+            "2. For transition students the minumum required is to be 5 years old before the beginning of the school period for which they aspire.",
             "3. Comply with each of the documents required for registration to the process."
         ],
         "how-to-apply" :  [
             "How to apply?",
-            "Families interested in participating in the educational project of the school must comply with the following process"
+            "Families interested in participating in the educational project of the school must comply with the following process:"
         ],
         "step-1": [
             "Step 1",
-            "Registration for an admission exam with complete documentation previously delivered personally at the Institute."
+            "Registration for an admission exam with complete documentation previously delivered personally at INSA."
         ],
         "step-2": [
             "Step 2",
@@ -202,11 +202,11 @@
         ],
         "step-3": [
             "Step 3",
-            "Participation of the family nucleus in the presentation of the Institute from the Open House program that takes place the same day of the admission exam."
+            "Participation of the family nucleus in the presentation of the Our Lady of the Assumption School from the Open House program that takes place the same day as the admission exam."
         ],
         "step-4": [
             "Step 4",
-            "Review by parents of the shortlisted list on the date established by the Institute."
+            "Review of the abridged list by parents on the date established by the school."
         ],
         "step-5": [
             "Step 5",
@@ -214,7 +214,7 @@
         ],
         "step-6": [
             "Step 6",
-            "Interview at the Institute with the rector or director where the quota will be officially granted."
+            "Interview at Our Lady of the Assumption School with the rector or director where the quota will be officially granted."
         ]
       }
 }
