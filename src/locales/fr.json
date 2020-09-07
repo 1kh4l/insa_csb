@@ -47,6 +47,10 @@
     },
     "life-stu": "La vie étudiante",
     "contact": "Contactez",
+    "buttons": {
+        "show-more": "Montre Plus",
+        "show-less": "Montrer Moins"
+    },
     "content-insa": {
         "about": [
             "L'Institut Notre-Dame de l'Assomption est une communauté éducative fondée le 4 octobre 1992. Situé dans le quartier d'Andrés Sanín, centre paroissial de Nuestra Señora de la Asunción, il développe son processus en une seule journée, en donnant la priorité aux familles des couches 1 et 2, des quartiers d'Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero et La Playa",

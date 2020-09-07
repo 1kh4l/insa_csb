@@ -47,6 +47,10 @@
     },
     "life-stu": "Student Life",
     "contact": "Contact",
+    "buttons": {
+        "show-more": "Show More",
+        "show-less": "Show Less"
+    },
     "content-insa": {
         "about": [
             "Our Lady of the Assumption School (INSA) is an educational community, founded on October 4, 1992. It is located in the Andrés Sanín neighborhood and it is the parish center of the Our Lady of the Assumption Parish. Its process is developed in a unique scholar day time, serving primarily families of strata 1 and 2, from the neighborhoods Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero and La Playa.",
