@@ -41,6 +41,10 @@
     },
     "life-stu": "Vida de estudiante",
     "contact": "Contacto",
+    "buttons": {
+        "show-more": "Mostrar Más",
+        "show-less": "Muestra Menos"
+    },
     "content-insa": {
         "about": [
             "El Instituto Nuestra Señora de la Asunción, es una Comunidad Educativa, fundada el 4 de octubre de 1992. Ubicado en el barrio Andrés Sanín, centro parroquial de Nuestra Señora de la Asunción, desarrolla su proceso en jornada única, atendiendo prioritariamente a familias de estratos 1 y 2, de los barrios Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero y La Playa.",

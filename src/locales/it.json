@@ -40,6 +40,10 @@
     },
     "life-stu": "Vita studentesca",
     "contact": "Contatto",
+    "buttons": {
+        "show-more": "Mostra di più",
+        "show-less": "Mostra meno"
+    },
     "content-insa": {
         "about": [
              "L'Istituto di Nostra Signora Assunta è una comunità educativa fondata il 4 ottobre 1992. Situato nel quartiere di Andrés Sanín, centro parrocchiale di Nuestra Señora de la Asunción, sviluppa il suo processo in un solo giorno, dando priorità alle famiglie degli strati 1 e 2, dei quartieri di Andrés Sanín, Siete de Agosto, Puerto Mallarino, Vivero e La Playa",
