@@ -5,10 +5,9 @@ Vue.use(VueI18n);
 Vue.config.productionTip = false;
 
 // As Flowtype definition, Locale Messages syntax like BNF annotation
-type LocaleMessages = { [key: string]: LocaleMessageObject };
+type LocaleMessage = string;
 type LocaleMessageObject = { [key: string]: LocaleMessage };
-type LocaleMessageArray = LocaleMessage[];
-type LocaleMessage = string | LocaleMessageObject | LocaleMessageArray;
+type LocaleMessages = { [key: string]: LocaleMessageObject };
 
 const loadLocaleMessages = (): LocaleMessages => {
   const locales = require.context("./../locales", true, /[A-Za-z0-9-_,\s]+\.json$/i);
