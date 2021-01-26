@@ -23,24 +23,6 @@
             ]
         },
         {
-            "title": "sidenav.basilians.title",
-            "icon": "mdi-christianity",
-            "items": [
-                {
-                    "title": "sidenav.basilians.items.about",
-                    "icon": "mdi-account-group"
-                },
-                {
-                    "title": "history",
-                    "icon": "mdi-timer-sand"
-                },
-                {
-                    "title": "sidenav.basilians.items.work",
-                    "icon": "mdi-charity"
-                }
-            ]
-        },
-        {
             "title": "sidenav.academic.title",
             "icon": "mdi-school",
             "items": [
