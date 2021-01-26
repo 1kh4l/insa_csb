@@ -15,13 +15,6 @@
                 "about"  : "INSA"
             }
         },
-        "basilians": {
-            "title": "Basilians",
-            "items": {
-                "about"  : "About Us",
-                "work"   : "Our Mission"
-            }
-        },
         "academic": {
             "title": "Academics",
             "items": {
@@ -70,26 +63,6 @@
         "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "mission": "Build a family-centered, Catholic educational community that provides integral training to educational agents, based on its socio-cultural environment and Christian values. (PEI)",
         "vision": "We, the members of this educational family, envision: the construction of an integral training center for students and their families, which enables the development of an educational community inspired by Our Lord Jesus Christ and his Gospel. May it foster in all aspects: growth, liberation, organization and participation of all its members, to live here fully in brotherhood within the Kingdom of God, now and forever. (PEI)"
-    },
-    "content-basilians": {
-        "about": [
-            "The Congregation of St. Basil is a Catholic male religious community of French origin, strongly established in Canada and the United States. In Latin America, it is present in Mexico and, since 1987, in Colombia as well.",
-            "In our country it was first based in the Our Lady of the Assumption Parish in Cali and, in 1995, it established its second national headquarters in the city of Medellín. The beginning of the third millennium saw the founding of a training house in the city of Bogotá.",
-            "Among the group of Basilians who participated in the first settlement of the community in Colombia were Father Francisco, Father Roberto, and Rafael Lopera, the latter a candidate at the time. In the last twenty-five years, Father Rafael, Father Pedro, Father Juan Carlos, and Father Óscar have been ordained as priests of the Congregation of St. Basil. In addition, many men of faith have shared several years of their life with the Congregation. Although they have subsequently retired, their work helped to lay the strong foundations that the community now rests on.",
-            "Today Colombia is graced with the presence of seven Basilian priests; two in the city of Cali, two in Medellín and three in the city of Bogotá, including Father Felipe Platt in the latter. Along with them, a significant group of candidates are undergoing their formation process, projecting at least two priestly ordinations in the next three years. We also initiated a project to constitute a female community of St. Basil, with two religious and a candidate to be implemented in 2012, which adds to the workload of the brothers.",
-            "As for the work carried out, we can say that the parishes of Cali and Medellín combine the work of evangelization with that of support for development; Cali’s dynamics promotes the Basilian charism from the perspective of formal education in the Our Lady of the Assumption School, while in the capital of Antioquia the Basilian being is cultivated through popular education. The two parishes boast productive projects, although more so in Medellín. Bogotá emphasizes the formation of people interested in joining the Congregation and tangentially providing pastoral collaboration in the Egipto Parish and others.",
-            "As for the presence of the religious women in the Congregation of St. Basil, over the last years, the Basilian Sisters have been officially constituted and are bona-fide members. This is a unique experience internationally for the Congregation. Although they were first constituted in the Basilian Parish in Medellín, they are currently located in the Our Lady of the Assumption Parish in the city of Cali, serving both in the educational pastoral of INSA, as in the pastoral of the neighborhoods; especially focusing on the formation and organization of local women."
-        ],
-        "history": [
-            "The Congregation was founded in the Annonay region of France by ten diocesan priests who decided to live by radical communal principles, following Jesus. Attuned to the need of the time, they dedicated their efforts to teaching young people and preaching the Gospel.",
-            "Firm in their purpose and united by common life, they professed vows of Chastity, Poverty, and Obedience in 1822.",
-            "Over the last 192 years they have expanded to Canada, the United States, Mexico, Saint Lucia, and Colombia.",
-            "In Colombia they have been present since 1987 in the Our Lady of the Assumption Parish in the Andrés Sanín neighborhood in Cali. Consistent with their choice and faithful to their charism in education and preaching, they lead the parish and the Our Lady of the Assumption School.",
-            "With the firm objective of responding thoroughly to the reality of Colombia, the Congregation of St. Basil established its second foundation in Colombia in 1995. The second house was erected in the city of Medellín, initially in the Prado Center Parish, later moving to the Divino Ecce Homo Parish in the Blanquizal neighborhood. Currently (and definitively), they are situated in the St. Basil Parish in the Olaya Herrera neighborhood, where a temple was built and a pastoral process led by Father Roberto Seguín was consolidated.",
-            "Aware of the importance of educating of future Basilians, a house was established in the city of Bogotá in 1997. Although possibilities were explored with the Novitiate and the Scholasticate in the El Campín and 20 de Julio neighborhoods, in 1999, we finally settled in our own space called Basilian Annonay House of Formation in the Egipto neighborhood.",
-            "In 2014, the Congregation organized the House of the Novitiate in the city of Santa Marta. As an experiment in the making, it certainly required immense effort (becoming redundant in the future); it will bear fruit for Kingdom work here on Earth among our people."
-        ],
-        "our-work": "From our experience, and in keeping with our Basilian charism, carry out a new evangelization that fosters life in all its aspects while promoting a community in Christ that nurtures and celebrates the liberation, organization, development, and participation of people to live here fully in brotherhood within the Kingdom of God, now and forever."
     },
     "content-education": {
         "students": [
