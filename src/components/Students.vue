@@ -21,61 +21,58 @@
           <v-col class="col-size" align="center" cols="12" sm="12" xs="12" lg="12" xl="12">
             <v-row class="img-size">
               <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-                <v-img class="img1" src="../assets/students_gallery_1.jpg" />
-                <!-- <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_1.jpg" />-->
+                <v-img
+                  class="img1"
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_1.jpg"
+                />
               </v-col>
               <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                <v-img class="img1" src="../assets/students_gallery_2.jpg" />
-                <!-- <v-img
+                <v-img
                   class="img1"
-                  src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_2.jpg"
-                />-->
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_2.jpg"
+                />
               </v-col>
               <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                <v-img class="img1" src="../assets/students_gallery_3.jpg" />
-                <!-- <v-img
+                <v-img
                   class="img1"
-                  src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_3.jpg"
-                />-->
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_3.jpg"
+                />
               </v-col>
             </v-row>
             <v-row class="img-size2">
               <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                <v-img class="img2" src="../assets/students_gallery_4.jpg" />
-                <!-- <v-img
-                  class="img1"
-                  src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_4.jpg"
-                />-->
+                <v-img
+                  class="img2"
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_4.jpg"
+                />
               </v-col>
               <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                <v-img class="img2" src="../assets/students_gallery_5.jpg" />
-                <!-- <v-img
-                  class="img1"
-                  src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_5.jpg"
-                />-->
+                <v-img
+                  class="img2"
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_5.jpg"
+                />
               </v-col>
               <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-                <v-img class="img2" src="../assets/students_gallery_6.jpg" />
-                <!-- <v-img
-                  class="img1"
-                  src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_6.jpg"
-                />-->
+                <v-img
+                  class="img2"
+                  src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_6.jpg"
+                />
               </v-col>
               <v-col class="small-img" cols="12" sm="2" xs="2" lg="2" xl="2">
                 <v-row class="small-img-row1">
                   <v-col cols="12" sm="2" xs="2" lg="12" xl="12">
-                    <v-img class="img2" src="../assets/students_gallery_7.jpg" />
-                    <!-- <v-img
-                      src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_7.jpg"
-                    />-->
+                    <v-img
+                      class="img2"
+                      src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_7.jpg"
+                    />
                   </v-col>
                 </v-row>
                 <v-row class="small-img-row2">
                   <v-col cols="12" sm="2" xs="2" lg="12" xl="12">
-                    <v-img class="img2" src="../assets/students_gallery_8.jpg" />
-                    <!-- <v-img
-                      src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_8.jpg"
-                    />-->
+                    <v-img
+                      class="img2"
+                      src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_8.jpg"
+                    />
                   </v-col>
                 </v-row>
               </v-col>
@@ -97,61 +94,58 @@
             <v-col class="col-size" align="center" cols="12" sm="12" xs="12" lg="12" xl="12">
               <v-row class="img-size-below">
                 <v-col cols="12" sm="6" xs="6" lg="6" xl="6">
-                  <v-img class="img1" src="../assets/students_gallery_9.jpg" />
-                  <!-- <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_9.jpg" />-->
+                  <v-img
+                    class="img1"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_9.jpg"
+                  />
                 </v-col>
                 <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                  <v-img class="img1-below" src="../assets/students_gallery_10.jpg" />
-                  <!-- <v-img
-                    class="img1"
-                    src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_10.jpg"
-                  />-->
+                  <v-img
+                    class="img1-below"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_10.jpg"
+                  />
                 </v-col>
                 <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                  <v-img class="img1-below" src="../assets/students_gallery_11.jpg" />
-                  <!-- <v-img
-                    class="img1"
-                    src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_11.jpg"
-                  />-->
+                  <v-img
+                    class="img1-below"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_11.jpg"
+                  />
                 </v-col>
               </v-row>
               <v-row class="img-size2-below">
                 <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                  <v-img class="img2-below" src="../assets/students_gallery_12.jpg" />
-                  <!-- <v-img
-                    class="img1"
-                    src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_12.jpg"
-                  />-->
+                  <v-img
+                    class="img2-below"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_12.jpg"
+                  />
                 </v-col>
                 <v-col cols="12" sm="3" xs="3" lg="3" xl="3">
-                  <v-img class="img2-below" src="../assets/students_gallery_13.jpg" />
-                  <!-- <v-img
-                    class="img1"
-                    src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_13.jpg"
-                  />-->
+                  <v-img
+                    class="img2-below"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_13.jpg"
+                  />
                 </v-col>
                 <v-col cols="12" sm="4" xs="4" lg="4" xl="4">
-                  <v-img class="img2-below" src="../assets/students_gallery_14.jpg" />
-                  <!-- <v-img
-                    class="img1"
-                    src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_14.jpg"
-                  />-->
+                  <v-img
+                    class="img2-below"
+                    src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_14.jpg"
+                  />
                 </v-col>
                 <v-col class="small-img" cols="12" sm="2" xs="2" lg="2" xl="2">
                   <v-row class="small-img-row1-below">
                     <v-col cols="12" sm="2" xs="2" lg="12" xl="12">
-                      <v-img class="img2-row1-below" src="../assets/students_gallery_15.jpg" />
-                      <!-- <v-img
-                        src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_15.jpg"
-                      />-->
+                      <v-img
+                        class="img2-row1-below"
+                        src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_15.jpg"
+                      />
                     </v-col>
                   </v-row>
                   <v-row class="small-img-row2-below">
                     <v-col cols="12" sm="2" xs="2" lg="12" xl="12">
-                      <v-img class="img2-below" src="../assets/students_gallery_16.jpg" />
-                      <!-- <v-img
-                        src="https://d2461yysjut9f6.cloudfront.net/photos/students_gallery_16.jpg"
-                      />-->
+                      <v-img
+                        class="img2-below"
+                        src="https://d1ro9wdeur3r20.cloudfront.net/photos/students_gallery_16.jpg"
+                      />
                     </v-col>
                   </v-row>
                 </v-col>
