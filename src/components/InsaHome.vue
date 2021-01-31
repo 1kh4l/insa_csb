@@ -1,7 +1,7 @@
 <template>
   <v-container class="main-page">
     <div class="cover-image">
-      <img class="img1" src="https://d2461yysjut9f6.cloudfront.net/photos/cover_page_kids.jpg" />
+      <img class="img1" src="https://d1ro9wdeur3r20.cloudfront.net/photos/cover_page_kids.jpg" />
     </div>
     <!-- ABOUT US SECTION -->
     <v-container id="about" class="about-us-section">
@@ -21,7 +21,7 @@
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6" class="about-us-image-container">
           <v-img
             class="main-page-school"
-            src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_school.png"
+            src="https://d1ro9wdeur3r20.cloudfront.net/photos/main_page_school.png"
           >
           </v-img>
         </v-col>
@@ -58,7 +58,7 @@
           <div class="history-image">
             <v-img
               class="img2"
-              src="https://d2461yysjut9f6.cloudfront.net/photos/school_life_1.jpg"
+              src="https://d1ro9wdeur3r20.cloudfront.net/photos/school_life_1.jpg"
             >
             </v-img>
           </div>
@@ -86,7 +86,7 @@
         </v-col>
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6">
           <div class="mission-image">
-            <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_mission.png">
+            <v-img src="https://d1ro9wdeur3r20.cloudfront.net/photos/main_page_mission.png">
             </v-img>
           </div>
         </v-col>
@@ -96,7 +96,7 @@
       <v-row align="center">
         <v-col cols="12" sm="12" xs="12" lg="6" xl="6" align="right">
           <div class="vision-image">
-            <v-img src="https://d2461yysjut9f6.cloudfront.net/photos/main_page_vision.png"></v-img>
+            <v-img src="https://d1ro9wdeur3r20.cloudfront.net/photos/main_page_vision.png"></v-img>
           </div>
         </v-col>
         <v-col cols="12" sm="12" xs="12" lg="6 " xl="6">

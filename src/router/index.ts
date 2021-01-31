@@ -1,4 +1,3 @@
-import Basilians from "@/components/Basilians.vue";
 import Contact from "@/components/Contact.vue";
 import EducationLevels from "@/components/EducationLevels.vue";
 import InsaAdmission from "@/components/InsaAdmission.vue";
@@ -18,11 +17,6 @@ const Routes: RouteConfig[] = [
     component: InsaHome,
     name: "home",
     path: "/home",
-  },
-  {
-    component: Basilians,
-    name: "basilians",
-    path: "/basilians",
   },
   {
     component: Students,
