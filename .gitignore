@@ -19,3 +19,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+
+#Added by cargo
+
+/insa_backend/target
+**/*.rs.bk
+/insa_backend/.env
