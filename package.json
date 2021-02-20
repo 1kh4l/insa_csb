@@ -55,6 +55,6 @@
     "vue-cli-plugin-vuetify": "2.0.7",
     "vue-svg-loader": "0.16.0",
     "vue-template-compiler": "2.6.12",
-    "vuetify-loader": "1.6.0"
+    "vuetify-loader": "1.7.2"
   }
 }
