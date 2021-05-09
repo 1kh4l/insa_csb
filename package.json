@@ -28,7 +28,7 @@
     "vuex": "3.5.1"
   },
   "devDependencies": {
-    "@types/chai": "4.2.13",
+    "@types/chai": "4.2.18",
     "@types/mocha": "8.0.3",
     "@typescript-eslint/eslint-plugin": "4.4.0",
     "@typescript-eslint/parser": "4.4.0",
@@ -40,7 +40,7 @@
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "7.0.0",
     "@vue/test-utils": "1.1.0",
-    "chai": "4.2.0",
+    "chai": "4.3.4",
     "chromedriver": "85.0.1",
     "eslint": "7.10.0",
     "eslint-config-prettier": "6.12.0",
